@@ -1,0 +1,16 @@
+//Themes
+
+.bff-theme--booker{ @include theme--solid($booker--color-blue, $white, $booker--color-blue-light) }
+.bff-theme--booker-outline{ @include theme--outline(transparent, $booker--color-blue, $booker--color-blue-light ) }
+.bff-theme--frederick{ @include theme--solid($frederick--color-green, $white, $frederick--color-green-light) }
+.bff-theme--frederick-outline{ @include theme--outline(transparent, $frederick--color-green, $frederick--color-green-light ) }
+.bff-theme--success{ @include theme--solid($success--color, $white, $success--color-light) }
+.bff-theme--success-outline{ @include theme--outline(transparent, $success--color, $success--color-light ) }
+.bff-theme--danger{ @include theme--solid($danger--color, $white, $danger--color-light) }
+.bff-theme--danger-outline{ @include theme--outline(transparent, $danger--color, $danger--color-light ) }
+.bff-theme--warning{ @include theme--solid($warning--color, $white, $warning--color-light) }
+.bff-theme--warning-outline{ @include theme--outline(transparent, $warning--color, $warning--color-light ) }
+.bff-theme--info{ @include theme--solid($info--color, $white, $info--color-light) }
+.bff-theme--info-outline{ @include theme--outline(transparent, $info--color, $info--color-light ) }
+
+

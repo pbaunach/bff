@@ -1,0 +1,12 @@
+// Spacing
+
+@include spacing(xx-large,$spacing--xx-large);
+@include spacing(x-large,$spacing--x-large);
+@include spacing(large,$spacing--large);
+@include spacing(medium,$spacing--medium);
+@include spacing(small,$spacing--small);
+@include spacing(x-small,$spacing--x-small);
+@include spacing(xx-small,$spacing--xx-small);
+@include spacing(xxx-small,$spacing--xxx-small);
+@include spacing(none,$spacing--none);
+

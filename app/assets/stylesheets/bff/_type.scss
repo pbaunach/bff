@@ -1,0 +1,89 @@
+// Text Sizes
+
+.bff-text-body--x-small{
+  font-size: $font-size--x-small;
+}
+.bff-text-body--small{
+  font-size: $font-size--small;
+}
+.bff-text-body--normal{
+  font-size: $font-size--base;
+}
+.bff-text-body--large{
+  font-size: $font-size--large;
+}
+.bff-text-body--x-large{
+  font-size: $font-size--x-large;
+}
+.bff-text-body--xx-large{
+  font-size: $font-size--xx-large;
+}
+
+// Text weights
+
+.bff-text-body--light{
+  font-weight: $font-weight--light;
+}
+.bff-text-body--normal{
+  font-weight: $font-weight--normal;
+}
+.bff-text-body--semibold{
+  font-weight: $font-weight--semibold;
+}
+
+// Headings
+
+.bff-text-heading--x-small{
+  @extend .bff-text-body--x-small;
+  @extend .bff-text-body--semibold;
+  color: $gray-darkest;
+}
+.bff-text-heading--small{
+  @extend .bff-text-body--small;
+  @extend .bff-text-body--semibold;
+  color: $gray-darkest;
+}
+.bff-text-heading--normal{
+  @extend .bff-text-body--normal;
+  @extend .bff-text-body--semibold;
+  color: $gray-darkest;
+}
+.bff-text-heading--large{
+  @extend .bff-text-body--large;
+  @extend .bff-text-body--semibold;
+  color: $gray-darkest;
+}
+.bff-text-heading--x-large{
+  @extend .bff-text-body--x-large;
+  @extend .bff-text-body--semibold;
+  color: $gray-darkest;
+}
+.bff-text-heading--xx-large{
+  @extend .bff-text-body--xx-large;
+  @extend .bff-text-body--semibold;
+  color: $gray-darkest;
+}
+
+//
+// Lists
+//
+
+.list-unstyled {
+  @include list-unstyled;
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+  @include list-unstyled;
+}
+.list-inline-item {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: $list-inline-padding;
+  }
+}
+
+
+
+

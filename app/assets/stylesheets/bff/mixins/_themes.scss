@@ -1,0 +1,24 @@
+// Themes
+
+// Currently made for buttons ... may need to re-write to be more extensible later.
+
+@mixin theme--solid($bg--color, $font--color, $hover--color){
+  background-color: $bg--color;
+  border-color: $bg--color;
+  color: $font--color;
+  &:hover{
+    background-color: $hover--color;
+    border-color: $hover--color;
+  };
+}
+
+@mixin theme--outline($bg--color, $font--color, $hover--color){
+  background-color: $bg--color;
+  border:$border-width solid $font--color;
+  color: $font--color;
+  &:hover{
+    background-color: $hover--color;
+    border-color: $hover--color;
+    color: $white;
+  };
+}

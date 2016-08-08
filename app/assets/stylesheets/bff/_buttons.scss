@@ -1,0 +1,57 @@
+// Buttons
+.bff-button{
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: $input-btn-border-width solid transparent;
+  background-color: $white;
+  border-color: $gray-light;
+  color: $gray-darkest;
+  @include button-size($btn-padding-y, $btn-padding-x, $font-size--base, $line-height, $btn-border-radius);
+ 
+  &:hover{
+    background-color: $gray-lightest;
+  };
+}
+
+.bff-button--disabled{
+  background-color: $gray-light;
+  border-color: $gray-light;
+  color: $gray-lightest;
+  &:hover{
+    background-color: $gray-light;
+    border-color: $gray-light;
+    color: $gray-lightest;
+    cursor:not-allowed;
+  }
+}
+
+//
+// Button Sizes
+//
+
+.bff-button--small {
+  // line-height: ensure proper height of button next to small input
+  @include button-size($btn-padding-y--small, $btn-padding-x--small, $font-size--small, $line-height--small, $btn-border-radius);
+}
+.bff-button--large {
+  // line-height: ensure even-numbered height of button next to large input
+  @include button-size($btn-padding-y--large, $btn-padding-x--large, $font-size--large, $line-height--large, $btn-border-radius);
+}
+.bff-button--x-large {
+  // line-height: ensure even-numbered height of button next to large input
+  @include button-size($btn-padding-y--x-large, $btn-padding-x--x-large, $font-size--x-large, $line-height--x-large, $btn-border-radius);
+}
+
+//
+// Block button
+//
+
+.bff-button__block {
+  display: block;
+  width: 100%;
+}

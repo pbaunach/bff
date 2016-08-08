@@ -1,0 +1,95 @@
+//
+// Custom Variables
+//
+
+// BFF Colors
+
+$bff-booker-blue: 				#00AEEF;
+$bff-booker-blue-light: 		#43C8F5;
+
+$bff-frederick-green: 			#54D48A;
+$bff-frederick-green-light: 	#86E0AA;
+
+$bff-white:               #FFFFFF;
+$bff-grey-lightest: 			#F5F7FA;
+$bff-grey-lighter: 				#E6E9ED;
+$bff-grey-light: 				#CCD1D9;
+$bff-grey: 						#AAB2BD;
+$bff-grey-dark: 				#838B91;
+$bff-grey-darker: 				#656D78;
+$bff-grey-darkest: 				#434A54;
+
+$bff-grapefruit: 				#DA4453;
+$bff-grapefruit-light: 			#ED5565;
+$bff-grapefruit-lighter: 		#F27789;
+
+$bff-bittersweet: 				#E9573F;
+$bff-bittersweet-light: 		#FC6E51;
+$bff-bittersweet-lighter: 		#FC8C7A;
+
+$bff-sunflower: 				#F6BB42;
+$bff-sunflower-light: 			#FFCE54;
+$bff-sunflower-lighter: 		#FFD983;
+
+$bff-grass: 					#8CC152;
+$bff-grass-light: 				#A0D468;
+$bff-grass-lighter: 			#BADD8A;
+
+$bff-mint: 						#37BC9B;
+$bff-mint-light: 				#48CFAD;
+$bff-mint-lighter: 				#6FDDBE;
+
+$bff-aqua: 						#3BAFDA;
+$bff-aqua-light: 				#4FC1E9;
+$bff-aqua-lighter: 				#69D1ED;
+
+$bff-cornflower: 				#4A89DC;
+$bff-cornflower-light: 			#5D9CEC;
+$bff-cornflower-lighter: 		#79B3F2;
+
+$bff-lavander: 					#967ADC;
+$bff-lavander-light: 			#AC92EC;
+$bff-lavander-lighter: 			#BAA6F4;
+
+$bff-rose: 						#D770AD;
+$bff-rose-light: 				#EC87C0;
+$bff-rose-lighter: 				#F4A6D4;
+
+// BFF Utilities
+
+$bff-border-radius: 0.1875rem;
+
+$border-radius: 0.1875rem;
+$border-radius-sm: 0.1875rem;
+$border-radius-lg: 0.1875rem;
+
+$font-family-base: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font-size-base:             0.875rem !default;
+$font-size-xs:               .625rem !default;
+$font-size-sm:               .75rem !default;
+$font-size-lg:               1.125rem !default;
+$font-size-xl:               1.375rem !default;
+$font-size-xxl:              2rem !default;
+
+$line-height:                1.5 !default;
+$line-height-sm:             1.5 !default;
+$line-height-lg:             (4 / 3) !default;
+$line-height-xl:             (4 / 3) !default;
+
+// BFF Buttons
+//
+// For each of Bootstrap's buttons, define text, background and border color.
+
+$bff-btn-padding-x:           1rem !default;
+$bff-btn-padding-y:           .375rem !default;
+$bff-btn-font-weight:         normal !default;
+
+$bff-btn-padding-x--sm:       .75rem !default;
+$bff-btn-padding-y--sm:       .25rem !default;
+
+$bff-btn-padding-x--lg:       1.25rem !default;
+$bff-btn-padding-y--lg:       .75rem !default;
+
+$bff-btn-padding-x--xl:       1.50rem !default;
+$bff-btn-padding-y--xl:       1rem !default;
