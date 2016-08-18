@@ -1,3 +1,8 @@
+// Variables
+// CSS Namespace
+$css-prefix: "bff-";
+
+
 // General variable structure
 //
 // Variable format should follow the `$block__element--modifier` order.
@@ -75,6 +80,8 @@ $font-family--base: 		  $font-family-sans-serif;
 $font-weight--light: 		  300;
 $font-weight--normal:		  400;
 $font-weight--semibold:		  600;
+
+$font-color--default: $gray-darker;
 
 $font-size--root:             16px !default;
 
@@ -197,22 +204,23 @@ $btn-border-radius:              $border-radius !default;
 $input-padding-x:                .75rem !default;
 $input-padding-y:                .375rem !default;
 
-$input-bg:                       #fff !default;
-$input-bg-disabled:              $gray-lighter !default;
+$input-background--color:                       $white !default;
+$input-background--disabled:              $gray-lighter !default;
+$input-border--disabled:              $gray-light !default;
 
-$input-color:                    $gray !default;
-$input-border-color:             #ccc !default;
-$input-btn-border-width:         $border-width !default; // For form controls and buttons
+$input-color:                    $gray-darker !default;
+$input-border--color:             $gray !default;
+$input-border--width:         $border-width !default; // For form controls and buttons
 $input-box-shadow:               inset 0 1px 1px rgba(0,0,0,.075) !default;
 
-$input-border-radius:            $border-radius !default;
+$input-border--radius:            $border-radius !default;
 
-$input-border-focus:             #66afe9 !default;
-$input-box-shadow-focus:         rgba(102,175,233,.6) !default;
+$input-border--focus:             $aqua !default;
+$input-box-shadow--focus:         $aqua !default;
 
-$input-color-placeholder:        #999 !default;
+$input-color-placeholder:        $gray-light !default;
 
-$input-padding-x--small:             .75rem !default;
+$input-padding-x--small:             .525rem !default;
 $input-padding-y--small:             .275rem !default;
 
 $input-padding-x--large:             1.25rem !default;
@@ -225,9 +233,30 @@ $input-height--small:                (($font-size--small * $line-height--small) 
 $form-group-margin-bottom:       $spacer-y !default;
 
 $input-group-addon-bg:           $gray-lighter !default;
-$input-group-addon-border-color: $input-border-color !default;
+$input-group-addon-border-color: $input-border--color !default;
 
 $cursor-disabled:                not-allowed !default;
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-cell-padding:            .75rem !default;
+$table-cell-padding--small:         .3rem !default;
+$table-cell--max-width:           15rem;
+
+$table-background--color:                      $white !default;
+
+$table-header-background--color:       $gray-lighter;
+$table-header--color:          $gray-darker;
+
+$table-row-background--alt:               $gray-lightest !default;
+$table-row-background--hover:                $gray-lightest !default;
+$table-row-background--active:               $gray-lightest !default;
+
+$table-border--width:            $border-width !default;
+$table-border--color:            $gray-lighter !default;
+$table-cell-border--selection:        $aqua;
 
 
 //Utilities?

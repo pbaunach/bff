@@ -1,0 +1,27 @@
+// Inputs 
+// Base Styles
+
+.input-group {
+  position: relative;
+  display: flex;
+ 
+
+  .form-control {
+    // Ensure that the input is always above the *appended* addon button for
+    // proper border colors.
+    position: relative;
+    z-index: 2;
+    // Bring the "active" form control to the front
+//  @include hover-focus-active {
+//    z-index: 3;
+//  }
+    
+    flex: 1;
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+

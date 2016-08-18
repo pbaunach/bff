@@ -16,7 +16,7 @@
   @each $breakpoint in map-keys($breakpoints) {
 
     @for $i from 1 through $columns {
-      .bff-col--#{$breakpoint}-#{$i} {
+      .#{$css-prefix}col--#{$breakpoint}-#{$i} {
         @extend %grid__column;
       }
     }
@@ -26,13 +26,13 @@
         float: left;
       }
       @for $i from 1 through $columns {
-        .bff-col--#{$breakpoint}-#{$i} {
+        .#{$css-prefix}col--#{$breakpoint}-#{$i} {
           @include make-col--span($i, $columns);
         }
       }
       @each $modifier in (pull, push, offset) {
         @for $i from 0 through $columns {
-          .bff-col--#{$breakpoint}-#{$modifier}-#{$i} {
+          .#{$css-prefix}col--#{$breakpoint}-#{$modifier}-#{$i} {
             @include make-col--modifier($modifier, $i, $columns)
           }
         }

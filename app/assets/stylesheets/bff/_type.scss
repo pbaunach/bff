@@ -1,66 +1,66 @@
 // Text Sizes
 
-.bff-text-body--x-small{
+.#{$css-prefix}text-body--x-small{
   font-size: $font-size--x-small;
 }
-.bff-text-body--small{
+.#{$css-prefix}text-body--small{
   font-size: $font-size--small;
 }
-.bff-text-body--normal{
+.#{$css-prefix}text-body--normal{
   font-size: $font-size--base;
 }
-.bff-text-body--large{
+.#{$css-prefix}text-body--large{
   font-size: $font-size--large;
 }
-.bff-text-body--x-large{
+.#{$css-prefix}text-body--x-large{
   font-size: $font-size--x-large;
 }
-.bff-text-body--xx-large{
+.#{$css-prefix}text-body--xx-large{
   font-size: $font-size--xx-large;
 }
 
 // Text weights
 
-.bff-text-body--light{
+.#{$css-prefix}text-body--light{
   font-weight: $font-weight--light;
 }
-.bff-text-body--normal{
+.#{$css-prefix}text-body--normal{
   font-weight: $font-weight--normal;
 }
-.bff-text-body--semibold{
+.#{$css-prefix}text-body--semibold{
   font-weight: $font-weight--semibold;
 }
 
 // Headings
 
-.bff-text-heading--x-small{
-  @extend .bff-text-body--x-small;
-  @extend .bff-text-body--semibold;
+.#{$css-prefix}text-heading--x-small{
+  @extend .#{$css-prefix}text-body--x-small;
+  @extend .#{$css-prefix}text-body--semibold;
   color: $gray-darkest;
 }
-.bff-text-heading--small{
-  @extend .bff-text-body--small;
-  @extend .bff-text-body--semibold;
+.#{$css-prefix}text-heading--small{
+  @extend .#{$css-prefix}text-body--small;
+  @extend .#{$css-prefix}text-body--semibold;
   color: $gray-darkest;
 }
-.bff-text-heading--normal{
-  @extend .bff-text-body--normal;
-  @extend .bff-text-body--semibold;
+.#{$css-prefix}text-heading--normal{
+  @extend .#{$css-prefix}text-body--normal;
+  @extend .#{$css-prefix}text-body--semibold;
   color: $gray-darkest;
 }
-.bff-text-heading--large{
-  @extend .bff-text-body--large;
-  @extend .bff-text-body--semibold;
+.#{$css-prefix}text-heading--large{
+  @extend .#{$css-prefix}text-body--large;
+  @extend .#{$css-prefix}text-body--semibold;
   color: $gray-darkest;
 }
-.bff-text-heading--x-large{
-  @extend .bff-text-body--x-large;
-  @extend .bff-text-body--semibold;
+.#{$css-prefix}text-heading--x-large{
+  @extend .#{$css-prefix}text-body--x-large;
+  @extend .#{$css-prefix}text-body--semibold;
   color: $gray-darkest;
 }
-.bff-text-heading--xx-large{
-  @extend .bff-text-body--xx-large;
-  @extend .bff-text-body--semibold;
+.#{$css-prefix}text-heading--xx-large{
+  @extend .#{$css-prefix}text-body--xx-large;
+  @extend .#{$css-prefix}text-body--semibold;
   color: $gray-darkest;
 }
 

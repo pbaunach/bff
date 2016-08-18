@@ -1,19 +1,19 @@
 // Spacing
 
 @mixin spacing($name, $value){
-	.bff-p-top--#{$name}{padding-top:$value;}
-	.bff-p-bottom--#{$name}{padding-bottom:$value;}
-	.bff-p-left--#{$name}{padding-left:$value;}
-	.bff-p-right--#{$name}{padding-right:$value;}
-	.bff-p-horizontal--#{$name}{padding-left:$value;padding-right:$value;}
-	.bff-p-vertical--#{$name}{padding-top:$value;padding-bottom:$value;}
-	.bff-p-around--#{$name}{padding:$value;}
-	.bff-m-top--#{$name}{margin-top:$value;}
-	.bff-m-bottom--#{$name}{margin-bottom:$value;}
-	.bff-m-left--#{$name}{margin-left:$value;}
-	.bff-m-right--#{$name}{margin-right:$value;}
-	.bff-m-horizontal--#{$name}{margin-left:$value;margin-right:$value;}
-	.bff-m-vertical--#{$name}{margin-top:$value;margin-bottom:$value;}
-	.bff-m-around--#{$name}{margin:$value;}
+	.#{$css-prefix}p-top--#{$name}{padding-top:$value;}
+	.#{$css-prefix}p-bottom--#{$name}{padding-bottom:$value;}
+	.#{$css-prefix}p-left--#{$name}{padding-left:$value;}
+	.#{$css-prefix}p-right--#{$name}{padding-right:$value;}
+	.#{$css-prefix}p-horizontal--#{$name}{padding-left:$value;padding-right:$value;}
+	.#{$css-prefix}p-vertical--#{$name}{padding-top:$value;padding-bottom:$value;}
+	.#{$css-prefix}p-around--#{$name}{padding:$value;}
+	.#{$css-prefix}m-top--#{$name}{margin-top:$value;}
+	.#{$css-prefix}m-bottom--#{$name}{margin-bottom:$value;}
+	.#{$css-prefix}m-left--#{$name}{margin-left:$value;}
+	.#{$css-prefix}m-right--#{$name}{margin-right:$value;}
+	.#{$css-prefix}m-horizontal--#{$name}{margin-left:$value;margin-right:$value;}
+	.#{$css-prefix}m-vertical--#{$name}{margin-top:$value;margin-bottom:$value;}
+	.#{$css-prefix}m-around--#{$name}{margin:$value;}
 }
 

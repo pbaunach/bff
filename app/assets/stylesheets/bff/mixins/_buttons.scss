@@ -8,3 +8,23 @@
   @include border-radius($border-radius);
 }
 
+@mixin button-variant--solid($bg--color, $font--color, $hover--color){
+  background-color: $bg--color;
+  border-color: $bg--color;
+  color: $font--color;
+  &:hover{
+    background-color: $hover--color;
+    border-color: $hover--color;
+  };
+}
+
+@mixin button-variant--outline($bg--color, $font--color, $hover--color){
+  background-color: $bg--color;
+  border:$border-width solid $font--color;
+  color: $font--color;
+  &:hover{
+    background-color: $hover--color;
+    border-color: $hover--color;
+    color: $white;
+  };
+}

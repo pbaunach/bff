@@ -70,35 +70,35 @@
   </div>
     <div class="bff-row">
     <div class="bff-col--x-small">
-      <h1 class="bff-text-heading--large"> Button - Themes</h1>
+      <h1 class="bff-text-heading--large"> Button - Variants</h1>
     </div>
   </div>
   <div class="bff-row bff-p-bottom--medium">
   <div class="bff-col--x-small-12">
-    <h2 class="bff-text-heading--normal"> bff-theme--*color*</h2>
+    <h2 class="bff-text-heading--normal"> bff-button--*color*</h2>
    </div>
     <div class="bff-col--x-small">
       <button type="button" class="bff-button">Default</button>
-      <button type="button" class="bff-button bff-theme--booker">Booker</button>
-      <button type="button" class="bff-button bff-theme--frederick">Frederick</button>
-      <button type="button" class="bff-button bff-theme--success">Success</button>
-      <button type="button" class="bff-button bff-theme--danger">Danger</button>
-      <button type="button" class="bff-button bff-theme--warning">Warning</button>
-      <button type="button" class="bff-button bff-theme--info">Info</button>
+      <button type="button" class="bff-button bff-button--booker">Booker</button>
+      <button type="button" class="bff-button bff-button--frederick">Frederick</button>
+      <button type="button" class="bff-button bff-button--success">Success</button>
+      <button type="button" class="bff-button bff-button--danger">Danger</button>
+      <button type="button" class="bff-button bff-button--warning">Warning</button>
+      <button type="button" class="bff-button bff-button--info">Info</button>
       <button type="button" class="bff-button bff-button--disabled">Disabled</button>
     </div>
   </div>
    <div class="bff-row">
    <div class="bff-col--x-small-12">
-    <h2 class="bff-text-heading--normal"> bff-theme--*color*-outline</h2>
+    <h2 class="bff-text-heading--normal"> bff-button--*color*-outline</h2>
    </div>
     <div class="bff-col--x-small bff-p-bottom--medium">
-      <button type="button" class="bff-button bff-theme--booker-outline">Booker</button>
-      <button type="button" class="bff-button bff-theme--frederick-outline">Frederick</button>
-      <button type="button" class="bff-button bff-theme--success-outline">Success</button>
-      <button type="button" class="bff-button bff-theme--danger-outline">Danger</button>
-      <button type="button" class="bff-button bff-theme--warning-outline">Warning</button>
-      <button type="button" class="bff-button bff-theme--info-outline">Info</button>
+      <button type="button" class="bff-button bff-button--booker-outline">Booker</button>
+      <button type="button" class="bff-button bff-button--frederick-outline">Frederick</button>
+      <button type="button" class="bff-button bff-button--success-outline">Success</button>
+      <button type="button" class="bff-button bff-button--danger-outline">Danger</button>
+      <button type="button" class="bff-button bff-button--warning-outline">Warning</button>
+      <button type="button" class="bff-button bff-button--info-outline">Info</button>
     </div>
   </div>
 </div>
@@ -325,6 +325,183 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+<!-- Form -->
+  <div class="bff-row">
+    <div class="bff-col--x-small-12">
+      <h1 class="bff-text-heading--large">Forms</h1>
+      <h2 class="bff-text-heading--normal"> bff-input bff-input--*size* (optional)</h2>
+    </div>
+    <div class="bff-col--x-small-12 bff-p-bottom--small">
+      <form>
+        <div class="form-group">
+          <input type="email" class="bff-input bff-input--small" placeholder="bff-input bff-input--small">
+        </div>
+      </form>
+    </div>
+    <div class="bff-col--x-small-12 bff-p-bottom--small">
+      <form>
+        <div class="form-group">
+          <input type="email" class="bff-input" placeholder="bff-input">
+        </div>
+      </form>
+    </div>
+    <div class="bff-col--x-small-12 bff-p-bottom--small">
+      <form>
+        <div class="form-group">
+          <input type="email" class="bff-input bff-input--large" placeholder="bff-input bff-input--large">
+        </div>
+      </form>
+    </div>
+    <div class="bff-col--x-small-12 bff-p-bottom--small">
+      <form>
+        <div class="form-group bff-has-error">
+          <input type="email" class="bff-input bff-input--error" placeholder="bff-input // parent element bff-has-error">
+        </div>
+      </form>
+    </div>
+    <div class="bff-col--x-small-12 bff-p-bottom--small">
+      <form>
+        <div class="form-group">
+          <input type="email" class="bff-input" disabled placeholder="bff-input // use inputs disabled tag">
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Tables -->
+  <div class="bff-row"><div class="bff-col--x-small-12">
+      <h1 class="bff-text-heading--large">Tables</h1>
+      <h2 class="bff-text-heading--normal"> bff-table</h2>
+    </div>
+    <div class="bff-col--x-small-12">
+      <table class="bff-table">
+        <thead>
+          <tr class="bff-text-heading--label">
+            <th>
+              <div class="bff-truncate">#</div>
+            </th>
+            <th>
+              <div class="bff-truncate">First Name</div>
+            </th>
+            <th>
+              <div class="bff-truncate">Last Name</div>
+            </th>
+            <th>
+              <div class="bff-truncate">Email</div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="bff-truncate">1</div>
+            </td>
+            <td>
+              <div class="bff-truncate">Emelia</div>
+            </td>
+            <td>
+              <div class="bff-truncate">Rempel</div>
+            </td>
+            <td>
+              <div class="bff-truncate"><a href="#">emelia.rempel@yahoo.com</a></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="bff-truncate">2</div>
+            </td>
+            <td>
+              <div class="bff-truncate">Matt</div>
+            </td>
+            <td>
+              <div class="bff-truncate">Koepp</div>
+            </td>
+            <td>
+              <div class="bff-truncate"><a href="#">mkoepp41@hotmail.com</a></div>
+            </td>
+          </tr>
+           <tr>
+            <td>
+              <div class="bff-truncate">3</div>
+            </td>
+            <td>
+              <div class="bff-truncate">Donny</div>
+            </td>
+            <td>
+              <div class="bff-truncate">Gerhold</div>
+            </td>
+            <td>
+              <div class="bff-truncate"><a href="#">donny_gerhold72@gemail.com</a></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="bff-col--x-small-12">
+      <h2 class="bff-text-heading--normal"> bff-table bff-table--bordered (optional) bff-table--cell-buffer (optional) bff-table--striped (optional)</h2>
+      <table class="bff-table bff-table--bordered bff-table--cell-buffer bff-table--striped">
+        <thead>
+          <tr class="bff-text-heading--label">
+            <th>
+              <div class="bff-truncate">#</div>
+            </th>
+            <th>
+              <div class="bff-truncate">First Name</div>
+            </th>
+            <th>
+              <div class="bff-truncate">Last Name</div>
+            </th>
+            <th>
+              <div class="bff-truncate">Email</div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="bff-truncate">1</div>
+            </td>
+            <td>
+              <div class="bff-truncate">Emelia</div>
+            </td>
+            <td>
+              <div class="bff-truncate">Rempel</div>
+            </td>
+            <td>
+              <div class="bff-truncate"><a href="#">emelia.rempel@yahoo.com</a></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="bff-truncate">2</div>
+            </td>
+            <td>
+              <div class="bff-truncate">Matt</div>
+            </td>
+            <td>
+              <div class="bff-truncate">Koepp</div>
+            </td>
+            <td>
+              <div class="bff-truncate"><a href="#">mkoepp41@hotmail.com</a></div>
+            </td>
+          </tr>
+           <tr>
+            <td>
+              <div class="bff-truncate">3</div>
+            </td>
+            <td>
+              <div class="bff-truncate">Donny</div>
+            </td>
+            <td>
+              <div class="bff-truncate">Gerhold</div>
+            </td>
+            <td>
+              <div class="bff-truncate"><a href="#">donny_gerhold72@gemail.com</a></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>

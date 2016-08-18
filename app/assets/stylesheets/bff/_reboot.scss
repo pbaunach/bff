@@ -249,12 +249,13 @@ textarea {
 
 table {
   // Reset for nesting within parents with `background-color`.
-//  background-color: $table-bg;
+  background-color: $table-background--color;
+  width:100%;
 }
 
 caption {
-//  padding-top: $table-cell-padding;
-//  padding-bottom: $table-cell-padding;
+  padding-top: $table-cell-padding;
+  padding-bottom: $table-cell-padding;
 //  color: $text-muted;
   text-align: left;
   caption-side: bottom;
