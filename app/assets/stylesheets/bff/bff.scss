@@ -4,6 +4,7 @@
 
 // Core variables and mixins
 @import "variables";
+@import "iconfont";
 @import "mixins";
 
 // Load Normalize and Bootstrap's Reboot to reset browsers
@@ -16,6 +17,7 @@
 @import "type";
 @import "buttons";
 @import "forms";
+@import "checkboxes";
 @import "tables";
 
 // Themes

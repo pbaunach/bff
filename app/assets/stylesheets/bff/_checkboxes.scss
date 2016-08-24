@@ -1,0 +1,232 @@
+// Checkboxes
+
+.#{$css-prefix}checkbox {
+  display: inline-block;
+
+  .#{$css-prefix}checkbox--faux {
+    height:1.5rem;
+    width:1.5rem;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    border: $border-width solid $input-border--color;
+    border-radius: $border-radius;
+    background: $input-background--color;
+    //transition: border $duration-quickly linear, background-color $duration-quickly linear;
+  }
+
+  .#{$css-prefix}form-element__label {
+    display: inline;
+    vertical-align: middle;
+    font-size: $font-size--base;
+  }
+
+  [type="checkbox"] {
+    height:1px;
+    width:1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+
+    &:checked + .#{$css-prefix}checkbox--faux,
+    &:checked ~ .#{$css-prefix}checkbox--faux {
+
+      &:after {
+        display: block;
+        content: '';
+        //height: ($square-icon-x-small-content / 2);
+        //width: $square-icon-x-small-content;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+        border-bottom: $border-width solid $brand--color;
+        border-left: $border-width solid $brand--color;
+      }
+    }
+
+    &:focus {
+
+      + .#{$css-prefix}checkbox--faux,
+      ~ .#{$css-prefix}checkbox--faux {
+        content: '';
+        border-color: $input-border--color-active;
+        //box-shadow: $shadow-button-focus;
+      }
+
+      &:checked > .#{$css-prefix}checkbox--faux,
+      &:checked ~ .#{$css-prefix}checkbox--faux {
+        border-color: $input-border--color-active;
+        background-color: $input-border--color-active;
+      }
+    }
+
+    &[disabled] {
+      // scss-lint:disable NestingDepth
+
+      + .#{$css-prefix}checkbox--faux,
+      ~ .#{$css-prefix}checkbox--faux {
+        background-color: $input-background--disabled;
+        border-color: $input-border--disabled;
+      }
+
+      + .#{$css-prefix}checkbox--faux:after,
+      ~ .#{$css-prefix}checkbox--faux:after {
+        border-color: $input-background--color;
+      }
+    }
+  }
+}
+
+.#{$css-prefix}has-error .#{$css-prefix}checkbox [type="checkbox"] {
+
+  + .#{$css-prefix}checkbox--faux,
+  ~ .#{$css-prefix}checkbox--faux {
+    border-color: $danger--color;
+    border-width: $border-width;
+  }
+
+  &:checked + .#{$css-prefix}checkbox--faux,
+  &:checked ~ .#{$css-prefix}checkbox--faux {
+    border-color: $danger--color;
+    background-color: $input-background--color;
+  }
+
+  &:checked + .#{$css-prefix}checkbox--faux:after,
+  &:checked ~ .#{$css-prefix}checkbox--faux:after {
+    border-color: $danger--color;
+  }
+}
+
+.#{$css-prefix}form-element .#{$css-prefix}checkbox [type="checkbox"] + .#{$css-prefix}checkbox--faux,
+.#{$css-prefix}form-element .#{$css-prefix}checkbox [type="checkbox"] ~ .#{$css-prefix}checkbox--faux {
+  margin-right: $spacing--x-small;
+}
+
+//
+// Toggle
+//
+
+.#{$css-prefix}checkbox--toggle {
+  width: 100%;
+
+  .#{$css-prefix}checkbox--faux {
+    display: inline-block;
+    position: relative;
+    width: $toggle--width; 
+    height: $toggle--height;
+    padding: $spacing--xxx-small;
+    background-color: $gray-lightest;
+    box-shadow: 0 0 0 1pt $gray;
+    border-radius: 15rem;
+    transition: background-color 0.2s cubic-bezier(0.75, 0, 0.08, 1);
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: $toggle--background-color-hover;
+    }
+
+    &:before {
+      content: attr(data-check-off);
+      position: absolute;
+      right: $spacing--x-small;
+      font-size: $font-size--x-small;
+      font-weight: $font-weight--semibold;
+      text-transform: uppercase;
+      color: $gray;
+      line-height: $toggle--line-height;
+      transition: transform 0.2s cubic-bezier(0.75, 0, 0.08, 1);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: $spacing--xxx-small;
+      width: 1.25rem;
+      height: 1.25rem; 
+      background-color: $gray;
+      border-radius: 15rem;
+      transition: transform 0.2s cubic-bezier(0.75, 0, 0.08, 1);
+    }
+  }
+
+  // Hide input
+  [type="checkbox"] {
+    height:1px;
+    width:1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+
+
+    // Checked State with Interactions
+    &:checked {
+
+      & + .#{$css-prefix}checkbox--faux,
+      & ~ .#{$css-prefix}checkbox--faux {
+        background-color: $toggle--background-color-active;
+        box-shadow: 0 0 0 1pt $toggle--background-color-active;
+        color: $white;
+
+        &:hover,
+        &:focus {
+          background-color: $toggle--background-color-active-hover;
+          box-shadow: 0 0 0 1pt $toggle--background-color-active-hover;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          right: 2px;
+          width: 1.25rem;
+          height: 1.25rem;
+          background-color: $gray-lightest;
+          border-radius: 15rem;
+          transition: transform 0.2s cubic-bezier(0.75, 0, 0.08, 1);
+        }
+
+        &:after {
+          content: attr(data-check-on);
+          position: absolute;
+          left: $spacing--x-small;
+          background-color: transparent;
+          color: $white;
+          font-size: $font-size--x-small;
+          font-weight: $font-weight--semibold;
+          text-transform: uppercase;
+          line-height: $toggle--line-height;
+        }
+      }
+    }
+
+    &[disabled] {
+    // scss-lint:disable NestingDepth
+
+      & + .#{$css-prefix}checkbox--faux,
+      & ~ .#{$css-prefix}checkbox--faux {
+        background-color: $toggle--background-color-disabled;
+        box-shadow: 0 0 0 1pt $toggle--background-color-disabled;
+        pointer-events: none;
+
+        &:before,
+        &:after {
+          color: $toggle--text-color-disabled;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: $toggle--background-color-disabled;
+          box-shadow: 0 0 0 1pt $toggle--background-color-disabled;
+          cursor: default;
+        }
+      }
+    }
+  }
+}
