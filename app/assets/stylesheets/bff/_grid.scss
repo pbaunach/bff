@@ -359,13 +359,6 @@ $grid: (
   vertical-align: bottom;
   align-self: flex-end;
 }
-.#{$css-prefix}align-content-center {
-  @include deprecate('4.0.0') {
-    flex: 1;
-    align-self: center;
-    justify-content: center;
-  }
-}
 .#{$css-prefix}grid--vertical-stretch {
   align-items: stretch; // Single Row Alignment
   align-content: stretch; // Multi Row Alignment
