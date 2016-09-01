@@ -1,0 +1,27 @@
+{
+  "name": "@hirefrederick/bff",
+  "version": "0.0.1",
+  "description": "Booker Frederick Framework",
+  "main": "assets/stylesheets/bff/bff.scss",
+  "dependencies": {
+ 
+  },
+  "files":[
+    "assets/stylesheets/bff/",
+    "assets/stylesheets/application.scss"
+  ],
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HireFrederick/bff.git"
+  },
+  "keywords": [
+    "bff"
+  ],
+  "author": "Frederick Squad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HireFrederick/bff/issues"
+  },
+  "homepage": "https://github.com/HireFrederick/bff#readme"
+}
