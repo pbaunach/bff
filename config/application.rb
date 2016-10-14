@@ -24,6 +24,6 @@ module Bff
     config.active_record.raise_in_transactional_callbacks = true
     config.assets.enabled = true  
     config.assets.paths << "#{Rails.root}/app/assets/fonts" 
-    config.serve_static_assets = true 
+    config.serve_static_files = true
   end
 end
