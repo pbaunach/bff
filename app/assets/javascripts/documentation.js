@@ -2,8 +2,6 @@
 // Documentation Tables
 //
 
-var cssPrefix = '.bff-';
-
 function parseDocumentation(object, name){
 	$('#table--'+name+'-documentation').append('<thead> <tr class="bff-text-heading--label"> <th class="bff-size--1-of-3"> <span class="bff-truncate">Class Name</span> </th> <th class="bff-size--1-of-3"> <div class="bff-truncate">Usage</div> </th> <th class="bff-size--1-of-3"> <div class="bff-truncate">Comment</div> </th> </tr> </thead> <tbody id="table__content--'+ name +'-documentation"></tbody>');
 
@@ -20,4 +18,19 @@ $(document).ready(function(){
 	parseDocumentation(visibilityDocumentation, 'visibility');
 	parseDocumentation(responsiveDocumentation, 'responsive');
 	//Atoms
+	parseDocumentation(buttonsDocumentation, 'buttons');
+	parseDocumentation(checkboxDocumentation, 'checkbox');
+	parseDocumentation(dropdownsDocumentation, 'dropdowns');
+	parseDocumentation(formsSimpleDocumentation, 'forms-simple');
+	parseDocumentation(inputsDocumentation, 'inputs');
+	parseDocumentation(loaderDocumentation, 'loader');
+	parseDocumentation(radioDocumentation, 'radio');
+	parseDocumentation(toggleDocumentation, 'toggle');
+	//Molecules
+	parseDocumentation(formsComplexDocumentation, 'forms-complex');
+	parseDocumentation(notificationsDocumentation, 'notifications');
+	parseDocumentation(stepWizardDocumentation, 'step-wizard');
+	//Organisms
+	parseDocumentation(modalDocumentation, 'modal');
+	parseDocumentation(tablesDocumentation, 'tables');
 })
