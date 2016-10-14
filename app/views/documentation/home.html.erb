@@ -1,0 +1,34 @@
+<div class="bff-grid bff-grid--vertical" style="min-height:100vh; box-sizing:border-box;">
+	<main class="main bff-col bff-p-horizontal--large" style="margin-left:15rem;">
+		<div id="utilities" class="bff-p-top--large">
+			<h1 class="bff-text-heading--large">Utilities</h1>
+			<%= render 'components/utilities/grids' %>
+			<%= render 'components/utilities/spacing' %>
+			<%= render 'components/utilities/type' %>
+			<%= render 'components/utilities/visibility' %>
+			<%= render 'components/utilities/responsive' %>
+		</div>
+		<div id="atoms" class="bff-p-top--large">
+			<h1 class="bff-text-heading--large">Atoms</h1>
+			<%= render 'components/atoms/buttons' %>
+			<%= render 'components/atoms/checkbox' %>
+			<%= render 'components/atoms/dropdowns' %>
+			<%= render 'components/atoms/forms' %>
+			<%= render 'components/atoms/inputs' %>
+			<%= render 'components/atoms/loader' %>
+			<%= render 'components/atoms/radio' %>
+			<%= render 'components/atoms/toggle' %>
+		</div>
+		<div id="molecules">
+			<h1>Molecules</h1>
+		</div>
+		<div id="orgranisms">
+			<h1>Organisms</h1>
+			<%= render 'components/organisms/tables' %>
+			<%= render 'components/organisms/modal' %>
+		</div>
+	</main>
+	<!-- Navigation -->
+	<%= render 'components/navigation' %>
+	<footer style="margin-left:15rem;">Footer</footer>
+</div>

@@ -1,0 +1,3038 @@
+@font-face {
+  font-family: 'linearicons';
+  src:  url('https://d29r3ah9iexoih.cloudfront.net/1.0/fonts/linearicons.eot');
+  src:  url('https://d29r3ah9iexoih.cloudfront.net/1.0/fonts/linearicons.eot') format('embedded-opentype'),
+    url('https://d29r3ah9iexoih.cloudfront.net/1.0/fonts/linearicons.ttf') format('truetype'),
+    url('https://d29r3ah9iexoih.cloudfront.net/1.0/fonts/linearicons.woff') format('woff'),
+    url('https://d29r3ah9iexoih.cloudfront.net/1.0/fonts/linearicons.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="#{$css-prefix}icon--"], [class*=" #{$css-prefix}icon--"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'linearicons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  font-size: $icon-size--normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.#{$css-prefix}icon--small{font-size: $icon-size--small; } 
+.#{$css-prefix}icon--normal{font-size: $icon-size--normal; }
+.#{$css-prefix}icon--large{font-size: $icon-size--large; }
+.#{$css-prefix}icon--x-large{font-size: $icon-size--x-large; }
+
+.#{$css-prefix}icon--home:before {
+  content: "\e600";
+}
+.#{$css-prefix}icon--home2:before {
+  content: "\e601";
+}
+.#{$css-prefix}icon--home3:before {
+  content: "\e602";
+}
+.#{$css-prefix}icon--home4:before {
+  content: "\e603";
+}
+.#{$css-prefix}icon--home5:before {
+  content: "\e604";
+}
+.#{$css-prefix}icon--home6:before {
+  content: "\e605";
+}
+.#{$css-prefix}icon--bathtub:before {
+  content: "\e606";
+}
+.#{$css-prefix}icon--toothbrush:before {
+  content: "\e607";
+}
+.#{$css-prefix}icon--bed:before {
+  content: "\e608";
+}
+.#{$css-prefix}icon--couch:before {
+  content: "\e609";
+}
+.#{$css-prefix}icon--chair:before {
+  content: "\e60a";
+}
+.#{$css-prefix}icon--city:before {
+  content: "\e60b";
+}
+.#{$css-prefix}icon--apartment:before {
+  content: "\e60c";
+}
+.#{$css-prefix}icon--pencil:before {
+  content: "\e60d";
+}
+.#{$css-prefix}icon--pencil2:before {
+  content: "\e60e";
+}
+.#{$css-prefix}icon--pen:before {
+  content: "\e60f";
+}
+.#{$css-prefix}icon--pencil3:before {
+  content: "\e610";
+}
+.#{$css-prefix}icon--eraser:before {
+  content: "\e611";
+}
+.#{$css-prefix}icon--pencil4:before {
+  content: "\e612";
+}
+.#{$css-prefix}icon--pencil5:before {
+  content: "\e613";
+}
+.#{$css-prefix}icon--feather:before {
+  content: "\e614";
+}
+.#{$css-prefix}icon--feather2:before {
+  content: "\e615";
+}
+.#{$css-prefix}icon--feather3:before {
+  content: "\e616";
+}
+.#{$css-prefix}icon--pen2:before {
+  content: "\e617";
+}
+.#{$css-prefix}icon--pen-add:before {
+  content: "\e618";
+}
+.#{$css-prefix}icon--pen-remove:before {
+  content: "\e619";
+}
+.#{$css-prefix}icon--vector:before {
+  content: "\e61a";
+}
+.#{$css-prefix}icon--pen3:before {
+  content: "\e61b";
+}
+.#{$css-prefix}icon--blog:before {
+  content: "\e61c";
+}
+.#{$css-prefix}icon--brush:before {
+  content: "\e61d";
+}
+.#{$css-prefix}icon--brush2:before {
+  content: "\e61e";
+}
+.#{$css-prefix}icon--spray:before {
+  content: "\e61f";
+}
+.#{$css-prefix}icon--paint-roller:before {
+  content: "\e620";
+}
+.#{$css-prefix}icon--stamp:before {
+  content: "\e621";
+}
+.#{$css-prefix}icon--tape:before {
+  content: "\e622";
+}
+.#{$css-prefix}icon--desk-tape:before {
+  content: "\e623";
+}
+.#{$css-prefix}icon--texture:before {
+  content: "\e624";
+}
+.#{$css-prefix}icon--eye-dropper:before {
+  content: "\e625";
+}
+.#{$css-prefix}icon--palette:before {
+  content: "\e626";
+}
+.#{$css-prefix}icon--color-sampler:before {
+  content: "\e627";
+}
+.#{$css-prefix}icon--bucket:before {
+  content: "\e628";
+}
+.#{$css-prefix}icon--gradient:before {
+  content: "\e629";
+}
+.#{$css-prefix}icon--gradient2:before {
+  content: "\e62a";
+}
+.#{$css-prefix}icon--magic-wand:before {
+  content: "\e62b";
+}
+.#{$css-prefix}icon--magnet:before {
+  content: "\e62c";
+}
+.#{$css-prefix}icon--pencil-ruler:before {
+  content: "\e62d";
+}
+.#{$css-prefix}icon--pencil-ruler2:before {
+  content: "\e62e";
+}
+.#{$css-prefix}icon--compass:before {
+  content: "\e62f";
+}
+.#{$css-prefix}icon--aim:before {
+  content: "\e630";
+}
+.#{$css-prefix}icon--gun:before {
+  content: "\e631";
+}
+.#{$css-prefix}icon--bottle:before {
+  content: "\e632";
+}
+.#{$css-prefix}icon--drop:before {
+  content: "\e633";
+}
+.#{$css-prefix}icon--drop-crossed:before {
+  content: "\e634";
+}
+.#{$css-prefix}icon--drop2:before {
+  content: "\e635";
+}
+.#{$css-prefix}icon--snow:before {
+  content: "\e636";
+}
+.#{$css-prefix}icon--snow2:before {
+  content: "\e637";
+}
+.#{$css-prefix}icon--fire:before {
+  content: "\e638";
+}
+.#{$css-prefix}icon--lighter:before {
+  content: "\e639";
+}
+.#{$css-prefix}icon--knife:before {
+  content: "\e63a";
+}
+.#{$css-prefix}icon--dagger:before {
+  content: "\e63b";
+}
+.#{$css-prefix}icon--tissue:before {
+  content: "\e63c";
+}
+.#{$css-prefix}icon--toilet-paper:before {
+  content: "\e63d";
+}
+.#{$css-prefix}icon--poop:before {
+  content: "\e63e";
+}
+.#{$css-prefix}icon--umbrella:before {
+  content: "\e63f";
+}
+.#{$css-prefix}icon--umbrella2:before {
+  content: "\e640";
+}
+.#{$css-prefix}icon--rain:before {
+  content: "\e641";
+}
+.#{$css-prefix}icon--tornado:before {
+  content: "\e642";
+}
+.#{$css-prefix}icon--wind:before {
+  content: "\e643";
+}
+.#{$css-prefix}icon--fan:before {
+  content: "\e644";
+}
+.#{$css-prefix}icon--contrast:before {
+  content: "\e645";
+}
+.#{$css-prefix}icon--sun-small:before {
+  content: "\e646";
+}
+.#{$css-prefix}icon--sun:before {
+  content: "\e647";
+}
+.#{$css-prefix}icon--sun2:before {
+  content: "\e648";
+}
+.#{$css-prefix}icon--moon:before {
+  content: "\e649";
+}
+.#{$css-prefix}icon--cloud:before {
+  content: "\e64a";
+}
+.#{$css-prefix}icon--cloud-upload:before {
+  content: "\e64b";
+}
+.#{$css-prefix}icon--cloud-download:before {
+  content: "\e64c";
+}
+.#{$css-prefix}icon--cloud-rain:before {
+  content: "\e64d";
+}
+.#{$css-prefix}icon--cloud-hailstones:before {
+  content: "\e64e";
+}
+.#{$css-prefix}icon--cloud-snow:before {
+  content: "\e64f";
+}
+.#{$css-prefix}icon--cloud-windy:before {
+  content: "\e650";
+}
+.#{$css-prefix}icon--sun-wind:before {
+  content: "\e651";
+}
+.#{$css-prefix}icon--cloud-fog:before {
+  content: "\e652";
+}
+.#{$css-prefix}icon--cloud-sun:before {
+  content: "\e653";
+}
+.#{$css-prefix}icon--cloud-lightning:before {
+  content: "\e654";
+}
+.#{$css-prefix}icon--cloud-sync:before {
+  content: "\e655";
+}
+.#{$css-prefix}icon--cloud-lock:before {
+  content: "\e656";
+}
+.#{$css-prefix}icon--cloud-gear:before {
+  content: "\e657";
+}
+.#{$css-prefix}icon--cloud-alert:before {
+  content: "\e658";
+}
+.#{$css-prefix}icon--cloud-check:before {
+  content: "\e659";
+}
+.#{$css-prefix}icon--cloud-cross:before {
+  content: "\e65a";
+}
+.#{$css-prefix}icon--cloud-crossed:before {
+  content: "\e65b";
+}
+.#{$css-prefix}icon--cloud-database:before {
+  content: "\e65c";
+}
+.#{$css-prefix}icon--database:before {
+  content: "\e65d";
+}
+.#{$css-prefix}icon--database-add:before {
+  content: "\e65e";
+}
+.#{$css-prefix}icon--database-remove:before {
+  content: "\e65f";
+}
+.#{$css-prefix}icon--database-lock:before {
+  content: "\e660";
+}
+.#{$css-prefix}icon--database-refresh:before {
+  content: "\e661";
+}
+.#{$css-prefix}icon--database-check:before {
+  content: "\e662";
+}
+.#{$css-prefix}icon--database-history:before {
+  content: "\e663";
+}
+.#{$css-prefix}icon--database-upload:before {
+  content: "\e664";
+}
+.#{$css-prefix}icon--database-download:before {
+  content: "\e665";
+}
+.#{$css-prefix}icon--server:before {
+  content: "\e666";
+}
+.#{$css-prefix}icon--shield:before {
+  content: "\e667";
+}
+.#{$css-prefix}icon--shield-check:before {
+  content: "\e668";
+}
+.#{$css-prefix}icon--shield-alert:before {
+  content: "\e669";
+}
+.#{$css-prefix}icon--shield-cross:before {
+  content: "\e66a";
+}
+.#{$css-prefix}icon--lock:before {
+  content: "\e66b";
+}
+.#{$css-prefix}icon--rotation-lock:before {
+  content: "\e66c";
+}
+.#{$css-prefix}icon--unlock:before {
+  content: "\e66d";
+}
+.#{$css-prefix}icon--key:before {
+  content: "\e66e";
+}
+.#{$css-prefix}icon--key-hole:before {
+  content: "\e66f";
+}
+.#{$css-prefix}icon--toggle-off:before {
+  content: "\e670";
+}
+.#{$css-prefix}icon--toggle-on:before {
+  content: "\e671";
+}
+.#{$css-prefix}icon--cog:before {
+  content: "\e672";
+}
+.#{$css-prefix}icon--cog2:before {
+  content: "\e673";
+}
+.#{$css-prefix}icon--wrench:before {
+  content: "\e674";
+}
+.#{$css-prefix}icon--screwdriver:before {
+  content: "\e675";
+}
+.#{$css-prefix}icon--hammer-wrench:before {
+  content: "\e676";
+}
+.#{$css-prefix}icon--hammer:before {
+  content: "\e677";
+}
+.#{$css-prefix}icon--saw:before {
+  content: "\e678";
+}
+.#{$css-prefix}icon--axe:before {
+  content: "\e679";
+}
+.#{$css-prefix}icon--axe2:before {
+  content: "\e67a";
+}
+.#{$css-prefix}icon--shovel:before {
+  content: "\e67b";
+}
+.#{$css-prefix}icon--pickaxe:before {
+  content: "\e67c";
+}
+.#{$css-prefix}icon--factory:before {
+  content: "\e67d";
+}
+.#{$css-prefix}icon--factory2:before {
+  content: "\e67e";
+}
+.#{$css-prefix}icon--recycle:before {
+  content: "\e67f";
+}
+.#{$css-prefix}icon--trash:before {
+  content: "\e680";
+}
+.#{$css-prefix}icon--trash2:before {
+  content: "\e681";
+}
+.#{$css-prefix}icon--trash3:before {
+  content: "\e682";
+}
+.#{$css-prefix}icon--broom:before {
+  content: "\e683";
+}
+.#{$css-prefix}icon--game:before {
+  content: "\e684";
+}
+.#{$css-prefix}icon--gamepad:before {
+  content: "\e685";
+}
+.#{$css-prefix}icon--joystick:before {
+  content: "\e686";
+}
+.#{$css-prefix}icon--dice:before {
+  content: "\e687";
+}
+.#{$css-prefix}icon--spades:before {
+  content: "\e688";
+}
+.#{$css-prefix}icon--diamonds:before {
+  content: "\e689";
+}
+.#{$css-prefix}icon--clubs:before {
+  content: "\e68a";
+}
+.#{$css-prefix}icon--hearts:before {
+  content: "\e68b";
+}
+.#{$css-prefix}icon--heart:before {
+  content: "\e68c";
+}
+.#{$css-prefix}icon--star:before {
+  content: "\e68d";
+}
+.#{$css-prefix}icon--star-half:before {
+  content: "\e68e";
+}
+.#{$css-prefix}icon--star-empty:before {
+  content: "\e68f";
+}
+.#{$css-prefix}icon--flag:before {
+  content: "\e690";
+}
+.#{$css-prefix}icon--flag2:before {
+  content: "\e691";
+}
+.#{$css-prefix}icon--flag3:before {
+  content: "\e692";
+}
+.#{$css-prefix}icon--mailbox-full:before {
+  content: "\e693";
+}
+.#{$css-prefix}icon--mailbox-empty:before {
+  content: "\e694";
+}
+.#{$css-prefix}icon--at-sign:before {
+  content: "\e695";
+}
+.#{$css-prefix}icon--envelope:before {
+  content: "\e696";
+}
+.#{$css-prefix}icon--envelope-open:before {
+  content: "\e697";
+}
+.#{$css-prefix}icon--paperclip:before {
+  content: "\e698";
+}
+.#{$css-prefix}icon--paper-plane:before {
+  content: "\e699";
+}
+.#{$css-prefix}icon--reply:before {
+  content: "\e69a";
+}
+.#{$css-prefix}icon--reply-all:before {
+  content: "\e69b";
+}
+.#{$css-prefix}icon--inbox:before {
+  content: "\e69c";
+}
+.#{$css-prefix}icon--inbox2:before {
+  content: "\e69d";
+}
+.#{$css-prefix}icon--outbox:before {
+  content: "\e69e";
+}
+.#{$css-prefix}icon--box:before {
+  content: "\e69f";
+}
+.#{$css-prefix}icon--archive:before {
+  content: "\e6a0";
+}
+.#{$css-prefix}icon--archive2:before {
+  content: "\e6a1";
+}
+.#{$css-prefix}icon--drawers:before {
+  content: "\e6a2";
+}
+.#{$css-prefix}icon--drawers2:before {
+  content: "\e6a3";
+}
+.#{$css-prefix}icon--drawers3:before {
+  content: "\e6a4";
+}
+.#{$css-prefix}icon--eye:before {
+  content: "\e6a5";
+}
+.#{$css-prefix}icon--eye-crossed:before {
+  content: "\e6a6";
+}
+.#{$css-prefix}icon--eye-plus:before {
+  content: "\e6a7";
+}
+.#{$css-prefix}icon--eye-minus:before {
+  content: "\e6a8";
+}
+.#{$css-prefix}icon--binoculars:before {
+  content: "\e6a9";
+}
+.#{$css-prefix}icon--binoculars2:before {
+  content: "\e6aa";
+}
+.#{$css-prefix}icon--hdd:before {
+  content: "\e6ab";
+}
+.#{$css-prefix}icon--hdd-down:before {
+  content: "\e6ac";
+}
+.#{$css-prefix}icon--hdd-up:before {
+  content: "\e6ad";
+}
+.#{$css-prefix}icon--floppy-disk:before {
+  content: "\e6ae";
+}
+.#{$css-prefix}icon--disc:before {
+  content: "\e6af";
+}
+.#{$css-prefix}icon--tape2:before {
+  content: "\e6b0";
+}
+.#{$css-prefix}icon--printer:before {
+  content: "\e6b1";
+}
+.#{$css-prefix}icon--shredder:before {
+  content: "\e6b2";
+}
+.#{$css-prefix}icon--file-empty:before {
+  content: "\e6b3";
+}
+.#{$css-prefix}icon--file-add:before {
+  content: "\e6b4";
+}
+.#{$css-prefix}icon--file-check:before {
+  content: "\e6b5";
+}
+.#{$css-prefix}icon--file-lock:before {
+  content: "\e6b6";
+}
+.#{$css-prefix}icon--files:before {
+  content: "\e6b7";
+}
+.#{$css-prefix}icon--copy:before {
+  content: "\e6b8";
+}
+.#{$css-prefix}icon--compare:before {
+  content: "\e6b9";
+}
+.#{$css-prefix}icon--folder:before {
+  content: "\e6ba";
+}
+.#{$css-prefix}icon--folder-search:before {
+  content: "\e6bb";
+}
+.#{$css-prefix}icon--folder-plus:before {
+  content: "\e6bc";
+}
+.#{$css-prefix}icon--folder-minus:before {
+  content: "\e6bd";
+}
+.#{$css-prefix}icon--folder-download:before {
+  content: "\e6be";
+}
+.#{$css-prefix}icon--folder-upload:before {
+  content: "\e6bf";
+}
+.#{$css-prefix}icon--folder-star:before {
+  content: "\e6c0";
+}
+.#{$css-prefix}icon--folder-heart:before {
+  content: "\e6c1";
+}
+.#{$css-prefix}icon--folder-user:before {
+  content: "\e6c2";
+}
+.#{$css-prefix}icon--folder-shared:before {
+  content: "\e6c3";
+}
+.#{$css-prefix}icon--folder-music:before {
+  content: "\e6c4";
+}
+.#{$css-prefix}icon--folder-picture:before {
+  content: "\e6c5";
+}
+.#{$css-prefix}icon--folder-film:before {
+  content: "\e6c6";
+}
+.#{$css-prefix}icon--scissors:before {
+  content: "\e6c7";
+}
+.#{$css-prefix}icon--paste:before {
+  content: "\e6c8";
+}
+.#{$css-prefix}icon--clipboard-empty:before {
+  content: "\e6c9";
+}
+.#{$css-prefix}icon--clipboard-pencil:before {
+  content: "\e6ca";
+}
+.#{$css-prefix}icon--clipboard-text:before {
+  content: "\e6cb";
+}
+.#{$css-prefix}icon--clipboard-check:before {
+  content: "\e6cc";
+}
+.#{$css-prefix}icon--clipboard-down:before {
+  content: "\e6cd";
+}
+.#{$css-prefix}icon--clipboard-left:before {
+  content: "\e6ce";
+}
+.#{$css-prefix}icon--clipboard-alert:before {
+  content: "\e6cf";
+}
+.#{$css-prefix}icon--clipboard-user:before {
+  content: "\e6d0";
+}
+.#{$css-prefix}icon--register:before {
+  content: "\e6d1";
+}
+.#{$css-prefix}icon--enter:before {
+  content: "\e6d2";
+}
+.#{$css-prefix}icon--exit:before {
+  content: "\e6d3";
+}
+.#{$css-prefix}icon--papers:before {
+  content: "\e6d4";
+}
+.#{$css-prefix}icon--news:before {
+  content: "\e6d5";
+}
+.#{$css-prefix}icon--reading:before {
+  content: "\e6d6";
+}
+.#{$css-prefix}icon--typewriter:before {
+  content: "\e6d7";
+}
+.#{$css-prefix}icon--document:before {
+  content: "\e6d8";
+}
+.#{$css-prefix}icon--document2:before {
+  content: "\e6d9";
+}
+.#{$css-prefix}icon--graduation-hat:before {
+  content: "\e6da";
+}
+.#{$css-prefix}icon--license:before {
+  content: "\e6db";
+}
+.#{$css-prefix}icon--license2:before {
+  content: "\e6dc";
+}
+.#{$css-prefix}icon--medal-empty:before {
+  content: "\e6dd";
+}
+.#{$css-prefix}icon--medal-first:before {
+  content: "\e6de";
+}
+.#{$css-prefix}icon--medal-second:before {
+  content: "\e6df";
+}
+.#{$css-prefix}icon--medal-third:before {
+  content: "\e6e0";
+}
+.#{$css-prefix}icon--podium:before {
+  content: "\e6e1";
+}
+.#{$css-prefix}icon--trophy:before {
+  content: "\e6e2";
+}
+.#{$css-prefix}icon--trophy2:before {
+  content: "\e6e3";
+}
+.#{$css-prefix}icon--music-note:before {
+  content: "\e6e4";
+}
+.#{$css-prefix}icon--music-note2:before {
+  content: "\e6e5";
+}
+.#{$css-prefix}icon--music-note3:before {
+  content: "\e6e6";
+}
+.#{$css-prefix}icon--playlist:before {
+  content: "\e6e7";
+}
+.#{$css-prefix}icon--playlist-add:before {
+  content: "\e6e8";
+}
+.#{$css-prefix}icon--guitar:before {
+  content: "\e6e9";
+}
+.#{$css-prefix}icon--trumpet:before {
+  content: "\e6ea";
+}
+.#{$css-prefix}icon--album:before {
+  content: "\e6eb";
+}
+.#{$css-prefix}icon--shuffle:before {
+  content: "\e6ec";
+}
+.#{$css-prefix}icon--repeat-one:before {
+  content: "\e6ed";
+}
+.#{$css-prefix}icon--repeat:before {
+  content: "\e6ee";
+}
+.#{$css-prefix}icon--headphones:before {
+  content: "\e6ef";
+}
+.#{$css-prefix}icon--headset:before {
+  content: "\e6f0";
+}
+.#{$css-prefix}icon--loudspeaker:before {
+  content: "\e6f1";
+}
+.#{$css-prefix}icon--equalizer:before {
+  content: "\e6f2";
+}
+.#{$css-prefix}icon--theater:before {
+  content: "\e6f3";
+}
+.#{$css-prefix}icon--3d-glasses:before {
+  content: "\e6f4";
+}
+.#{$css-prefix}icon--ticket:before {
+  content: "\e6f5";
+}
+.#{$css-prefix}icon--presentation:before {
+  content: "\e6f6";
+}
+.#{$css-prefix}icon--play:before {
+  content: "\e6f7";
+}
+.#{$css-prefix}icon--film-play:before {
+  content: "\e6f8";
+}
+.#{$css-prefix}icon--clapboard-play:before {
+  content: "\e6f9";
+}
+.#{$css-prefix}icon--media:before {
+  content: "\e6fa";
+}
+.#{$css-prefix}icon--film:before {
+  content: "\e6fb";
+}
+.#{$css-prefix}icon--film2:before {
+  content: "\e6fc";
+}
+.#{$css-prefix}icon--surveillance:before {
+  content: "\e6fd";
+}
+.#{$css-prefix}icon--surveillance2:before {
+  content: "\e6fe";
+}
+.#{$css-prefix}icon--camera:before {
+  content: "\e6ff";
+}
+.#{$css-prefix}icon--camera-crossed:before {
+  content: "\e700";
+}
+.#{$css-prefix}icon--camera-play:before {
+  content: "\e701";
+}
+.#{$css-prefix}icon--time-lapse:before {
+  content: "\e702";
+}
+.#{$css-prefix}icon--record:before {
+  content: "\e703";
+}
+.#{$css-prefix}icon--camera2:before {
+  content: "\e704";
+}
+.#{$css-prefix}icon--camera-flip:before {
+  content: "\e705";
+}
+.#{$css-prefix}icon--panorama:before {
+  content: "\e706";
+}
+.#{$css-prefix}icon--time-lapse2:before {
+  content: "\e707";
+}
+.#{$css-prefix}icon--shutter:before {
+  content: "\e708";
+}
+.#{$css-prefix}icon--shutter2:before {
+  content: "\e709";
+}
+.#{$css-prefix}icon--face-detection:before {
+  content: "\e70a";
+}
+.#{$css-prefix}icon--flare:before {
+  content: "\e70b";
+}
+.#{$css-prefix}icon--convex:before {
+  content: "\e70c";
+}
+.#{$css-prefix}icon--concave:before {
+  content: "\e70d";
+}
+.#{$css-prefix}icon--picture:before {
+  content: "\e70e";
+}
+.#{$css-prefix}icon--picture2:before {
+  content: "\e70f";
+}
+.#{$css-prefix}icon--picture3:before {
+  content: "\e710";
+}
+.#{$css-prefix}icon--pictures:before {
+  content: "\e711";
+}
+.#{$css-prefix}icon--book:before {
+  content: "\e712";
+}
+.#{$css-prefix}icon--audio-book:before {
+  content: "\e713";
+}
+.#{$css-prefix}icon--book2:before {
+  content: "\e714";
+}
+.#{$css-prefix}icon--bookmark:before {
+  content: "\e715";
+}
+.#{$css-prefix}icon--bookmark2:before {
+  content: "\e716";
+}
+.#{$css-prefix}icon--label:before {
+  content: "\e717";
+}
+.#{$css-prefix}icon--library:before {
+  content: "\e718";
+}
+.#{$css-prefix}icon--library2:before {
+  content: "\e719";
+}
+.#{$css-prefix}icon--contacts:before {
+  content: "\e71a";
+}
+.#{$css-prefix}icon--profile:before {
+  content: "\e71b";
+}
+.#{$css-prefix}icon--portrait:before {
+  content: "\e71c";
+}
+.#{$css-prefix}icon--portrait2:before {
+  content: "\e71d";
+}
+.#{$css-prefix}icon--user:before {
+  content: "\e71e";
+}
+.#{$css-prefix}icon--user-plus:before {
+  content: "\e71f";
+}
+.#{$css-prefix}icon--user-minus:before {
+  content: "\e720";
+}
+.#{$css-prefix}icon--user-lock:before {
+  content: "\e721";
+}
+.#{$css-prefix}icon--users:before {
+  content: "\e722";
+}
+.#{$css-prefix}icon--users2:before {
+  content: "\e723";
+}
+.#{$css-prefix}icon--users-plus:before {
+  content: "\e724";
+}
+.#{$css-prefix}icon--users-minus:before {
+  content: "\e725";
+}
+.#{$css-prefix}icon--group-work:before {
+  content: "\e726";
+}
+.#{$css-prefix}icon--woman:before {
+  content: "\e727";
+}
+.#{$css-prefix}icon--man:before {
+  content: "\e728";
+}
+.#{$css-prefix}icon--baby:before {
+  content: "\e729";
+}
+.#{$css-prefix}icon--baby2:before {
+  content: "\e72a";
+}
+.#{$css-prefix}icon--baby3:before {
+  content: "\e72b";
+}
+.#{$css-prefix}icon--baby-bottle:before {
+  content: "\e72c";
+}
+.#{$css-prefix}icon--walk:before {
+  content: "\e72d";
+}
+.#{$css-prefix}icon--hand-waving:before {
+  content: "\e72e";
+}
+.#{$css-prefix}icon--jump:before {
+  content: "\e72f";
+}
+.#{$css-prefix}icon--run:before {
+  content: "\e730";
+}
+.#{$css-prefix}icon--woman2:before {
+  content: "\e731";
+}
+.#{$css-prefix}icon--man2:before {
+  content: "\e732";
+}
+.#{$css-prefix}icon--man-woman:before {
+  content: "\e733";
+}
+.#{$css-prefix}icon--height:before {
+  content: "\e734";
+}
+.#{$css-prefix}icon--weight:before {
+  content: "\e735";
+}
+.#{$css-prefix}icon--scale:before {
+  content: "\e736";
+}
+.#{$css-prefix}icon--button:before {
+  content: "\e737";
+}
+.#{$css-prefix}icon--bow-tie:before {
+  content: "\e738";
+}
+.#{$css-prefix}icon--tie:before {
+  content: "\e739";
+}
+.#{$css-prefix}icon--socks:before {
+  content: "\e73a";
+}
+.#{$css-prefix}icon--shoe:before {
+  content: "\e73b";
+}
+.#{$css-prefix}icon--shoes:before {
+  content: "\e73c";
+}
+.#{$css-prefix}icon--hat:before {
+  content: "\e73d";
+}
+.#{$css-prefix}icon--pants:before {
+  content: "\e73e";
+}
+.#{$css-prefix}icon--shorts:before {
+  content: "\e73f";
+}
+.#{$css-prefix}icon--flip-flops:before {
+  content: "\e740";
+}
+.#{$css-prefix}icon--shirt:before {
+  content: "\e741";
+}
+.#{$css-prefix}icon--hanger:before {
+  content: "\e742";
+}
+.#{$css-prefix}icon--laundry:before {
+  content: "\e743";
+}
+.#{$css-prefix}icon--store:before {
+  content: "\e744";
+}
+.#{$css-prefix}icon--haircut:before {
+  content: "\e745";
+}
+.#{$css-prefix}icon--store-24:before {
+  content: "\e746";
+}
+.#{$css-prefix}icon--barcode:before {
+  content: "\e747";
+}
+.#{$css-prefix}icon--barcode2:before {
+  content: "\e748";
+}
+.#{$css-prefix}icon--barcode3:before {
+  content: "\e749";
+}
+.#{$css-prefix}icon--cashier:before {
+  content: "\e74a";
+}
+.#{$css-prefix}icon--bag:before {
+  content: "\e74b";
+}
+.#{$css-prefix}icon--bag2:before {
+  content: "\e74c";
+}
+.#{$css-prefix}icon--cart:before {
+  content: "\e74d";
+}
+.#{$css-prefix}icon--cart-empty:before {
+  content: "\e74e";
+}
+.#{$css-prefix}icon--cart-full:before {
+  content: "\e74f";
+}
+.#{$css-prefix}icon--cart-plus:before {
+  content: "\e750";
+}
+.#{$css-prefix}icon--cart-plus2:before {
+  content: "\e751";
+}
+.#{$css-prefix}icon--cart-add:before {
+  content: "\e752";
+}
+.#{$css-prefix}icon--cart-remove:before {
+  content: "\e753";
+}
+.#{$css-prefix}icon--cart-exchange:before {
+  content: "\e754";
+}
+.#{$css-prefix}icon--tag:before {
+  content: "\e755";
+}
+.#{$css-prefix}icon--tags:before {
+  content: "\e756";
+}
+.#{$css-prefix}icon--receipt:before {
+  content: "\e757";
+}
+.#{$css-prefix}icon--wallet:before {
+  content: "\e758";
+}
+.#{$css-prefix}icon--credit-card:before {
+  content: "\e759";
+}
+.#{$css-prefix}icon--cash-dollar:before {
+  content: "\e75a";
+}
+.#{$css-prefix}icon--cash-euro:before {
+  content: "\e75b";
+}
+.#{$css-prefix}icon--cash-pound:before {
+  content: "\e75c";
+}
+.#{$css-prefix}icon--cash-yen:before {
+  content: "\e75d";
+}
+.#{$css-prefix}icon--bag-dollar:before {
+  content: "\e75e";
+}
+.#{$css-prefix}icon--bag-euro:before {
+  content: "\e75f";
+}
+.#{$css-prefix}icon--bag-pound:before {
+  content: "\e760";
+}
+.#{$css-prefix}icon--bag-yen:before {
+  content: "\e761";
+}
+.#{$css-prefix}icon--coin-dollar:before {
+  content: "\e762";
+}
+.#{$css-prefix}icon--coin-euro:before {
+  content: "\e763";
+}
+.#{$css-prefix}icon--coin-pound:before {
+  content: "\e764";
+}
+.#{$css-prefix}icon--coin-yen:before {
+  content: "\e765";
+}
+.#{$css-prefix}icon--calculator:before {
+  content: "\e766";
+}
+.#{$css-prefix}icon--calculator2:before {
+  content: "\e767";
+}
+.#{$css-prefix}icon--abacus:before {
+  content: "\e768";
+}
+.#{$css-prefix}icon--vault:before {
+  content: "\e769";
+}
+.#{$css-prefix}icon--telephone:before {
+  content: "\e76a";
+}
+.#{$css-prefix}icon--phone-lock:before {
+  content: "\e76b";
+}
+.#{$css-prefix}icon--phone-wave:before {
+  content: "\e76c";
+}
+.#{$css-prefix}icon--phone-pause:before {
+  content: "\e76d";
+}
+.#{$css-prefix}icon--phone-outgoing:before {
+  content: "\e76e";
+}
+.#{$css-prefix}icon--phone-incoming:before {
+  content: "\e76f";
+}
+.#{$css-prefix}icon--phone-in-out:before {
+  content: "\e770";
+}
+.#{$css-prefix}icon--phone-error:before {
+  content: "\e771";
+}
+.#{$css-prefix}icon--phone-sip:before {
+  content: "\e772";
+}
+.#{$css-prefix}icon--phone-plus:before {
+  content: "\e773";
+}
+.#{$css-prefix}icon--phone-minus:before {
+  content: "\e774";
+}
+.#{$css-prefix}icon--voicemail:before {
+  content: "\e775";
+}
+.#{$css-prefix}icon--dial:before {
+  content: "\e776";
+}
+.#{$css-prefix}icon--telephone2:before {
+  content: "\e777";
+}
+.#{$css-prefix}icon--pushpin:before {
+  content: "\e778";
+}
+.#{$css-prefix}icon--pushpin2:before {
+  content: "\e779";
+}
+.#{$css-prefix}icon--map-marker:before {
+  content: "\e77a";
+}
+.#{$css-prefix}icon--map-marker-user:before {
+  content: "\e77b";
+}
+.#{$css-prefix}icon--map-marker-down:before {
+  content: "\e77c";
+}
+.#{$css-prefix}icon--map-marker-check:before {
+  content: "\e77d";
+}
+.#{$css-prefix}icon--map-marker-crossed:before {
+  content: "\e77e";
+}
+.#{$css-prefix}icon--radar:before {
+  content: "\e77f";
+}
+.#{$css-prefix}icon--compass2:before {
+  content: "\e780";
+}
+.#{$css-prefix}icon--map:before {
+  content: "\e781";
+}
+.#{$css-prefix}icon--map2:before {
+  content: "\e782";
+}
+.#{$css-prefix}icon--location:before {
+  content: "\e783";
+}
+.#{$css-prefix}icon--road-sign:before {
+  content: "\e784";
+}
+.#{$css-prefix}icon--calendar-empty:before {
+  content: "\e785";
+}
+.#{$css-prefix}icon--calendar-check:before {
+  content: "\e786";
+}
+.#{$css-prefix}icon--calendar-cross:before {
+  content: "\e787";
+}
+.#{$css-prefix}icon--calendar-31:before {
+  content: "\e788";
+}
+.#{$css-prefix}icon--calendar-full:before {
+  content: "\e789";
+}
+.#{$css-prefix}icon--calendar-insert:before {
+  content: "\e78a";
+}
+.#{$css-prefix}icon--calendar-text:before {
+  content: "\e78b";
+}
+.#{$css-prefix}icon--calendar-user:before {
+  content: "\e78c";
+}
+.#{$css-prefix}icon--mouse:before {
+  content: "\e78d";
+}
+.#{$css-prefix}icon--mouse-left:before {
+  content: "\e78e";
+}
+.#{$css-prefix}icon--mouse-right:before {
+  content: "\e78f";
+}
+.#{$css-prefix}icon--mouse-both:before {
+  content: "\e790";
+}
+.#{$css-prefix}icon--keyboard:before {
+  content: "\e791";
+}
+.#{$css-prefix}icon--keyboard-up:before {
+  content: "\e792";
+}
+.#{$css-prefix}icon--keyboard-down:before {
+  content: "\e793";
+}
+.#{$css-prefix}icon--delete:before {
+  content: "\e794";
+}
+.#{$css-prefix}icon--spell-check:before {
+  content: "\e795";
+}
+.#{$css-prefix}icon--escape:before {
+  content: "\e796";
+}
+.#{$css-prefix}icon--enter2:before {
+  content: "\e797";
+}
+.#{$css-prefix}icon--screen:before {
+  content: "\e798";
+}
+.#{$css-prefix}icon--aspect-ratio:before {
+  content: "\e799";
+}
+.#{$css-prefix}icon--signal:before {
+  content: "\e79a";
+}
+.#{$css-prefix}icon--signal-lock:before {
+  content: "\e79b";
+}
+.#{$css-prefix}icon--signal-80:before {
+  content: "\e79c";
+}
+.#{$css-prefix}icon--signal-60:before {
+  content: "\e79d";
+}
+.#{$css-prefix}icon--signal-40:before {
+  content: "\e79e";
+}
+.#{$css-prefix}icon--signal-20:before {
+  content: "\e79f";
+}
+.#{$css-prefix}icon--signal-0:before {
+  content: "\e7a0";
+}
+.#{$css-prefix}icon--signal-blocked:before {
+  content: "\e7a1";
+}
+.#{$css-prefix}icon--sim:before {
+  content: "\e7a2";
+}
+.#{$css-prefix}icon--flash-memory:before {
+  content: "\e7a3";
+}
+.#{$css-prefix}icon--usb-drive:before {
+  content: "\e7a4";
+}
+.#{$css-prefix}icon--phone:before {
+  content: "\e7a5";
+}
+.#{$css-prefix}icon--smartphone:before {
+  content: "\e7a6";
+}
+.#{$css-prefix}icon--smartphone-notification:before {
+  content: "\e7a7";
+}
+.#{$css-prefix}icon--smartphone-vibration:before {
+  content: "\e7a8";
+}
+.#{$css-prefix}icon--smartphone-embed:before {
+  content: "\e7a9";
+}
+.#{$css-prefix}icon--smartphone-waves:before {
+  content: "\e7aa";
+}
+.#{$css-prefix}icon--tablet:before {
+  content: "\e7ab";
+}
+.#{$css-prefix}icon--tablet2:before {
+  content: "\e7ac";
+}
+.#{$css-prefix}icon--laptop:before {
+  content: "\e7ad";
+}
+.#{$css-prefix}icon--laptop-phone:before {
+  content: "\e7ae";
+}
+.#{$css-prefix}icon--desktop:before {
+  content: "\e7af";
+}
+.#{$css-prefix}icon--launch:before {
+  content: "\e7b0";
+}
+.#{$css-prefix}icon--new-tab:before {
+  content: "\e7b1";
+}
+.#{$css-prefix}icon--window:before {
+  content: "\e7b2";
+}
+.#{$css-prefix}icon--cable:before {
+  content: "\e7b3";
+}
+.#{$css-prefix}icon--cable2:before {
+  content: "\e7b4";
+}
+.#{$css-prefix}icon--tv:before {
+  content: "\e7b5";
+}
+.#{$css-prefix}icon--radio:before {
+  content: "\e7b6";
+}
+.#{$css-prefix}icon--remote-control:before {
+  content: "\e7b7";
+}
+.#{$css-prefix}icon--power-switch:before {
+  content: "\e7b8";
+}
+.#{$css-prefix}icon--power:before {
+  content: "\e7b9";
+}
+.#{$css-prefix}icon--power-crossed:before {
+  content: "\e7ba";
+}
+.#{$css-prefix}icon--flash-auto:before {
+  content: "\e7bb";
+}
+.#{$css-prefix}icon--lamp:before {
+  content: "\e7bc";
+}
+.#{$css-prefix}icon--flashlight:before {
+  content: "\e7bd";
+}
+.#{$css-prefix}icon--lampshade:before {
+  content: "\e7be";
+}
+.#{$css-prefix}icon--cord:before {
+  content: "\e7bf";
+}
+.#{$css-prefix}icon--outlet:before {
+  content: "\e7c0";
+}
+.#{$css-prefix}icon--battery-power:before {
+  content: "\e7c1";
+}
+.#{$css-prefix}icon--battery-empty:before {
+  content: "\e7c2";
+}
+.#{$css-prefix}icon--battery-alert:before {
+  content: "\e7c3";
+}
+.#{$css-prefix}icon--battery-error:before {
+  content: "\e7c4";
+}
+.#{$css-prefix}icon--battery-low1:before {
+  content: "\e7c5";
+}
+.#{$css-prefix}icon--battery-low2:before {
+  content: "\e7c6";
+}
+.#{$css-prefix}icon--battery-low3:before {
+  content: "\e7c7";
+}
+.#{$css-prefix}icon--battery-mid1:before {
+  content: "\e7c8";
+}
+.#{$css-prefix}icon--battery-mid2:before {
+  content: "\e7c9";
+}
+.#{$css-prefix}icon--battery-mid3:before {
+  content: "\e7ca";
+}
+.#{$css-prefix}icon--battery-full:before {
+  content: "\e7cb";
+}
+.#{$css-prefix}icon--battery-charging:before {
+  content: "\e7cc";
+}
+.#{$css-prefix}icon--battery-charging2:before {
+  content: "\e7cd";
+}
+.#{$css-prefix}icon--battery-charging3:before {
+  content: "\e7ce";
+}
+.#{$css-prefix}icon--battery-charging4:before {
+  content: "\e7cf";
+}
+.#{$css-prefix}icon--battery-charging5:before {
+  content: "\e7d0";
+}
+.#{$css-prefix}icon--battery-charging6:before {
+  content: "\e7d1";
+}
+.#{$css-prefix}icon--battery-charging7:before {
+  content: "\e7d2";
+}
+.#{$css-prefix}icon--chip:before {
+  content: "\e7d3";
+}
+.#{$css-prefix}icon--chip-x64:before {
+  content: "\e7d4";
+}
+.#{$css-prefix}icon--chip-x86:before {
+  content: "\e7d5";
+}
+.#{$css-prefix}icon--bubble:before {
+  content: "\e7d6";
+}
+.#{$css-prefix}icon--bubbles:before {
+  content: "\e7d7";
+}
+.#{$css-prefix}icon--bubble-dots:before {
+  content: "\e7d8";
+}
+.#{$css-prefix}icon--bubble-alert:before {
+  content: "\e7d9";
+}
+.#{$css-prefix}icon--bubble-question:before {
+  content: "\e7da";
+}
+.#{$css-prefix}icon--bubble-text:before {
+  content: "\e7db";
+}
+.#{$css-prefix}icon--bubble-pencil:before {
+  content: "\e7dc";
+}
+.#{$css-prefix}icon--bubble-picture:before {
+  content: "\e7dd";
+}
+.#{$css-prefix}icon--bubble-video:before {
+  content: "\e7de";
+}
+.#{$css-prefix}icon--bubble-user:before {
+  content: "\e7df";
+}
+.#{$css-prefix}icon--bubble-quote:before {
+  content: "\e7e0";
+}
+.#{$css-prefix}icon--bubble-heart:before {
+  content: "\e7e1";
+}
+.#{$css-prefix}icon--bubble-emoticon:before {
+  content: "\e7e2";
+}
+.#{$css-prefix}icon--bubble-attachment:before {
+  content: "\e7e3";
+}
+.#{$css-prefix}icon--phone-bubble:before {
+  content: "\e7e4";
+}
+.#{$css-prefix}icon--quote-open:before {
+  content: "\e7e5";
+}
+.#{$css-prefix}icon--quote-close:before {
+  content: "\e7e6";
+}
+.#{$css-prefix}icon--dna:before {
+  content: "\e7e7";
+}
+.#{$css-prefix}icon--heart-pulse:before {
+  content: "\e7e8";
+}
+.#{$css-prefix}icon--pulse:before {
+  content: "\e7e9";
+}
+.#{$css-prefix}icon--syringe:before {
+  content: "\e7ea";
+}
+.#{$css-prefix}icon--pills:before {
+  content: "\e7eb";
+}
+.#{$css-prefix}icon--first-aid:before {
+  content: "\e7ec";
+}
+.#{$css-prefix}icon--lifebuoy:before {
+  content: "\e7ed";
+}
+.#{$css-prefix}icon--bandage:before {
+  content: "\e7ee";
+}
+.#{$css-prefix}icon--bandages:before {
+  content: "\e7ef";
+}
+.#{$css-prefix}icon--thermometer:before {
+  content: "\e7f0";
+}
+.#{$css-prefix}icon--microscope:before {
+  content: "\e7f1";
+}
+.#{$css-prefix}icon--brain:before {
+  content: "\e7f2";
+}
+.#{$css-prefix}icon--beaker:before {
+  content: "\e7f3";
+}
+.#{$css-prefix}icon--skull:before {
+  content: "\e7f4";
+}
+.#{$css-prefix}icon--bone:before {
+  content: "\e7f5";
+}
+.#{$css-prefix}icon--construction:before {
+  content: "\e7f6";
+}
+.#{$css-prefix}icon--construction-cone:before {
+  content: "\e7f7";
+}
+.#{$css-prefix}icon--pie-chart:before {
+  content: "\e7f8";
+}
+.#{$css-prefix}icon--pie-chart2:before {
+  content: "\e7f9";
+}
+.#{$css-prefix}icon--graph:before {
+  content: "\e7fa";
+}
+.#{$css-prefix}icon--chart-growth:before {
+  content: "\e7fb";
+}
+.#{$css-prefix}icon--chart-bars:before {
+  content: "\e7fc";
+}
+.#{$css-prefix}icon--chart-settings:before {
+  content: "\e7fd";
+}
+.#{$css-prefix}icon--cake:before {
+  content: "\e7fe";
+}
+.#{$css-prefix}icon--gift:before {
+  content: "\e7ff";
+}
+.#{$css-prefix}icon--balloon:before {
+  content: "\e800";
+}
+.#{$css-prefix}icon--rank:before {
+  content: "\e801";
+}
+.#{$css-prefix}icon--rank2:before {
+  content: "\e802";
+}
+.#{$css-prefix}icon--rank3:before {
+  content: "\e803";
+}
+.#{$css-prefix}icon--crown:before {
+  content: "\e804";
+}
+.#{$css-prefix}icon--lotus:before {
+  content: "\e805";
+}
+.#{$css-prefix}icon--diamond:before {
+  content: "\e806";
+}
+.#{$css-prefix}icon--diamond2:before {
+  content: "\e807";
+}
+.#{$css-prefix}icon--diamond3:before {
+  content: "\e808";
+}
+.#{$css-prefix}icon--diamond4:before {
+  content: "\e809";
+}
+.#{$css-prefix}icon--linearicons:before {
+  content: "\e80a";
+}
+.#{$css-prefix}icon--teacup:before {
+  content: "\e80b";
+}
+.#{$css-prefix}icon--teapot:before {
+  content: "\e80c";
+}
+.#{$css-prefix}icon--glass:before {
+  content: "\e80d";
+}
+.#{$css-prefix}icon--bottle2:before {
+  content: "\e80e";
+}
+.#{$css-prefix}icon--glass-cocktail:before {
+  content: "\e80f";
+}
+.#{$css-prefix}icon--glass2:before {
+  content: "\e810";
+}
+.#{$css-prefix}icon--dinner:before {
+  content: "\e811";
+}
+.#{$css-prefix}icon--dinner2:before {
+  content: "\e812";
+}
+.#{$css-prefix}icon--chef:before {
+  content: "\e813";
+}
+.#{$css-prefix}icon--scale2:before {
+  content: "\e814";
+}
+.#{$css-prefix}icon--egg:before {
+  content: "\e815";
+}
+.#{$css-prefix}icon--egg2:before {
+  content: "\e816";
+}
+.#{$css-prefix}icon--eggs:before {
+  content: "\e817";
+}
+.#{$css-prefix}icon--platter:before {
+  content: "\e818";
+}
+.#{$css-prefix}icon--steak:before {
+  content: "\e819";
+}
+.#{$css-prefix}icon--hamburger:before {
+  content: "\e81a";
+}
+.#{$css-prefix}icon--hotdog:before {
+  content: "\e81b";
+}
+.#{$css-prefix}icon--pizza:before {
+  content: "\e81c";
+}
+.#{$css-prefix}icon--sausage:before {
+  content: "\e81d";
+}
+.#{$css-prefix}icon--chicken:before {
+  content: "\e81e";
+}
+.#{$css-prefix}icon--fish:before {
+  content: "\e81f";
+}
+.#{$css-prefix}icon--carrot:before {
+  content: "\e820";
+}
+.#{$css-prefix}icon--cheese:before {
+  content: "\e821";
+}
+.#{$css-prefix}icon--bread:before {
+  content: "\e822";
+}
+.#{$css-prefix}icon--ice-cream:before {
+  content: "\e823";
+}
+.#{$css-prefix}icon--ice-cream2:before {
+  content: "\e824";
+}
+.#{$css-prefix}icon--candy:before {
+  content: "\e825";
+}
+.#{$css-prefix}icon--lollipop:before {
+  content: "\e826";
+}
+.#{$css-prefix}icon--coffee-bean:before {
+  content: "\e827";
+}
+.#{$css-prefix}icon--coffee-cup:before {
+  content: "\e828";
+}
+.#{$css-prefix}icon--cherry:before {
+  content: "\e829";
+}
+.#{$css-prefix}icon--grapes:before {
+  content: "\e82a";
+}
+.#{$css-prefix}icon--citrus:before {
+  content: "\e82b";
+}
+.#{$css-prefix}icon--apple:before {
+  content: "\e82c";
+}
+.#{$css-prefix}icon--leaf:before {
+  content: "\e82d";
+}
+.#{$css-prefix}icon--landscape:before {
+  content: "\e82e";
+}
+.#{$css-prefix}icon--pine-tree:before {
+  content: "\e82f";
+}
+.#{$css-prefix}icon--tree:before {
+  content: "\e830";
+}
+.#{$css-prefix}icon--cactus:before {
+  content: "\e831";
+}
+.#{$css-prefix}icon--paw:before {
+  content: "\e832";
+}
+.#{$css-prefix}icon--footprint:before {
+  content: "\e833";
+}
+.#{$css-prefix}icon--speed-slow:before {
+  content: "\e834";
+}
+.#{$css-prefix}icon--speed-medium:before {
+  content: "\e835";
+}
+.#{$css-prefix}icon--speed-fast:before {
+  content: "\e836";
+}
+.#{$css-prefix}icon--rocket:before {
+  content: "\e837";
+}
+.#{$css-prefix}icon--hammer2:before {
+  content: "\e838";
+}
+.#{$css-prefix}icon--balance:before {
+  content: "\e839";
+}
+.#{$css-prefix}icon--briefcase:before {
+  content: "\e83a";
+}
+.#{$css-prefix}icon--luggage-weight:before {
+  content: "\e83b";
+}
+.#{$css-prefix}icon--dolly:before {
+  content: "\e83c";
+}
+.#{$css-prefix}icon--plane:before {
+  content: "\e83d";
+}
+.#{$css-prefix}icon--plane-crossed:before {
+  content: "\e83e";
+}
+.#{$css-prefix}icon--helicopter:before {
+  content: "\e83f";
+}
+.#{$css-prefix}icon--traffic-lights:before {
+  content: "\e840";
+}
+.#{$css-prefix}icon--siren:before {
+  content: "\e841";
+}
+.#{$css-prefix}icon--road:before {
+  content: "\e842";
+}
+.#{$css-prefix}icon--engine:before {
+  content: "\e843";
+}
+.#{$css-prefix}icon--oil-pressure:before {
+  content: "\e844";
+}
+.#{$css-prefix}icon--coolant-temperature:before {
+  content: "\e845";
+}
+.#{$css-prefix}icon--car-battery:before {
+  content: "\e846";
+}
+.#{$css-prefix}icon--gas:before {
+  content: "\e847";
+}
+.#{$css-prefix}icon--gallon:before {
+  content: "\e848";
+}
+.#{$css-prefix}icon--transmission:before {
+  content: "\e849";
+}
+.#{$css-prefix}icon--car:before {
+  content: "\e84a";
+}
+.#{$css-prefix}icon--car-wash:before {
+  content: "\e84b";
+}
+.#{$css-prefix}icon--car-wash2:before {
+  content: "\e84c";
+}
+.#{$css-prefix}icon--bus:before {
+  content: "\e84d";
+}
+.#{$css-prefix}icon--bus2:before {
+  content: "\e84e";
+}
+.#{$css-prefix}icon--car2:before {
+  content: "\e84f";
+}
+.#{$css-prefix}icon--parking:before {
+  content: "\e850";
+}
+.#{$css-prefix}icon--car-lock:before {
+  content: "\e851";
+}
+.#{$css-prefix}icon--taxi:before {
+  content: "\e852";
+}
+.#{$css-prefix}icon--car-siren:before {
+  content: "\e853";
+}
+.#{$css-prefix}icon--car-wash3:before {
+  content: "\e854";
+}
+.#{$css-prefix}icon--car-wash4:before {
+  content: "\e855";
+}
+.#{$css-prefix}icon--ambulance:before {
+  content: "\e856";
+}
+.#{$css-prefix}icon--truck:before {
+  content: "\e857";
+}
+.#{$css-prefix}icon--trailer:before {
+  content: "\e858";
+}
+.#{$css-prefix}icon--scale-truck:before {
+  content: "\e859";
+}
+.#{$css-prefix}icon--train:before {
+  content: "\e85a";
+}
+.#{$css-prefix}icon--ship:before {
+  content: "\e85b";
+}
+.#{$css-prefix}icon--ship2:before {
+  content: "\e85c";
+}
+.#{$css-prefix}icon--anchor:before {
+  content: "\e85d";
+}
+.#{$css-prefix}icon--boat:before {
+  content: "\e85e";
+}
+.#{$css-prefix}icon--bicycle:before {
+  content: "\e85f";
+}
+.#{$css-prefix}icon--bicycle2:before {
+  content: "\e860";
+}
+.#{$css-prefix}icon--dumbbell:before {
+  content: "\e861";
+}
+.#{$css-prefix}icon--bench-press:before {
+  content: "\e862";
+}
+.#{$css-prefix}icon--swim:before {
+  content: "\e863";
+}
+.#{$css-prefix}icon--football:before {
+  content: "\e864";
+}
+.#{$css-prefix}icon--baseball-bat:before {
+  content: "\e865";
+}
+.#{$css-prefix}icon--baseball:before {
+  content: "\e866";
+}
+.#{$css-prefix}icon--tennis:before {
+  content: "\e867";
+}
+.#{$css-prefix}icon--tennis2:before {
+  content: "\e868";
+}
+.#{$css-prefix}icon--ping-pong:before {
+  content: "\e869";
+}
+.#{$css-prefix}icon--hockey:before {
+  content: "\e86a";
+}
+.#{$css-prefix}icon--8ball:before {
+  content: "\e86b";
+}
+.#{$css-prefix}icon--bowling:before {
+  content: "\e86c";
+}
+.#{$css-prefix}icon--bowling-pins:before {
+  content: "\e86d";
+}
+.#{$css-prefix}icon--golf:before {
+  content: "\e86e";
+}
+.#{$css-prefix}icon--golf2:before {
+  content: "\e86f";
+}
+.#{$css-prefix}icon--archery:before {
+  content: "\e870";
+}
+.#{$css-prefix}icon--slingshot:before {
+  content: "\e871";
+}
+.#{$css-prefix}icon--soccer:before {
+  content: "\e872";
+}
+.#{$css-prefix}icon--basketball:before {
+  content: "\e873";
+}
+.#{$css-prefix}icon--cube:before {
+  content: "\e874";
+}
+.#{$css-prefix}icon--3d-rotate:before {
+  content: "\e875";
+}
+.#{$css-prefix}icon--puzzle:before {
+  content: "\e876";
+}
+.#{$css-prefix}icon--glasses:before {
+  content: "\e877";
+}
+.#{$css-prefix}icon--glasses2:before {
+  content: "\e878";
+}
+.#{$css-prefix}icon--accessibility:before {
+  content: "\e879";
+}
+.#{$css-prefix}icon--wheelchair:before {
+  content: "\e87a";
+}
+.#{$css-prefix}icon--wall:before {
+  content: "\e87b";
+}
+.#{$css-prefix}icon--fence:before {
+  content: "\e87c";
+}
+.#{$css-prefix}icon--wall2:before {
+  content: "\e87d";
+}
+.#{$css-prefix}icon--icons:before {
+  content: "\e87e";
+}
+.#{$css-prefix}icon--resize-handle:before {
+  content: "\e87f";
+}
+.#{$css-prefix}icon--icons2:before {
+  content: "\e880";
+}
+.#{$css-prefix}icon--select:before {
+  content: "\e881";
+}
+.#{$css-prefix}icon--select2:before {
+  content: "\e882";
+}
+.#{$css-prefix}icon--site-map:before {
+  content: "\e883";
+}
+.#{$css-prefix}icon--earth:before {
+  content: "\e884";
+}
+.#{$css-prefix}icon--earth-lock:before {
+  content: "\e885";
+}
+.#{$css-prefix}icon--network:before {
+  content: "\e886";
+}
+.#{$css-prefix}icon--network-lock:before {
+  content: "\e887";
+}
+.#{$css-prefix}icon--planet:before {
+  content: "\e888";
+}
+.#{$css-prefix}icon--happy:before {
+  content: "\e889";
+}
+.#{$css-prefix}icon--smile:before {
+  content: "\e88a";
+}
+.#{$css-prefix}icon--grin:before {
+  content: "\e88b";
+}
+.#{$css-prefix}icon--tongue:before {
+  content: "\e88c";
+}
+.#{$css-prefix}icon--sad:before {
+  content: "\e88d";
+}
+.#{$css-prefix}icon--wink:before {
+  content: "\e88e";
+}
+.#{$css-prefix}icon--dream:before {
+  content: "\e88f";
+}
+.#{$css-prefix}icon--shocked:before {
+  content: "\e890";
+}
+.#{$css-prefix}icon--shocked2:before {
+  content: "\e891";
+}
+.#{$css-prefix}icon--tongue2:before {
+  content: "\e892";
+}
+.#{$css-prefix}icon--neutral:before {
+  content: "\e893";
+}
+.#{$css-prefix}icon--happy-grin:before {
+  content: "\e894";
+}
+.#{$css-prefix}icon--cool:before {
+  content: "\e895";
+}
+.#{$css-prefix}icon--mad:before {
+  content: "\e896";
+}
+.#{$css-prefix}icon--grin-evil:before {
+  content: "\e897";
+}
+.#{$css-prefix}icon--evil:before {
+  content: "\e898";
+}
+.#{$css-prefix}icon--wow:before {
+  content: "\e899";
+}
+.#{$css-prefix}icon--annoyed:before {
+  content: "\e89a";
+}
+.#{$css-prefix}icon--wondering:before {
+  content: "\e89b";
+}
+.#{$css-prefix}icon--confused:before {
+  content: "\e89c";
+}
+.#{$css-prefix}icon--zipped:before {
+  content: "\e89d";
+}
+.#{$css-prefix}icon--grumpy:before {
+  content: "\e89e";
+}
+.#{$css-prefix}icon--mustache:before {
+  content: "\e89f";
+}
+.#{$css-prefix}icon--tombstone-hipster:before {
+  content: "\e8a0";
+}
+.#{$css-prefix}icon--tombstone:before {
+  content: "\e8a1";
+}
+.#{$css-prefix}icon--ghost:before {
+  content: "\e8a2";
+}
+.#{$css-prefix}icon--ghost-hipster:before {
+  content: "\e8a3";
+}
+.#{$css-prefix}icon--halloween:before {
+  content: "\e8a4";
+}
+.#{$css-prefix}icon--christmas:before {
+  content: "\e8a5";
+}
+.#{$css-prefix}icon--easter-egg:before {
+  content: "\e8a6";
+}
+.#{$css-prefix}icon--mustache2:before {
+  content: "\e8a7";
+}
+.#{$css-prefix}icon--mustache-glasses:before {
+  content: "\e8a8";
+}
+.#{$css-prefix}icon--pipe:before {
+  content: "\e8a9";
+}
+.#{$css-prefix}icon--alarm:before {
+  content: "\e8aa";
+}
+.#{$css-prefix}icon--alarm-add:before {
+  content: "\e8ab";
+}
+.#{$css-prefix}icon--alarm-snooze:before {
+  content: "\e8ac";
+}
+.#{$css-prefix}icon--alarm-ringing:before {
+  content: "\e8ad";
+}
+.#{$css-prefix}icon--bullhorn:before {
+  content: "\e8ae";
+}
+.#{$css-prefix}icon--hearing:before {
+  content: "\e8af";
+}
+.#{$css-prefix}icon--volume-high:before {
+  content: "\e8b0";
+}
+.#{$css-prefix}icon--volume-medium:before {
+  content: "\e8b1";
+}
+.#{$css-prefix}icon--volume-low:before {
+  content: "\e8b2";
+}
+.#{$css-prefix}icon--volume:before {
+  content: "\e8b3";
+}
+.#{$css-prefix}icon--mute:before {
+  content: "\e8b4";
+}
+.#{$css-prefix}icon--lan:before {
+  content: "\e8b5";
+}
+.#{$css-prefix}icon--lan2:before {
+  content: "\e8b6";
+}
+.#{$css-prefix}icon--wifi:before {
+  content: "\e8b7";
+}
+.#{$css-prefix}icon--wifi-lock:before {
+  content: "\e8b8";
+}
+.#{$css-prefix}icon--wifi-blocked:before {
+  content: "\e8b9";
+}
+.#{$css-prefix}icon--wifi-mid:before {
+  content: "\e8ba";
+}
+.#{$css-prefix}icon--wifi-low:before {
+  content: "\e8bb";
+}
+.#{$css-prefix}icon--wifi-low2:before {
+  content: "\e8bc";
+}
+.#{$css-prefix}icon--wifi-alert:before {
+  content: "\e8bd";
+}
+.#{$css-prefix}icon--wifi-alert-mid:before {
+  content: "\e8be";
+}
+.#{$css-prefix}icon--wifi-alert-low:before {
+  content: "\e8bf";
+}
+.#{$css-prefix}icon--wifi-alert-low2:before {
+  content: "\e8c0";
+}
+.#{$css-prefix}icon--stream:before {
+  content: "\e8c1";
+}
+.#{$css-prefix}icon--stream-check:before {
+  content: "\e8c2";
+}
+.#{$css-prefix}icon--stream-error:before {
+  content: "\e8c3";
+}
+.#{$css-prefix}icon--stream-alert:before {
+  content: "\e8c4";
+}
+.#{$css-prefix}icon--communication:before {
+  content: "\e8c5";
+}
+.#{$css-prefix}icon--communication-crossed:before {
+  content: "\e8c6";
+}
+.#{$css-prefix}icon--broadcast:before {
+  content: "\e8c7";
+}
+.#{$css-prefix}icon--antenna:before {
+  content: "\e8c8";
+}
+.#{$css-prefix}icon--satellite:before {
+  content: "\e8c9";
+}
+.#{$css-prefix}icon--satellite2:before {
+  content: "\e8ca";
+}
+.#{$css-prefix}icon--mic:before {
+  content: "\e8cb";
+}
+.#{$css-prefix}icon--mic-mute:before {
+  content: "\e8cc";
+}
+.#{$css-prefix}icon--mic2:before {
+  content: "\e8cd";
+}
+.#{$css-prefix}icon--spotlights:before {
+  content: "\e8ce";
+}
+.#{$css-prefix}icon--hourglass:before {
+  content: "\e8cf";
+}
+.#{$css-prefix}icon--loading:before {
+  content: "\e8d0";
+}
+.#{$css-prefix}icon--loading2:before {
+  content: "\e8d1";
+}
+.#{$css-prefix}icon--loading3:before {
+  content: "\e8d2";
+}
+.#{$css-prefix}icon--refresh:before {
+  content: "\e8d3";
+}
+.#{$css-prefix}icon--refresh2:before {
+  content: "\e8d4";
+}
+.#{$css-prefix}icon--undo:before {
+  content: "\e8d5";
+}
+.#{$css-prefix}icon--redo:before {
+  content: "\e8d6";
+}
+.#{$css-prefix}icon--jump2:before {
+  content: "\e8d7";
+}
+.#{$css-prefix}icon--undo2:before {
+  content: "\e8d8";
+}
+.#{$css-prefix}icon--redo2:before {
+  content: "\e8d9";
+}
+.#{$css-prefix}icon--sync:before {
+  content: "\e8da";
+}
+.#{$css-prefix}icon--repeat-one2:before {
+  content: "\e8db";
+}
+.#{$css-prefix}icon--sync-crossed:before {
+  content: "\e8dc";
+}
+.#{$css-prefix}icon--sync2:before {
+  content: "\e8dd";
+}
+.#{$css-prefix}icon--repeat-one3:before {
+  content: "\e8de";
+}
+.#{$css-prefix}icon--sync-crossed2:before {
+  content: "\e8df";
+}
+.#{$css-prefix}icon--return:before {
+  content: "\e8e0";
+}
+.#{$css-prefix}icon--return2:before {
+  content: "\e8e1";
+}
+.#{$css-prefix}icon--refund:before {
+  content: "\e8e2";
+}
+.#{$css-prefix}icon--history:before {
+  content: "\e8e3";
+}
+.#{$css-prefix}icon--history2:before {
+  content: "\e8e4";
+}
+.#{$css-prefix}icon--self-timer:before {
+  content: "\e8e5";
+}
+.#{$css-prefix}icon--clock:before {
+  content: "\e8e6";
+}
+.#{$css-prefix}icon--clock2:before {
+  content: "\e8e7";
+}
+.#{$css-prefix}icon--clock3:before {
+  content: "\e8e8";
+}
+.#{$css-prefix}icon--watch:before {
+  content: "\e8e9";
+}
+.#{$css-prefix}icon--alarm2:before {
+  content: "\e8ea";
+}
+.#{$css-prefix}icon--alarm-add2:before {
+  content: "\e8eb";
+}
+.#{$css-prefix}icon--alarm-remove:before {
+  content: "\e8ec";
+}
+.#{$css-prefix}icon--alarm-check:before {
+  content: "\e8ed";
+}
+.#{$css-prefix}icon--alarm-error:before {
+  content: "\e8ee";
+}
+.#{$css-prefix}icon--timer:before {
+  content: "\e8ef";
+}
+.#{$css-prefix}icon--timer-crossed:before {
+  content: "\e8f0";
+}
+.#{$css-prefix}icon--timer2:before {
+  content: "\e8f1";
+}
+.#{$css-prefix}icon--timer-crossed2:before {
+  content: "\e8f2";
+}
+.#{$css-prefix}icon--download:before {
+  content: "\e8f3";
+}
+.#{$css-prefix}icon--upload:before {
+  content: "\e8f4";
+}
+.#{$css-prefix}icon--download2:before {
+  content: "\e8f5";
+}
+.#{$css-prefix}icon--upload2:before {
+  content: "\e8f6";
+}
+.#{$css-prefix}icon--enter-up:before {
+  content: "\e8f7";
+}
+.#{$css-prefix}icon--enter-down:before {
+  content: "\e8f8";
+}
+.#{$css-prefix}icon--enter-left:before {
+  content: "\e8f9";
+}
+.#{$css-prefix}icon--enter-right:before {
+  content: "\e8fa";
+}
+.#{$css-prefix}icon--exit-up:before {
+  content: "\e8fb";
+}
+.#{$css-prefix}icon--exit-down:before {
+  content: "\e8fc";
+}
+.#{$css-prefix}icon--exit-left:before {
+  content: "\e8fd";
+}
+.#{$css-prefix}icon--exit-right:before {
+  content: "\e8fe";
+}
+.#{$css-prefix}icon--enter-up2:before {
+  content: "\e8ff";
+}
+.#{$css-prefix}icon--enter-down2:before {
+  content: "\e900";
+}
+.#{$css-prefix}icon--enter-vertical:before {
+  content: "\e901";
+}
+.#{$css-prefix}icon--enter-left2:before {
+  content: "\e902";
+}
+.#{$css-prefix}icon--enter-right2:before {
+  content: "\e903";
+}
+.#{$css-prefix}icon--enter-horizontal:before {
+  content: "\e904";
+}
+.#{$css-prefix}icon--exit-up2:before {
+  content: "\e905";
+}
+.#{$css-prefix}icon--exit-down2:before {
+  content: "\e906";
+}
+.#{$css-prefix}icon--exit-left2:before {
+  content: "\e907";
+}
+.#{$css-prefix}icon--exit-right2:before {
+  content: "\e908";
+}
+.#{$css-prefix}icon--cli:before {
+  content: "\e909";
+}
+.#{$css-prefix}icon--bug:before {
+  content: "\e90a";
+}
+.#{$css-prefix}icon--code:before {
+  content: "\e90b";
+}
+.#{$css-prefix}icon--file-code:before {
+  content: "\e90c";
+}
+.#{$css-prefix}icon--file-image:before {
+  content: "\e90d";
+}
+.#{$css-prefix}icon--file-zip:before {
+  content: "\e90e";
+}
+.#{$css-prefix}icon--file-audio:before {
+  content: "\e90f";
+}
+.#{$css-prefix}icon--file-video:before {
+  content: "\e910";
+}
+.#{$css-prefix}icon--file-preview:before {
+  content: "\e911";
+}
+.#{$css-prefix}icon--file-charts:before {
+  content: "\e912";
+}
+.#{$css-prefix}icon--file-stats:before {
+  content: "\e913";
+}
+.#{$css-prefix}icon--file-spreadsheet:before {
+  content: "\e914";
+}
+.#{$css-prefix}icon--link:before {
+  content: "\e915";
+}
+.#{$css-prefix}icon--unlink:before {
+  content: "\e916";
+}
+.#{$css-prefix}icon--link2:before {
+  content: "\e917";
+}
+.#{$css-prefix}icon--unlink2:before {
+  content: "\e918";
+}
+.#{$css-prefix}icon--thumbs-up:before {
+  content: "\e919";
+}
+.#{$css-prefix}icon--thumbs-down:before {
+  content: "\e91a";
+}
+.#{$css-prefix}icon--thumbs-up2:before {
+  content: "\e91b";
+}
+.#{$css-prefix}icon--thumbs-down2:before {
+  content: "\e91c";
+}
+.#{$css-prefix}icon--thumbs-up3:before {
+  content: "\e91d";
+}
+.#{$css-prefix}icon--thumbs-down3:before {
+  content: "\e91e";
+}
+.#{$css-prefix}icon--share:before {
+  content: "\e91f";
+}
+.#{$css-prefix}icon--share2:before {
+  content: "\e920";
+}
+.#{$css-prefix}icon--share3:before {
+  content: "\e921";
+}
+.#{$css-prefix}icon--magnifier:before {
+  content: "\e922";
+}
+.#{$css-prefix}icon--file-search:before {
+  content: "\e923";
+}
+.#{$css-prefix}icon--find-replace:before {
+  content: "\e924";
+}
+.#{$css-prefix}icon--zoom-in:before {
+  content: "\e925";
+}
+.#{$css-prefix}icon--zoom-out:before {
+  content: "\e926";
+}
+.#{$css-prefix}icon--loupe:before {
+  content: "\e927";
+}
+.#{$css-prefix}icon--loupe-zoom-in:before {
+  content: "\e928";
+}
+.#{$css-prefix}icon--loupe-zoom-out:before {
+  content: "\e929";
+}
+.#{$css-prefix}icon--cross:before {
+  content: "\e92a";
+}
+.#{$css-prefix}icon--menu:before {
+  content: "\e92b";
+}
+.#{$css-prefix}icon--list:before {
+  content: "\e92c";
+}
+.#{$css-prefix}icon--list2:before {
+  content: "\e92d";
+}
+.#{$css-prefix}icon--list3:before {
+  content: "\e92e";
+}
+.#{$css-prefix}icon--menu2:before {
+  content: "\e92f";
+}
+.#{$css-prefix}icon--list4:before {
+  content: "\e930";
+}
+.#{$css-prefix}icon--menu3:before {
+  content: "\e931";
+}
+.#{$css-prefix}icon--exclamation:before {
+  content: "\e932";
+}
+.#{$css-prefix}icon--question:before {
+  content: "\e933";
+}
+.#{$css-prefix}icon--check:before {
+  content: "\e934";
+}
+.#{$css-prefix}icon--cross2:before {
+  content: "\e935";
+}
+.#{$css-prefix}icon--plus:before {
+  content: "\e936";
+}
+.#{$css-prefix}icon--minus:before {
+  content: "\e937";
+}
+.#{$css-prefix}icon--percent:before {
+  content: "\e938";
+}
+.#{$css-prefix}icon--chevron-up:before {
+  content: "\e939";
+}
+.#{$css-prefix}icon--chevron-down:before {
+  content: "\e93a";
+}
+.#{$css-prefix}icon--chevron-left:before {
+  content: "\e93b";
+}
+.#{$css-prefix}icon--chevron-right:before {
+  content: "\e93c";
+}
+.#{$css-prefix}icon--chevrons-expand-vertical:before {
+  content: "\e93d";
+}
+.#{$css-prefix}icon--chevrons-expand-horizontal:before {
+  content: "\e93e";
+}
+.#{$css-prefix}icon--chevrons-contract-vertical:before {
+  content: "\e93f";
+}
+.#{$css-prefix}icon--chevrons-contract-horizontal:before {
+  content: "\e940";
+}
+.#{$css-prefix}icon--arrow-up:before {
+  content: "\e941";
+}
+.#{$css-prefix}icon--arrow-down:before {
+  content: "\e942";
+}
+.#{$css-prefix}icon--arrow-left:before {
+  content: "\e943";
+}
+.#{$css-prefix}icon--arrow-right:before {
+  content: "\e944";
+}
+.#{$css-prefix}icon--arrow-up-right:before {
+  content: "\e945";
+}
+.#{$css-prefix}icon--arrows-merge:before {
+  content: "\e946";
+}
+.#{$css-prefix}icon--arrows-split:before {
+  content: "\e947";
+}
+.#{$css-prefix}icon--arrow-divert:before {
+  content: "\e948";
+}
+.#{$css-prefix}icon--arrow-return:before {
+  content: "\e949";
+}
+.#{$css-prefix}icon--expand:before {
+  content: "\e94a";
+}
+.#{$css-prefix}icon--contract:before {
+  content: "\e94b";
+}
+.#{$css-prefix}icon--expand2:before {
+  content: "\e94c";
+}
+.#{$css-prefix}icon--contract2:before {
+  content: "\e94d";
+}
+.#{$css-prefix}icon--move:before {
+  content: "\e94e";
+}
+.#{$css-prefix}icon--tab:before {
+  content: "\e94f";
+}
+.#{$css-prefix}icon--arrow-wave:before {
+  content: "\e950";
+}
+.#{$css-prefix}icon--expand3:before {
+  content: "\e951";
+}
+.#{$css-prefix}icon--expand4:before {
+  content: "\e952";
+}
+.#{$css-prefix}icon--contract3:before {
+  content: "\e953";
+}
+.#{$css-prefix}icon--notification:before {
+  content: "\e954";
+}
+.#{$css-prefix}icon--warning:before {
+  content: "\e955";
+}
+.#{$css-prefix}icon--notification-circle:before {
+  content: "\e956";
+}
+.#{$css-prefix}icon--question-circle:before {
+  content: "\e957";
+}
+.#{$css-prefix}icon--menu-circle:before {
+  content: "\e958";
+}
+.#{$css-prefix}icon--checkmark-circle:before {
+  content: "\e959";
+}
+.#{$css-prefix}icon--cross-circle:before {
+  content: "\e95a";
+}
+.#{$css-prefix}icon--plus-circle:before {
+  content: "\e95b";
+}
+.#{$css-prefix}icon--circle-minus:before {
+  content: "\e95c";
+}
+.#{$css-prefix}icon--percent-circle:before {
+  content: "\e95d";
+}
+.#{$css-prefix}icon--arrow-up-circle:before {
+  content: "\e95e";
+}
+.#{$css-prefix}icon--arrow-down-circle:before {
+  content: "\e95f";
+}
+.#{$css-prefix}icon--arrow-left-circle:before {
+  content: "\e960";
+}
+.#{$css-prefix}icon--arrow-right-circle:before {
+  content: "\e961";
+}
+.#{$css-prefix}icon--chevron-up-circle:before {
+  content: "\e962";
+}
+.#{$css-prefix}icon--chevron-down-circle:before {
+  content: "\e963";
+}
+.#{$css-prefix}icon--chevron-left-circle:before {
+  content: "\e964";
+}
+.#{$css-prefix}icon--chevron-right-circle:before {
+  content: "\e965";
+}
+.#{$css-prefix}icon--backward-circle:before {
+  content: "\e966";
+}
+.#{$css-prefix}icon--first-circle:before {
+  content: "\e967";
+}
+.#{$css-prefix}icon--previous-circle:before {
+  content: "\e968";
+}
+.#{$css-prefix}icon--stop-circle:before {
+  content: "\e969";
+}
+.#{$css-prefix}icon--play-circle:before {
+  content: "\e96a";
+}
+.#{$css-prefix}icon--pause-circle:before {
+  content: "\e96b";
+}
+.#{$css-prefix}icon--next-circle:before {
+  content: "\e96c";
+}
+.#{$css-prefix}icon--last-circle:before {
+  content: "\e96d";
+}
+.#{$css-prefix}icon--forward-circle:before {
+  content: "\e96e";
+}
+.#{$css-prefix}icon--eject-circle:before {
+  content: "\e96f";
+}
+.#{$css-prefix}icon--crop:before {
+  content: "\e970";
+}
+.#{$css-prefix}icon--frame-expand:before {
+  content: "\e971";
+}
+.#{$css-prefix}icon--frame-contract:before {
+  content: "\e972";
+}
+.#{$css-prefix}icon--focus:before {
+  content: "\e973";
+}
+.#{$css-prefix}icon--transform:before {
+  content: "\e974";
+}
+.#{$css-prefix}icon--grid:before {
+  content: "\e975";
+}
+.#{$css-prefix}icon--grid-crossed:before {
+  content: "\e976";
+}
+.#{$css-prefix}icon--layers:before {
+  content: "\e977";
+}
+.#{$css-prefix}icon--layers-crossed:before {
+  content: "\e978";
+}
+.#{$css-prefix}icon--toggle:before {
+  content: "\e979";
+}
+.#{$css-prefix}icon--rulers:before {
+  content: "\e97a";
+}
+.#{$css-prefix}icon--ruler:before {
+  content: "\e97b";
+}
+.#{$css-prefix}icon--funnel:before {
+  content: "\e97c";
+}
+.#{$css-prefix}icon--flip-horizontal:before {
+  content: "\e97d";
+}
+.#{$css-prefix}icon--flip-vertical:before {
+  content: "\e97e";
+}
+.#{$css-prefix}icon--flip-horizontal2:before {
+  content: "\e97f";
+}
+.#{$css-prefix}icon--flip-vertical2:before {
+  content: "\e980";
+}
+.#{$css-prefix}icon--angle:before {
+  content: "\e981";
+}
+.#{$css-prefix}icon--angle2:before {
+  content: "\e982";
+}
+.#{$css-prefix}icon--subtract:before {
+  content: "\e983";
+}
+.#{$css-prefix}icon--combine:before {
+  content: "\e984";
+}
+.#{$css-prefix}icon--intersect:before {
+  content: "\e985";
+}
+.#{$css-prefix}icon--exclude:before {
+  content: "\e986";
+}
+.#{$css-prefix}icon--align-center-vertical:before {
+  content: "\e987";
+}
+.#{$css-prefix}icon--align-right:before {
+  content: "\e988";
+}
+.#{$css-prefix}icon--align-bottom:before {
+  content: "\e989";
+}
+.#{$css-prefix}icon--align-left:before {
+  content: "\e98a";
+}
+.#{$css-prefix}icon--align-center-horizontal:before {
+  content: "\e98b";
+}
+.#{$css-prefix}icon--align-top:before {
+  content: "\e98c";
+}
+.#{$css-prefix}icon--square:before {
+  content: "\e98d";
+}
+.#{$css-prefix}icon--plus-square:before {
+  content: "\e98e";
+}
+.#{$css-prefix}icon--minus-square:before {
+  content: "\e98f";
+}
+.#{$css-prefix}icon--percent-square:before {
+  content: "\e990";
+}
+.#{$css-prefix}icon--arrow-up-square:before {
+  content: "\e991";
+}
+.#{$css-prefix}icon--arrow-down-square:before {
+  content: "\e992";
+}
+.#{$css-prefix}icon--arrow-left-square:before {
+  content: "\e993";
+}
+.#{$css-prefix}icon--arrow-right-square:before {
+  content: "\e994";
+}
+.#{$css-prefix}icon--chevron-up-square:before {
+  content: "\e995";
+}
+.#{$css-prefix}icon--chevron-down-square:before {
+  content: "\e996";
+}
+.#{$css-prefix}icon--chevron-left-square:before {
+  content: "\e997";
+}
+.#{$css-prefix}icon--chevron-right-square:before {
+  content: "\e998";
+}
+.#{$css-prefix}icon--check-square:before {
+  content: "\e999";
+}
+.#{$css-prefix}icon--cross-square:before {
+  content: "\e99a";
+}
+.#{$css-prefix}icon--menu-square:before {
+  content: "\e99b";
+}
+.#{$css-prefix}icon--prohibited:before {
+  content: "\e99c";
+}
+.#{$css-prefix}icon--circle:before {
+  content: "\e99d";
+}
+.#{$css-prefix}icon--radio-button:before {
+  content: "\e99e";
+}
+.#{$css-prefix}icon--ligature:before {
+  content: "\e99f";
+}
+.#{$css-prefix}icon--text-format:before {
+  content: "\e9a0";
+}
+.#{$css-prefix}icon--text-format-remove:before {
+  content: "\e9a1";
+}
+.#{$css-prefix}icon--text-size:before {
+  content: "\e9a2";
+}
+.#{$css-prefix}icon--bold:before {
+  content: "\e9a3";
+}
+.#{$css-prefix}icon--italic:before {
+  content: "\e9a4";
+}
+.#{$css-prefix}icon--underline:before {
+  content: "\e9a5";
+}
+.#{$css-prefix}icon--strikethrough:before {
+  content: "\e9a6";
+}
+.#{$css-prefix}icon--highlight:before {
+  content: "\e9a7";
+}
+.#{$css-prefix}icon--text-align-left:before {
+  content: "\e9a8";
+}
+.#{$css-prefix}icon--text-align-center:before {
+  content: "\e9a9";
+}
+.#{$css-prefix}icon--text-align-right:before {
+  content: "\e9aa";
+}
+.#{$css-prefix}icon--text-align-justify:before {
+  content: "\e9ab";
+}
+.#{$css-prefix}icon--line-spacing:before {
+  content: "\e9ac";
+}
+.#{$css-prefix}icon--indent-increase:before {
+  content: "\e9ad";
+}
+.#{$css-prefix}icon--indent-decrease:before {
+  content: "\e9ae";
+}
+.#{$css-prefix}icon--text-wrap:before {
+  content: "\e9af";
+}
+.#{$css-prefix}icon--pilcrow:before {
+  content: "\e9b0";
+}
+.#{$css-prefix}icon--direction-ltr:before {
+  content: "\e9b1";
+}
+.#{$css-prefix}icon--direction-rtl:before {
+  content: "\e9b2";
+}
+.#{$css-prefix}icon--page-break:before {
+  content: "\e9b3";
+}
+.#{$css-prefix}icon--page-break2:before {
+  content: "\e9b4";
+}
+.#{$css-prefix}icon--sort-alpha-asc:before {
+  content: "\e9b5";
+}
+.#{$css-prefix}icon--sort-alpha-desc:before {
+  content: "\e9b6";
+}
+.#{$css-prefix}icon--sort-numeric-asc:before {
+  content: "\e9b7";
+}
+.#{$css-prefix}icon--sort-numeric-desc:before {
+  content: "\e9b8";
+}
+.#{$css-prefix}icon--sort-amount-asc:before {
+  content: "\e9b9";
+}
+.#{$css-prefix}icon--sort-amount-desc:before {
+  content: "\e9ba";
+}
+.#{$css-prefix}icon--sort-time-asc:before {
+  content: "\e9bb";
+}
+.#{$css-prefix}icon--sort-time-desc:before {
+  content: "\e9bc";
+}
+.#{$css-prefix}icon--sigma:before {
+  content: "\e9bd";
+}
+.#{$css-prefix}icon--pencil-line:before {
+  content: "\e9be";
+}
+.#{$css-prefix}icon--hand:before {
+  content: "\e9bf";
+}
+.#{$css-prefix}icon--pointer-up:before {
+  content: "\e9c0";
+}
+.#{$css-prefix}icon--pointer-right:before {
+  content: "\e9c1";
+}
+.#{$css-prefix}icon--pointer-down:before {
+  content: "\e9c2";
+}
+.#{$css-prefix}icon--pointer-left:before {
+  content: "\e9c3";
+}
+.#{$css-prefix}icon--finger-tap:before {
+  content: "\e9c4";
+}
+.#{$css-prefix}icon--fingers-tap:before {
+  content: "\e9c5";
+}
+.#{$css-prefix}icon--reminder:before {
+  content: "\e9c6";
+}
+.#{$css-prefix}icon--fingers-crossed:before {
+  content: "\e9c7";
+}
+.#{$css-prefix}icon--fingers-victory:before {
+  content: "\e9c8";
+}
+.#{$css-prefix}icon--gesture-zoom:before {
+  content: "\e9c9";
+}
+.#{$css-prefix}icon--gesture-pinch:before {
+  content: "\e9ca";
+}
+.#{$css-prefix}icon--fingers-scroll-horizontal:before {
+  content: "\e9cb";
+}
+.#{$css-prefix}icon--fingers-scroll-vertical:before {
+  content: "\e9cc";
+}
+.#{$css-prefix}icon--fingers-scroll-left:before {
+  content: "\e9cd";
+}
+.#{$css-prefix}icon--fingers-scroll-right:before {
+  content: "\e9ce";
+}
+.#{$css-prefix}icon--hand2:before {
+  content: "\e9cf";
+}
+.#{$css-prefix}icon--pointer-up2:before {
+  content: "\e9d0";
+}
+.#{$css-prefix}icon--pointer-right2:before {
+  content: "\e9d1";
+}
+.#{$css-prefix}icon--pointer-down2:before {
+  content: "\e9d2";
+}
+.#{$css-prefix}icon--pointer-left2:before {
+  content: "\e9d3";
+}
+.#{$css-prefix}icon--finger-tap2:before {
+  content: "\e9d4";
+}
+.#{$css-prefix}icon--fingers-tap2:before {
+  content: "\e9d5";
+}
+.#{$css-prefix}icon--reminder2:before {
+  content: "\e9d6";
+}
+.#{$css-prefix}icon--gesture-zoom2:before {
+  content: "\e9d7";
+}
+.#{$css-prefix}icon--gesture-pinch2:before {
+  content: "\e9d8";
+}
+.#{$css-prefix}icon--fingers-scroll-horizontal2:before {
+  content: "\e9d9";
+}
+.#{$css-prefix}icon--fingers-scroll-vertical2:before {
+  content: "\e9da";
+}
+.#{$css-prefix}icon--fingers-scroll-left2:before {
+  content: "\e9db";
+}
+.#{$css-prefix}icon--fingers-scroll-right2:before {
+  content: "\e9dc";
+}
+.#{$css-prefix}icon--fingers-scroll-vertical3:before {
+  content: "\e9dd";
+}
+.#{$css-prefix}icon--border-style:before {
+  content: "\e9de";
+}
+.#{$css-prefix}icon--border-all:before {
+  content: "\e9df";
+}
+.#{$css-prefix}icon--border-outer:before {
+  content: "\e9e0";
+}
+.#{$css-prefix}icon--border-inner:before {
+  content: "\e9e1";
+}
+.#{$css-prefix}icon--border-top:before {
+  content: "\e9e2";
+}
+.#{$css-prefix}icon--border-horizontal:before {
+  content: "\e9e3";
+}
+.#{$css-prefix}icon--border-bottom:before {
+  content: "\e9e4";
+}
+.#{$css-prefix}icon--border-left:before {
+  content: "\e9e5";
+}
+.#{$css-prefix}icon--border-vertical:before {
+  content: "\e9e6";
+}
+.#{$css-prefix}icon--border-right:before {
+  content: "\e9e7";
+}
+.#{$css-prefix}icon--border-none:before {
+  content: "\e9e8";
+}
+.#{$css-prefix}icon--ellipsis:before {
+  content: "\e9e9";
+}
+

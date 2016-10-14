@@ -1,0 +1,8 @@
+//
+// Responsive
+//
+
+@include visibility(x-small, $media-query--x-small, $media-query--small);
+@include visibility(small, $media-query--small, $media-query--medium);
+@include visibility(medium, $media-query--medium, $media-query--large);
+@include visibility(large, $media-query--large);

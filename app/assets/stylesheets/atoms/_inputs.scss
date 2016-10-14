@@ -1,0 +1,108 @@
+//
+// Inputs
+//
+
+.#{$css-prefix}input {
+  @include form-states;
+  display: inline-block;
+  padding: 0 $spacing--medium 0 $spacing--small;
+  line-height: $input-height;
+  min-height: calc(#{$input-height} + (#{$input-border--width} * 2)); // For IE
+
+  // Input bare
+  //
+  // Removes aesthetic nature from an input
+  &--bare {
+    background-color: transparent;
+    border: 0;
+    padding: {
+      top: 0;
+      bottom: 0;
+      left: $spacing--small;
+    }
+    color: $font-color--default;
+    line-height: $input-height;
+
+    &:focus,
+    &:active {
+      outline: 0;
+    }
+  }
+
+  // Input Height
+  //
+  // Used to apply an <input> size to another element thats a non <input>
+  // Because sometimes I need elements the same height as inputs
+  &--height {
+    min-height: calc(#{$input-height} + (#{$input-border--width} * 2)); // For IE
+  }
+}
+
+// Modifier if text input has svg icon adjacent to <input>
+.#{$css-prefix}input-has-icon {
+  position: relative;
+
+  .#{$css-prefix}input__icon {
+    @include square($square-icon--medium-content);
+    position: absolute;
+    top: 50%;
+    margin-top: (($square-icon--medium-content / 2) * -1);
+  }
+
+  &--left {
+    .#{$css-prefix}input__icon {
+      left: $spacing--small;
+    }
+
+    .#{$css-prefix}input,
+    .#{$css-prefix}input--bare {
+      padding-left: $spacing--x-large;
+    }
+  }
+
+  &--right {
+    .#{$css-prefix}input__icon {
+      right: $spacing--small;
+    }
+
+    .#{$css-prefix}input,
+    .#{$css-prefix}input--bare {
+      padding-right: $spacing--x-large;
+    }
+  }
+
+  &--left-right {
+
+    .#{$css-prefix}input__icon--left {
+      left: $spacing--small;
+    }
+
+    .#{$css-prefix}input__icon--right {
+      right: $spacing--small;
+    }
+
+    .#{$css-prefix}input,
+    .#{$css-prefix}input--bare {
+      padding: 0 $spacing--x-large;
+    }
+  }
+}
+
+.#{$css-prefix}input-has-fixed-addon {
+  display: flex;
+}
+
+.#{$css-prefix}form-element__addon {
+  display: inline-block;
+  margin: 0 $spacing--x-small;
+  align-self: center;
+}
+
+// Error Styles
+.#{$css-prefix}has-error {
+  @include form-input-error('.#{$css-prefix}input');
+
+  .#{$css-prefix}input__icon {
+    fill: $danger--color;
+  }
+}

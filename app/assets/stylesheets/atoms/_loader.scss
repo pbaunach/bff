@@ -1,0 +1,67 @@
+//
+// Loader
+//
+@keyframes bouncedelay {
+  0%, 100% { 
+    transform: scale(0);
+    opacity: 0;
+  } 50% { 
+    transform: scale(1.0);
+    opacity: 1;
+  }
+}
+
+.#{$css-prefix}loader{
+  margin: auto ;
+  width: 100px;
+  text-align: center;
+}
+.#{$css-prefix}loader__dot-a, 
+.#{$css-prefix}loader__dot-b{
+  position:relative;
+  display: inline-block;
+
+  &:before,
+  &:after{
+    content:'';
+    width:16px;
+    height:16px;
+    background-color:$brand--color;
+    position:absolute;
+    border-radius: 100%;
+    animation: bouncedelay 1.5s infinite ease-in-out both;
+  };
+}
+
+.#{$css-prefix}loader__dot-a{
+  margin-right:1.4rem;
+  &:before{
+    right:.25rem;
+    animation-delay: .0s;
+  }
+  &:after{
+    left:.25rem;
+    animation-delay: .2s;
+  }
+}
+.#{$css-prefix}loader__dot-b{
+  margin-left:1.4rem;
+  &:before{
+    right:.25rem;
+    animation-delay: .4s;
+  }
+  &:after{
+    left:.25rem;
+    animation-delay: .6s;
+  }
+}
+
+.#{$css-prefix}loader--white{
+  .#{$css-prefix}loader__dot-a, 
+  .#{$css-prefix}loader__dot-b{
+    &:before,
+    &:after{
+      background-color:$white;
+    }
+  }
+}

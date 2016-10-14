@@ -1,0 +1,20 @@
+
+.#{$css-prefix}form--compound {
+
+  .#{$css-prefix}form-element__row {
+    display: flex;
+    margin-bottom: $spacing--x-small;
+
+    + .#{$css-prefix}form-element__row {
+      clear: both;
+    }
+  }
+
+  .#{$css-prefix}form-element {
+    width: 100%; // Default - Stretch 100% unless told otherwise using sizing helpers
+
+    + .#{$css-prefix}form-element {
+      padding-left: $spacing--x-small;
+    }
+  }
+}

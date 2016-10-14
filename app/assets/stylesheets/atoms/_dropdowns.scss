@@ -1,0 +1,185 @@
+//
+// Dropdowns
+//
+
+.#{$css-prefix}dropdown {
+  position: absolute;
+  z-index: 7000;
+  left: 50%;
+  float: left;
+  min-width: $size--xxx-small;
+  max-width: $size--medium;
+  margin-top: $spacing--xxx-small;
+  border: $border-width solid $border--color;
+  border-radius: $border-radius;
+  padding: $spacing--xx-small 0;
+  font-size: $font-size--small;
+  background: $white;
+  box-shadow: $box-shadow ;
+  transform: translateX(-50%);
+
+  &--left {
+    left: 0;
+    transform: translateX(0);
+  }
+
+  &--right {
+    left: auto;
+    right: 0;
+    transform: translateX(0);
+  }
+
+  &--bottom {
+    bottom: 100%;
+  }
+
+  &--small {
+    min-width: $size--small;
+  }
+
+  &--medium {
+    min-width: $size--medium;
+  }
+
+  &--large {
+    min-width: $size--large;
+    max-width: $container-max-widths--small;
+  }
+
+  // Apply to Dropdown UL
+  &--length-5 {
+    @include dropdown-overflow-length(5);
+  }
+
+  &--length-7 {
+    @include dropdown-overflow-length(7);
+  }
+
+  &--length-10 {
+    @include dropdown-overflow-length(10);
+  }
+
+  &--length-with-icon-5 {
+    @include dropdown-overflow-length(5, $icon-size: $square-icon--small-boundary);
+  }
+
+  &--length-with-icon-7 {
+    @include dropdown-overflow-length(7, $icon-size: $square-icon--small-boundary);
+  }
+
+  &--length-with-icon-10 {
+    @include dropdown-overflow-length(10, $icon-size: $square-icon--small-boundary);
+  }
+
+  mark {
+    font-weight: $font-weight--semibold;
+    background-color: transparent;
+  }
+
+  &__caret{
+    display:inline-block; 
+    transform:translate3d(0.1875rem, 0, 0);
+    font-size:$font-size--small;
+    color: $gray-darkest;
+  }
+
+
+  &__header {
+    padding: $spacing--x-small $spacing--small;
+  }
+
+  &__item {
+    line-height: $line-height;
+
+    > a {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      padding: $spacing--x-small $spacing--small;
+      color: $font-color--default;
+      white-space: nowrap;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        outline: 0;
+        text-decoration: none;
+        background-color: $background-row-hover--color;
+      }
+
+      &:active {
+        text-decoration: none;
+        background-color: $background-row-hover--color-active;
+      }
+
+      &[disabled] {
+        color: $gray-light;
+        cursor: default;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+
+    .#{$css-prefix}icon--selected {
+      opacity: 0;
+      transition: opacity $duration-immediately ease;
+    }
+
+    &.#{$css-prefix}is-selected .#{$css-prefix}icon--selected {
+      fill: $brand--color;
+      opacity: 1;
+    }
+  }
+  &__icon-container{
+    display:flex;
+  }
+}
+
+.#{$css-prefix}dropdown-trigger {
+  position: relative;
+  display: inline-block;
+
+  .#{$css-prefix}dropdown {
+    top: 100%;
+  }
+
+  .#{$css-prefix}dropdown--bottom {
+    top: auto;
+  }
+
+  &--hover {
+
+    .#{$css-prefix}dropdown {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity $duration-quickly linear, visibility $duration-quickly linear;
+    }
+
+    &:hover,
+    &:focus {
+      outline: 0;
+
+      .#{$css-prefix}dropdown {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity $duration-quickly linear, visibility $duration-quickly linear;
+      }
+    }
+  }
+
+  // If someone is using javascript for click to toggle - this modifier will help
+  &--click {
+
+    .#{$css-prefix}dropdown {
+      display: none;
+    }
+
+    &.#{$css-prefix}is-open .#{$css-prefix}dropdown {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

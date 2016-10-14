@@ -1,0 +1,103 @@
+//
+// Buttons
+//
+
+.#{$css-prefix}button{
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: $input-border--width solid transparent;
+  background-color: $white;
+  border-color: $gray-light;
+  color: $gray-darkest;
+  @include button-size($btn-padding-y, $btn-padding-x, $font-size--base, $line-height, $btn-border-radius);
+ 
+  &:hover{
+    background-color: $gray-lightest;
+  };
+}
+
+.#{$css-prefix}button--disabled{
+  background-color: $gray-light;
+  border-color: $gray-light;
+  color: $gray-lightest;
+  &:hover{
+    background-color: $gray-light;
+    border-color: $gray-light;
+    color: $gray-lightest;
+    cursor:not-allowed;
+  }
+}
+
+//
+// Button Sizes
+//
+
+.#{$css-prefix}button--small {
+  // line-height: ensure proper height of button next to small input
+  @include button-size($btn-padding-y--small, $btn-padding-x--small, $font-size--small, $line-height--small, $btn-border-radius);
+}
+.#{$css-prefix}button--large {
+  // line-height: ensure even-numbered height of button next to large input
+  @include button-size($btn-padding-y--large, $btn-padding-x--large, $font-size--large, $line-height--large, $btn-border-radius);
+}
+.#{$css-prefix}button--x-large {
+  // line-height: ensure even-numbered height of button next to large input
+  @include button-size($btn-padding-y--x-large, $btn-padding-x--x-large, $font-size--x-large, $line-height--x-large, $btn-border-radius);
+}
+
+//
+// Button Minimum Size
+//
+
+.#{$css-prefix}button-min-size--small{
+  min-width:$size--xxx-small;
+}
+.#{$css-prefix}button-min-size--medium{
+  min-width:$size--xx-small;
+}
+.#{$css-prefix}button-min-size--large{
+  min-width:$size--x-small;
+}
+
+
+//
+// Block button
+//
+
+.#{$css-prefix}button__block {
+  display: block;
+  width: 100%;
+}
+
+//
+// Button variants
+//
+
+.#{$css-prefix}button--booker{ @include button-variant--solid($booker--color-blue, $white, $booker--color-blue-light) }
+.#{$css-prefix}button--booker-outline{ @include button-variant--outline(transparent, $booker--color-blue, $booker--color-blue-light ) }
+.#{$css-prefix}button--frederick{ @include button-variant--solid($frederick--color-green, $white, $frederick--color-green-light) }
+.#{$css-prefix}button--frederick-outline{ @include button-variant--outline(transparent, $frederick--color-green, $frederick--color-green-light ) }
+.#{$css-prefix}button--success{ @include button-variant--solid($success--color, $white, $success--color-light) }
+.#{$css-prefix}button--success-outline{ @include button-variant--outline(transparent, $success--color, $success--color-light ) }
+.#{$css-prefix}button--danger{ @include button-variant--solid($danger--color, $white, $danger--color-light) }
+.#{$css-prefix}button--danger-outline{ @include button-variant--outline(transparent, $danger--color, $danger--color-light ) }
+.#{$css-prefix}button--warning{ @include button-variant--solid($warning--color, $white, $warning--color-light) }
+.#{$css-prefix}button--warning-outline{ @include button-variant--outline(transparent, $warning--color, $warning--color-light ) }
+.#{$css-prefix}button--info{ @include button-variant--solid($info--color, $white, $info--color-light) }
+.#{$css-prefix}button--info-outline{ @include button-variant--outline(transparent, $info--color, $info--color-light ) }
+
+.#{$css-prefix}button--white-outline{
+  background-color: transparent;
+  border:$border-width solid $white;
+  color: $white;
+  &:hover{
+    background-color: $white;
+    border-color: $white;
+    color: $gray-darkest;
+  };
+}

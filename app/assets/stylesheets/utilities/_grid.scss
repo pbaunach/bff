@@ -1,0 +1,364 @@
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+
+//Grid
+$grid: (
+  'x-small': (
+    'breakpoint': $media-query--x-small,
+    'columns': 4,
+  ),
+  'small': (
+    'breakpoint': $media-query--small,
+    'columns': 8,
+  ),
+  'medium': (
+    'breakpoint': $media-query--medium,
+    'columns': 12,
+  ),
+  'large': (
+    'breakpoint': $media-query--large,
+    'columns': 12
+  )
+) !default;
+
+.#{$css-prefix}container {
+
+  &--small {
+    max-width: rem($media-query--small);
+  }
+
+  &--medium {
+    max-width: rem($media-query--medium);
+  }
+
+  &--large {
+    max-width: rem($media-query--large);
+  }
+
+  &--x-large {
+    max-width: rem($media-query--x-large);
+  }
+
+  &--fluid {
+    width: 100%;
+  }
+
+  &--center {
+    margin: {
+      left: auto;
+      right: auto;
+    }
+  }
+
+  &--left {
+    margin-right: auto;
+  }
+
+  &--right {
+    margin-left: auto;
+  }
+}
+
+//
+// Grid + Automatic Sizing
+//
+
+.#{$css-prefix}grid {
+  display: flex;
+
+  &--frame {
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  &--vertical {
+    flex-direction: column;
+  }
+
+  &--vertical-reverse {
+    flex-direction: column-reverse;
+  }
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.#{$css-prefix}col,
+// Catch all for col--padded variants
+[class*="#{$css-prefix}col--padded"] {
+  @include flex-item(expand);
+}
+
+.#{$css-prefix}col--padded {
+  padding: {
+    right: $spacing--small;
+    left: $spacing--small;
+  }
+
+  &-medium {
+    padding: {
+      right: $spacing--medium;
+      left: $spacing--medium;
+    }
+  }
+
+  &-large {
+    padding: {
+      right: $spacing--large;
+      left: $spacing--large;
+    }
+  }
+}
+
+//
+// Alignment Bump
+//
+.#{$css-prefix}col--bump {
+
+  &-top {
+    margin-top: auto;
+  }
+
+  &-right {
+    margin-right: auto;
+  }
+
+  &-bottom {
+    margin-right: auto;
+  }
+
+  &-left {
+    margin-left: auto;
+  }
+}
+
+
+.#{$css-prefix}grid--pull-padded {
+  margin: {
+    right: ($spacing--small * -1);
+    left: ($spacing--small * -1);
+  }
+
+  &-medium {
+    margin: {
+      right: ($spacing--medium * -1);
+      left: ($spacing--medium * -1);
+    }
+  }
+
+  &-large {
+    margin: {
+      right: ($spacing--large * -1);
+      left: ($spacing--large * -1);
+    }
+  }
+}
+
+//
+// Grid Overflow
+//
+
+.#{$css-prefix}grid--overflow {
+  flex-flow: row nowrap;
+
+  .#{$css-prefix}col {
+    min-width: 11.25em; //equals 180px
+    max-width: 22.5em;
+  }
+}
+
+.#{$css-prefix}col--rule {
+
+  @include media-query--large-min {
+
+    &-top {
+      border-top: 1px solid $border-separator--color;
+    }
+
+    &-right {
+      border-right: 1px solid $border-separator--color;
+    }
+
+    &-bottom {
+      border-bottom: 1px solid $border-separator--color;
+    }
+
+    &-left {
+      border-left: 1px solid $border-separator--color;
+    }
+  }
+}
+
+.#{$css-prefix}wrap {
+  @include flex-wrap(true);
+}
+
+// .bff-{size}-nowrap used for responsive design
+@each $size in map-keys($grid) {
+  $breakpoint: map-get(map-get($grid, $size), 'breakpoint');
+  @each $key in $size {
+    @media (min-width: #{pem($breakpoint)}) {
+      .#{$css-prefix}#{$size}-nowrap {
+        @include flex-item(expand);
+        @include flex-wrap(false);
+      }
+    }
+  }
+}
+
+// Initialize Basic Sizing Helpers
+@include width(12);
+@include order(12);
+
+// Generate responsive Sizing Helpers
+//
+// Loop through grid map checking for width name
+// Map is stored in layout dependencies
+//
+@each $size in map-keys($grid) {
+  // Store nested value from map
+  $breakpoint: map-get(map-get($grid, $size), 'breakpoint');
+  $columns: map-get(map-get($grid, $size), 'columns');
+  // Loop through nested map and do some bizness */
+  @each $key in $size {
+
+    @media (min-width: #{pem($breakpoint)}) {
+      // Generate responsive width names,
+      // e.g. <div class="medium-size--3-of-6">
+      @include width($columns, #{$size});
+
+      // Loop through column spread and generate
+      // ordering helpers, e.g. <div class="medium-order--2">
+      @for $i from 1 through $columns {
+        .#{$css-prefix}#{$size}-order--#{$i} {
+          order: $i;
+        }
+      }
+    }
+
+    @media (max-width: #{pem($breakpoint)}) {
+      // Generate responsive width names (up to size),
+      // e.g. <div class="max-medium-size--3-of-6">
+      @include width($columns, #{$size}, true);
+
+      // Loop through column spread and generate
+      // ordering helpers, e.g. <div class="medium-order--2">
+      @for $i from 1 through $columns {
+        .#{$css-prefix}max-#{$size}-order--#{$i} {
+          order: $i;
+        }
+      }
+    }
+  }
+}
+
+.#{$css-prefix}has-flexi-truncate {
+  flex: 1 1 0%;
+  min-width: 0; // For FFOX and newer browsers
+}
+
+.#{$css-prefix}no-flex {
+  flex: none;
+}
+
+.#{$css-prefix}no-space {
+  min-width: 0;
+}
+
+.#{$css-prefix}grow {
+  flex-grow: 1;
+}
+
+.#{$css-prefix}grow-none {
+  flex-grow: 0;
+}
+
+.#{$css-prefix}shrink {
+  flex-shrink: 1;
+}
+
+.#{$css-prefix}shrink-none {
+  flex-shrink: 0;
+}
+
+// Resets spacing/bullets for when grids are used on unordered lists
+.#{$css-prefix}text-longform ul.#{$css-prefix}grid {
+  margin-left: 0;
+  list-style: none;
+}
+
+//
+//Horizontal Spacing
+//
+
+.#{$css-prefix}grid--align-center {
+  justify-content: center;
+
+  .#{$css-prefix}col,
+  [class*="#{$css-prefix}col--padded"] {
+    flex-grow: 0;
+  }
+}
+.#{$css-prefix}grid--align-end {
+  justify-content: flex-end;
+
+  .#{$css-prefix}col,
+  [class*="#{$css-prefix}col--padded"] {
+    flex-grow: 0;
+  }
+}
+.#{$css-prefix}grid--align-spread {
+  justify-content: space-between;
+
+  .#{$css-prefix}col,
+  [class*="#{$css-prefix}col--padded"] {
+    flex-grow: 0;
+  }
+}
+.#{$css-prefix}grid--align-space {
+  justify-content: space-around;
+
+  .#{$css-prefix}col,
+  [class*="#{$css-prefix}col--padded"] {
+    flex-grow: 0;
+  }
+}
+
+//
+// Vertical Spacing
+//
+
+.#{$css-prefix}grid--vertical-align-center {
+  align-items: center; // Single Row Alignment
+  align-content: center; // Multi Row Alignment
+}
+.#{$css-prefix}grid--vertical-align-end {
+  align-items: flex-end; // Sinlge Row Alignment
+  align-content: flex-end; // Multi Row Alignment
+}
+.#{$css-prefix}align--top {
+  vertical-align: top;
+  align-self: flex-start;
+}
+
+.#{$css-prefix}align--middle {
+  vertical-align: middle;
+  align-self: center;
+}
+
+.#{$css-prefix}align--bottom {
+  vertical-align: bottom;
+  align-self: flex-end;
+}
+.#{$css-prefix}grid--vertical-stretch {
+  align-items: stretch; // Single Row Alignment
+  align-content: stretch; // Multi Row Alignment
+}
+
+
+
+

@@ -1,0 +1,110 @@
+//
+// Step Wizard
+//
+
+//TODO: Still an issue with truncation.
+
+.#{$css-prefix}step-wizard {
+  height:4.5rem;
+
+  &__step{
+    background: $gray-lighter;
+    padding: 0px;
+    position: relative;
+    margin: 0 5px 0 0; 
+    text-decoration: none;
+    color: $font-color--default;
+    line-height: 1.5;
+    min-width:80px;
+    display:flex;
+    align-items:center;
+
+    &:after,
+    &:before{
+      content: "";  
+      border-top: 1.875rem solid transparent;
+      border-bottom: 1.875rem solid transparent;
+      border-left: 1.875rem solid transparent;
+    };
+
+    &:after {
+      border-left-color: $gray-lighter;
+      position: absolute; 
+      right: -1.875rem; 
+      top: 0;
+      z-index: 1;
+    }
+    
+    &:before {
+      border-left-color: #fff;
+      position: absolute; left: 0; top: 0;
+    }
+    
+    &:first-child {
+      @include border-left-radius($border-radius);
+
+      &:before {
+          display: none; 
+      }
+      .#{$css-prefix}step-wizard__content{
+        margin-left:1rem;
+      }
+    }
+       
+    &:last-child{
+      padding-right: 0px;
+      margin: 0px;
+      @include border-right-radius($border-radius);
+    
+      &:after {
+        display: none; 
+      }
+    }
+
+   .#{$css-prefix}step-wizard__content{
+      margin-left:3.5rem;
+    }
+   
+    &:hover {
+      background: $frederick--color-green-light;
+      cursor:pointer;
+      color:$white;
+
+      &:after {
+      border-left-color: $frederick--color-green-light;
+      cursor:pointer;
+      }
+    }
+
+    &--completed{
+      background-color:$gray-light;
+
+      &:after{
+        border-left-color:$gray-light;
+      }
+    }
+  
+   &--selected{
+      background-color: $frederick--color-green;
+      
+      &:after{
+        border-left-color:$frederick--color-green;
+      }
+      .#{$css-prefix}step-wizard__title{
+        color:$white;
+      }
+      .#{$css-prefix}step-wizard__description{
+        color:$white;
+      }
+    }
+  }
+
+  &__title{
+    font-weight:$font-weight--semibold;
+    font-size:$font-size--small;
+  }
+
+  &__description{
+    margin:0;
+  }
+}

@@ -1,0 +1,91 @@
+//
+// Radio BUttons
+//
+
+.#{$css-prefix}radio {
+  display: inline-block;
+
+  .#{$css-prefix}radio--faux {
+    @include square($square-icon--medium-content);
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    border: $input-border--width solid $input-border--color;
+    border-radius: 50%;
+    background: $input-background--color;
+    transition: border $duration-quickly linear, background-color $duration-quickly linear;
+  }
+
+  .#{$css-prefix}form-element__label {
+    display: inline;
+    vertical-align: middle;
+    font-size: $font-size--base;
+  }
+
+  [type="radio"] {
+    @include square(1px);
+    border: 0;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+
+    &:checked + .#{$css-prefix}radio--faux,
+    &:checked ~ .#{$css-prefix}radio--faux {
+      background: $brand--color;
+      border-color:$brand--color;
+
+      &:after {
+        @include square(0.5rem);
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        border-radius: 50%;
+        background: $white;
+      }
+    }
+
+    &:focus + .#{$css-prefix}radio--faux,
+    &:focus ~ .#{$css-prefix}radio--faux {
+      border-color: $input-border--color-active;
+      //box-shadow: $shadow-button-focus;
+    }
+
+    &[disabled] {
+      cursor: not-allowed;
+      user-select: none;
+
+      ~ .#{$css-prefix}radio--faux {
+        background-color: $input-background--disabled;
+        border-color: $input-border--disabled;
+      }
+    }
+  }
+}
+
+.#{$css-prefix}has-error .#{$css-prefix}radio [type="radio"] {
+
+  + .#{$css-prefix}radio--faux,
+  ~ .#{$css-prefix}radio--faux {
+    border-color: $danger--color;
+    border-width: $input-border--width-thick;
+  }
+
+  &:checked + .#{$css-prefix}radio--faux,
+  &:checked ~ .#{$css-prefix}radio--faux {
+    background: $input-background--color;
+  }
+
+  &:checked + .#{$css-prefix}radio--faux:after,
+  &:checked ~ .#{$css-prefix}radio--faux:after {
+    background: $danger--color;
+  }
+}
+
+.#{$css-prefix}form-element .#{$css-prefix}radio [type="radio"] + .#{$css-prefix}radio--faux,
+.#{$css-prefix}form-element .#{$css-prefix}radio [type="radio"] ~ .#{$css-prefix}radio--faux {
+  margin-right: $spacing--x-small;
+}

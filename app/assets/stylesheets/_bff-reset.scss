@@ -1,0 +1,118 @@
+/* BFF's opinionated resets */
+
+// Reset the box-sizing
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// Make viewport responsive
+@at-root {
+  @-moz-viewport      { width: device-width; }
+  @-ms-viewport       { width: device-width; }
+  @-o-viewport        { width: device-width; }
+  @-webkit-viewport   { width: device-width; }
+  @viewport           { width: device-width; }
+}
+
+//
+// Reset HTML, body, and more
+//
+
+html {
+  // Sets a specific default `font-size` for user with `rem` type scales.
+  font-size: $font-size--root;
+  // Changes the default tap highlight to be completely transparent in iOS.
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  // Make the `body` use the `font-size-root`
+  font-family: $font-family--base;
+  font-size: $font-size--base;
+  font-weight: $font-weight--light;
+  line-height: $line-height;
+  // Go easy on the eyes and use something other than `#000` for text
+  color: $body--color;
+  // By default, `<body>` has no `background-color` so we set one as a best practice.
+  background-color: $body__bg--color;
+}
+
+// Suppress the focus outline on elements that cannot be accessed via keyboard.
+// This prevents an unwanted focus outline from appearing around elements that
+// might still respond to pointer events.
+//
+// Credit: https://github.com/suitcss/base
+[tabindex="-1"]:focus {
+  outline: none !important;
+}
+
+// Remove top margins from headings
+//
+// By default, `<h1>`-`<h6>` all receive top and bottom margins. We nuke the top
+// margin for easier control within type scales as it avoids margin collapsing.
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+// Avoid 300ms click delay on touch devices that support the `touch-action` CSS property.
+//
+
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+
+//Lists
+ol,
+ul,
+dl {
+  margin: 0;
+  padding: 0;
+}
+ol, ul{
+  list-style:none;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+//Links
+a {
+  color: $link--color;
+  text-decoration: $link--decoration;
+  
+  &:hover{
+    color: $link-hover--color;
+    text-decoration: $link-hover--decoration;
+  }
+}
+
+// Fieldsets
+fieldset{
+  border:none;
+  margin:0px;
+  padding:0px;
+}
+
+// Tables
+th, td, caption {
+  text-align:left;
+}

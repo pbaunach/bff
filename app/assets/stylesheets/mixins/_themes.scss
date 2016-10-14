@@ -1,0 +1,70 @@
+// Themes
+
+// Need to re-write
+
+@mixin theme--solid($bg--color, $font--color, $hover--color){
+  background-color: $bg--color;
+  border-color: $bg--color;
+  color: $font--color;
+  &:hover{
+    background-color: $hover--color;
+    border-color: $hover--color;
+  };
+}
+
+@mixin theme--outline($bg--color, $font--color, $hover--color){
+  background-color: $bg--color;
+  border:$border-width solid $font--color;
+  color: $font--color;
+  &:hover{
+    background-color: $hover--color;
+    border-color: $hover--color;
+    color: $white;
+  };
+}
+
+@mixin theme--background{
+   &--error {
+    background-color: $danger--color;
+  }
+
+  &--warning {
+    background-color: $warning--color;
+  }
+
+  &--success {
+    background-color: $success--color;
+  }
+
+  &--info {
+    background-color: $info--color;
+  }
+}
+
+// Inverse Links
+@mixin inverse-links {
+  color: $color-text-inverse;
+
+  a:not(.#{$css-prefix}button--neutral) {
+    color: $color-text-link-inverse;
+    text-decoration: underline;
+
+    &:link,
+    &:visited {
+      color: $color-text-link-inverse;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-text-link-inverse-hover;
+    }
+
+    &:active {
+      color: $color-text-link-inverse-active;
+    }
+
+    &[disabled] {
+      color: $color-text-link-inverse-disabled;
+    }
+  }
+}

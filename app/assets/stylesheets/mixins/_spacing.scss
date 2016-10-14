@@ -1,0 +1,18 @@
+// Spacing
+
+@mixin spacing($name, $value){
+	.#{$css-prefix}p-top--#{$name}{padding-top:$value;}
+	.#{$css-prefix}p-bottom--#{$name}{padding-bottom:$value;}
+	.#{$css-prefix}p-left--#{$name}{padding-left:$value;}
+	.#{$css-prefix}p-right--#{$name}{padding-right:$value;}
+	.#{$css-prefix}p-horizontal--#{$name}{padding-left:$value;padding-right:$value;}
+	.#{$css-prefix}p-vertical--#{$name}{padding-top:$value;padding-bottom:$value;}
+	.#{$css-prefix}p-around--#{$name}{padding:$value;}
+	.#{$css-prefix}m-top--#{$name}{margin-top:$value;}
+	.#{$css-prefix}m-bottom--#{$name}{margin-bottom:$value;}
+	.#{$css-prefix}m-left--#{$name}{margin-left:$value;}
+	.#{$css-prefix}m-right--#{$name}{margin-right:$value;}
+	.#{$css-prefix}m-horizontal--#{$name}{margin-left:$value;margin-right:$value;}
+	.#{$css-prefix}m-vertical--#{$name}{margin-top:$value;margin-bottom:$value;}
+	.#{$css-prefix}m-around--#{$name}{margin:$value;}
+}

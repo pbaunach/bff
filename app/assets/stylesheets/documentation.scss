@@ -1,0 +1,196 @@
+// Place all the styles related to the documentation controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ul{
+	list-style:none;
+	margin:0;
+}
+
+.navigation__container{
+	position:fixed;
+	top:0; 
+	bottom:0; 
+	width:15rem;
+	background-color: $frederick--color-green;
+	overflow-y:auto;
+}
+.navigation{
+	a{
+		color:$white;
+		text-decoration: none;
+		padding:$spacing--x-small $spacing--large;
+		display:block;
+		&:hover{
+			background-color:$frederick--color-green-light;
+		};
+	}
+	
+	
+}
+.sub-navigation{
+	a{
+		padding-left:2.5rem;
+	}
+}
+.example-block{
+	background-color:$gray-lighter;
+	border:1px solid $gray;
+	text-align:center;
+	min-width:5rem;
+	min-height:2rem;
+	padding:.5rem;
+	border-radius:$border-radius;
+}
+.example-block--compact{
+	background-color:$gray-lighter;
+	border:1px solid $gray;
+	text-align:center;
+	min-width:5rem;
+	border-radius:$border-radius;
+}
+
+.example-container{
+	background-color:$white;
+	border:1px solid $gray-lighter;
+	padding:$spacing--small;
+	margin-bottom:$spacing--medium;
+
+	&--compact {
+		padding:0;
+	}	
+}
+
+///////
+// Prism JS
+///////
+code[class*="language-"],
+pre[class*="language-"] {
+	color: $white;
+	background: none;
+	border-radius:$border-radius;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: $aqua-lighter;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: $aqua-lighter;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: $gray-darkest;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: $gray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: $rose-light;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: $grass-light;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: $aqua-light;
+}
+
+.token.function {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}

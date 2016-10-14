@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'documentation/home'
+
   root 'pattern#index'
   get 'pattern/index'
   get 'pattern/examples'

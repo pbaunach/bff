@@ -1,0 +1,77 @@
+<h1 class="bff-text-heading--x-large bff-p-top--x-large" id="checkbox-anchor">Checkboxes</h1>
+
+<h2 class="bff-text-heading--default">Checkbox - States</h2>
+<div class="example-container">
+	<div class="bff-form-element__control bff-p-bottom--x-small">
+		<label class="bff-checkbox">
+		  <input type="checkbox" />
+		  <span class="bff-checkbox--faux"></span>
+		  <span class="bff-form-element__label">Checkbox Off</span>
+		</label>
+	</div>
+	<div class="bff-form-element__control bff-p-bottom--x-small">
+		<label class="bff-checkbox">
+		  <input type="checkbox" checked />
+		  <span class="bff-checkbox--faux"></span>
+		  <span class="bff-form-element__label">Checkbox On</span>
+		</label>
+	</div>
+	<div class="bff-form-element__control">
+		<label class="bff-checkbox">
+		  <input type="checkbox" disabled />
+		  <span class="bff-checkbox--faux"></span>
+		  <span class="bff-form-element__label">Checkbox Disabled</span>
+		</label>
+	</div>
+</div>
+<pre class="bff-m-bottom--large"><code class="language-html">&lt;div class="bff-form-element__control">
+	&lt;label class="bff-checkbox">
+		&lt;input type="checkbox" />
+		&lt;span class="bff-checkbox--faux">&lt;/span>
+		&lt;span class="bff-form-element__label">Checkbox Off&lt;/span>
+	&lt;/label>
+&lt;/div>
+
+&lt;div class="bff-form-element__control">
+	&lt;label class="bff-checkbox">
+		&lt;input type="checkbox" checked />
+		&lt;span class="bff-checkbox--faux">&lt;/span>
+		&lt;span class="bff-form-element__label">Checkbox On&lt;/span>
+	&lt;/label>
+&lt;/div>
+
+&lt;div class="bff-form-element__control">
+	&lt;label class="bff-checkbox">
+		&lt;input type="checkbox" disabled />
+		&lt;span class="bff-checkbox--faux">&lt;/span>
+		&lt;span class="bff-form-element__label">Checkbox Disabled&lt;/span>
+	&lt;/label>
+&lt;/div>
+</code></pre>
+
+<h2 class="bff-text-heading--default">Checkbox - Required/Error</h2>
+<div class="example-container">
+	<div class="bff-form-element__control bff-has-error">
+		<label class="bff-checkbox">
+			<abbr class="bff-required">*</abbr>
+		  <input type="checkbox" />
+		  <span class="bff-checkbox--faux"></span>
+		  <span class="bff-form-element__label">Checkbox Required/Error</span>
+		</label>
+		<div class="bff-form-element__help">This field is required</div>
+	</div>
+</div>
+
+<pre class="bff-m-bottom--large"><code class="language-html">&lt;div class="bff-form-element__control bff-has-error">
+	&lt;label class="bff-checkbox">
+		&lt;abbr class="bff-required">*&lt;/abbr>
+		&lt;input type="checkbox" />
+		&lt;span class="bff-checkbox--faux">&lt;/span>
+		&lt;span class="bff-form-element__label">Checkbox Required/Error&lt;/span>
+	&lt;/label>
+	&lt;div class="bff-form-element__help">This field is required&lt;/div>
+&lt;/div>
+</code></pre>
+
+<h2 class="bff-text-heading--default">Usage</h2>
+<table class="bff-table bff-table--compact bff-table--bordered bff-table--cell-buffer bff-table--striped bff-size--1-of-1" id="table--checkbox-documentation"></table>

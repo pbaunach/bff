@@ -1,0 +1,55 @@
+//
+// Notifications
+//
+
+.#{$css-prefix}notify__container {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  text-align: center;
+}
+
+.#{$css-prefix}notify {
+  @include inverse-links;
+  position: relative;
+  background: $notification-background--color;
+  font-weight: $font-weight--light;
+
+  &__close {
+    fill:currentColor;
+    color:$white;
+    background:transparent;
+    border:none;
+    float: right;
+    margin-left: $spacing--xx-small;
+    line-height: $line-height;
+    padding: $spacing--xx-small;
+
+    &:hover{
+      fill:currentColor;
+      background:transparent;
+      color:$color-text-link-inverse-hover;
+    }
+  }
+
+  &__content {
+    padding-top: $spacing--x-small;
+    min-height: $notification--min-height;
+  }
+
+  &--toast{
+    border-radius: $border-radius;
+    margin: $spacing--x-small;
+    padding: $spacing--small $spacing--large;
+    min-width: $size--large;
+    display: inline-block;
+    text-align: left;
+
+    .#{$css-prefix}notify__close{
+      transform: translate3d(.5rem,0,0);
+    }
+  }
+  @include theme--background;
+}
