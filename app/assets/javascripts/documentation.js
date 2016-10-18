@@ -21,13 +21,12 @@ $(document).ready(function(){
 	parseDocumentation(buttonsDocumentation, 'buttons');
 	parseDocumentation(checkboxDocumentation, 'checkbox');
 	parseDocumentation(dropdownsDocumentation, 'dropdowns');
-	parseDocumentation(formsSimpleDocumentation, 'forms-simple');
-	parseDocumentation(inputsDocumentation, 'inputs');
+	parseDocumentation(textInputsDocumentation, 'text-inputs');
 	parseDocumentation(loaderDocumentation, 'loader');
 	parseDocumentation(radioDocumentation, 'radio');
 	parseDocumentation(toggleDocumentation, 'toggle');
 	//Molecules
-	parseDocumentation(formsComplexDocumentation, 'forms-complex');
+	parseDocumentation(formsDocumentation, 'forms');
 	parseDocumentation(notificationsDocumentation, 'notifications');
 	parseDocumentation(stepWizardDocumentation, 'step-wizard');
 	//Organisms

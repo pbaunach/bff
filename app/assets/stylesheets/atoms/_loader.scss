@@ -12,8 +12,10 @@
 }
 
 .#{$css-prefix}loader{
-  margin: auto ;
-  width: 100px;
+  display:flex;
+  margin: auto;
+  width: 64px;
+  height:16px;
   text-align: center;
 }
 .#{$css-prefix}loader__dot-a, 

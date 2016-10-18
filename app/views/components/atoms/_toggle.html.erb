@@ -1,5 +1,6 @@
 <h1 class="bff-text-heading--x-large bff-p-top--x-large" id="toggle-anchor">Toggle</h1>
 
+<h2 class="bff-text-heading--default">Toggle - Default</h2>
 <div class="example-container">
 	<div class="bff-form-element__control">
 	  <label class="bff-checkbox--toggle bff-grid bff-col--x-small-center">
@@ -15,6 +16,26 @@
 	    <span class="bff-form-element__label">Toggle On</span>
 	  </label>
 	</div>
+</div>
+
+<pre class="bff-m-bottom--large"><code class="language-html">&lt;div class="bff-form-element__control">
+  &lt;label class="bff-checkbox--toggle bff-grid bff-col--x-small-center">
+    &lt;input name="checkbox" type="checkbox" />
+    &lt;span class="bff-checkbox--faux" data-check-on="On" data-check-off="Off">&lt;/span>
+    &lt;span class="bff-form-element__label"> Toggle Off&lt;/span>
+  &lt;/label>
+&lt;/div>
+&lt;div class="bff-form-element__control">
+  &lt;label class="bff-checkbox--toggle bff-grid bff-grid--vertical-align-center">
+  &lt;input name="checkbox" type="checkbox" checked />
+    &lt;span class="bff-checkbox--faux" data-check-on="On" data-check-off="Off">&lt;/span>
+    &lt;span class="bff-form-element__label">Toggle On&lt;/span>
+  &lt;/label>
+&lt;/div>
+</code></pre>
+
+<h2 class="bff-text-heading--default">Toggle - Disabled</h2>
+<div class="example-container">
 	<div class="bff-form-element__control">
 	  <label class="bff-checkbox--toggle bff-grid bff-grid--vertical-align-center">
 	    <input name="checkbox" type="checkbox" disabled="" />
@@ -24,7 +45,13 @@
 	</div>
 </div>
 
-<pre class="bff-m-bottom--large"><code class="language-html">&lt;span class="coming soon">
+<pre class="bff-m-bottom--large"><code class="language-html">&lt;div class="bff-form-element__control">
+  &lt;label class="bff-checkbox--toggle bff-grid bff-grid--vertical-align-center">
+    &lt;input name="checkbox" type="checkbox" disabled="" />
+    &lt;span class="bff-checkbox--faux" data-check-on="On" data-check-off="Off">&lt;/span>
+    &lt;span class="bff-form-element__label">Toggle Disabled&lt;/span>
+  &lt;/label>
+&lt;/div>
 </code></pre>
 
 <h2 class="bff-text-heading--default">Usage</h2>

@@ -71,11 +71,6 @@
     @include dropdown-overflow-length(10, $icon-size: $square-icon--small-boundary);
   }
 
-  mark {
-    font-weight: $font-weight--semibold;
-    background-color: transparent;
-  }
-
   &__caret{
     display:inline-block; 
     transform:translate3d(0.1875rem, 0, 0);

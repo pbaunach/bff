@@ -5,7 +5,7 @@
 //TODO: Still an issue with truncation.
 
 .#{$css-prefix}step-wizard {
-  height:4.5rem;
+  height:4rem;
 
   &__step{
     background: $gray-lighter;
@@ -22,15 +22,15 @@
     &:after,
     &:before{
       content: "";  
-      border-top: 1.875rem solid transparent;
-      border-bottom: 1.875rem solid transparent;
-      border-left: 1.875rem solid transparent;
+      border-top: 2rem solid transparent;
+      border-bottom: 2rem solid transparent;
+      border-left: 2rem solid transparent;
     };
 
     &:after {
       border-left-color: $gray-lighter;
       position: absolute; 
-      right: -1.875rem; 
+      right: -2rem; 
       top: 0;
       z-index: 1;
     }

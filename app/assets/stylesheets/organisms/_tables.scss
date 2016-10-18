@@ -22,6 +22,15 @@
     background-color: $gray-lighter;
   }
 
+
+// Add alternating strips to rows
+&--striped {
+  tbody tr:nth-of-type(even) > td,
+  tbody tr:nth-of-type(even) > th {
+    background-color: $table-row-background--hover;
+  }
+}
+
   // Default Table Row Hover
   &:not(.#{$css-prefix}no-row-hover) tbody tr:hover {
     > td,
@@ -30,13 +39,17 @@
     }
   }
 
-  // Selected Table Row + Hover
+  // Selected Table Row
   tbody tr.#{$css-prefix}is-selected,
   &:not(.#{$css-prefix}no-row-hover) tr.#{$css-prefix}is-selected:hover {
 
     > td,
     > th {
       background-color: $table-row-background--active;
+      color:$white;
+      a{
+        color:$white;
+      }
     }
   }
 
@@ -123,14 +136,6 @@
   }
 }
 
-// Add alternating strips to rows
-.#{$css-prefix}table--striped {
-  // scss-lint:disable SelectorDepth
-  tbody tr:nth-of-type(even) > td,
-  tbody tr:nth-of-type(even) > th {
-    background-color: $table-row-background--hover;
-  }
-}
 
 // Applies move cursor to moveable cell
 th.#{$css-prefix}is-sortable {

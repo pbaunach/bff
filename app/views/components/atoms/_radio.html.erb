@@ -1,11 +1,139 @@
 <h1 class="bff-text-heading--x-large bff-p-top--x-large" id="radio-anchor">Radios</h1>
 
-<h2 class="bff-text-heading--default">Radios</h2>
+<h2 class="bff-text-heading--default">Radio - Default</h2>
 <div class="example-container">
-	<div>Coming Soon</div>
+	<fieldset class="bff-form-element">
+	  <legend class="bff-form-element__legend bff-form-element__label">Radio Group Label</legend>
+	  <div class="bff-form-element__control">
+	    <span class="bff-radio">
+	      <label class="bff-radio__label">
+	      	<input type="radio" name="radio-group-1" />
+	        <span class="bff-radio--faux"></span>
+	        <span class="bff-form-element__label">Radio Off</span>
+	      </label>
+	    </span>
+	    <span class="bff-radio">
+	      <label class="bff-radio__label">
+	      	<input type="radio" name="radio-group-1" checked />
+	        <span class="bff-radio--faux"></span>
+	        <span class="bff-form-element__label">Radio On</span>
+	      </label>
+	    </span>
+	  </div>
+	</fieldset>
 </div>
-<pre class="bff-m-bottom--large"><code class="language-html">&lt;div class="coming-soon">&lt;/div>
+<pre class="bff-m-bottom--large"><code class="language-html">&lt;fieldset class="bff-form-element">
+  &lt;legend class="bff-form-element__legend bff-form-element__label">Radio Group Label&lt;/legend>
+  &lt;div class="bff-form-element__control">
+    &lt;span class="bff-radio">
+      &lt;label class="bff-radio__label">
+      	&lt;input type="radio" name="radio-group-1" />
+        &lt;span class="bff-radio--faux">&lt;/span>
+        &lt;span class="bff-form-element__label">Radio Off&lt;/span>
+      &lt;/label>
+    &lt;/span>
+    &lt;span class="bff-radio">
+      &lt;label class="bff-radio__label">
+      	&lt;input type="radio" name="radio-group-1" checked />
+        &lt;span class="bff-radio--faux">&lt;/span>
+        &lt;span class="bff-form-element__label">Radio On&lt;/span>
+      &lt;/label>
+    &lt;/span>
+  &lt;/div>
+&lt;/fieldset>
+</code></pre>
+<h2 class="bff-text-heading--default">Radio - Error/Required</h2>
+<div class="example-container">
+	<fieldset class="bff-form-element bff-has-error">
+	  <legend class="bff-form-element__legend bff-form-element__label">
+	    <abbr class="bff-required" >*</abbr> Radio Group Label</legend>
+	  <div class="bff-form-element__control">
+	    <span class="bff-radio">
+	      <label class="bff-radio__label">
+	      <input type="radio" name="radio-group-2" checked />
+	        <span class="bff-radio--faux"></span>
+	        <span class="bff-form-element__label">Radio Label One</span>
+	      </label>
+	    </span>
+	    <span class="bff-radio">	     
+	      <label class="bff-radio__label">
+	      <input type="radio" name="radio-group-2" />
+	        <span class="bff-radio--faux"></span>
+	        <span class="bff-form-element__label">Radio Label Two</span>
+	      </label>
+	    </span>
+	  </div>
+	  <div id="error_01" class="bff-form-element__help">This field is required</div>
+	</fieldset>
+</div>
+<pre class="bff-m-bottom--large"><code class="language-html">&lt;fieldset class="bff-form-element bff-has-error">
+  &lt;legend class="bff-form-element__legend bff-form-element__label">
+    &lt;abbr class="bff-required" >*&lt;/abbr> Radio Group Label&lt;/legend>
+  &lt;div class="bff-form-element__control">
+    &lt;span class="bff-radio">
+      &lt;label class="bff-radio__label">
+      &lt;input type="radio" name="radio-group-2" checked />
+        &lt;span class="bff-radio--faux">&lt;/span>
+        &lt;span class="bff-form-element__label">Radio Label One&lt;/span>
+      &lt;/label>
+    &lt;/span>
+    &lt;span class="bff-radio">	     
+      &lt;label class="bff-radio__label">
+      &lt;input type="radio" name="radio-group-2" />
+        &lt;span class="bff-radio--faux">&lt;/span>
+        &lt;span class="bff-form-element__label">Radio Label Two&lt;/span>
+      &lt;/label>
+    &lt;/span>
+  &lt;/div>
+  &lt;div id="error_01" class="bff-form-element__help">This field is required&lt;/div>
+&lt;/fieldset>
+</code></pre>
+<h2 class="bff-text-heading--default">Radio - Disabled</h2>
+<div class="example-container">
+	<fieldset class="bff-form-element">
+	  <legend class="bff-form-element__legend bff-form-element__label">Radio Group Label</legend>
+	  <div class="bff-form-element__control">
+	    <span class="bff-radio">
+	      <label class="bff-radio__label">
+	      	<input type="radio" name="radio-group-3" disabled= />
+	        <span class="bff-radio--faux" ></span>
+	        <span class="bff-form-element__label">Radio Off</span>
+	      </label>
+	    </span>
+	    <span class="bff-radio">
+	      <label class="bff-radio__label">
+	      	<input type="radio" name="radio-group-3" checked disabled />
+	        <span class="bff-radio--faux"></span>
+	        <span class="bff-form-element__label">Radio On</span>
+	      </label>
+	    </span>
+	  </div>
+	</fieldset>
+</div>
+<pre class="bff-m-bottom--large"><code class="language-html">&lt;fieldset class="bff-form-element">
+  &lt;legend class="bff-form-element__legend bff-form-element__label">Radio Group Label&lt;/legend>
+  &lt;div class="bff-form-element__control">
+    &lt;span class="bff-radio">
+      &lt;label class="bff-radio__label">
+      	&lt;input type="radio" name="radio-group-3" disabled= />
+        &lt;span class="bff-radio--faux" >&lt;/span>
+        &lt;span class="bff-form-element__label">Radio Off&lt;/span>
+      &lt;/label>
+    &lt;/span>
+    &lt;span class="bff-radio">
+      &lt;label class="bff-radio__label">
+      	&lt;input type="radio" name="radio-group-3" checked disabled />
+        &lt;span class="bff-radio--faux">&lt;/span>
+        &lt;span class="bff-form-element__label">Radio On&lt;/span>
+      &lt;/label>
+    &lt;/span>
+  &lt;/div>
+&lt;/fieldset>
 </code></pre>
 
 <h2 class="bff-text-heading--default">Usage</h2>
 <table class="bff-table bff-table--compact bff-table--bordered bff-table--cell-buffer bff-table--striped bff-size--1-of-1" id="table--radio-documentation"></table>
+
+
+
+

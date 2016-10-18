@@ -2,7 +2,7 @@
 // Forms - Complex
 //
 
-var formsComplexDocumentation = [
+var formsDocumentation = [
 		{
 		className: cssPrefix+'Coming Soon',
 		usage: '--',

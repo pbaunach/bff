@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.page-container{
+	min-height:100vh; box-sizing:border-box;
+}
+.main{
+	margin-left:12rem;
+}
+
 ul{
 	list-style:none;
 	margin:0;
@@ -11,7 +18,7 @@ ul{
 	position:fixed;
 	top:0; 
 	bottom:0; 
-	width:15rem;
+	width:12rem;
 	background-color: $frederick--color-green;
 	overflow-y:auto;
 }
@@ -24,9 +31,7 @@ ul{
 		&:hover{
 			background-color:$frederick--color-green-light;
 		};
-	}
-	
-	
+	}	
 }
 .sub-navigation{
 	a{

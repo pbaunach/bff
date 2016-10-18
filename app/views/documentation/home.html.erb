@@ -1,5 +1,5 @@
-<div class="bff-grid bff-grid--vertical" style="min-height:100vh; box-sizing:border-box;">
-	<main class="main bff-col bff-p-horizontal--large" style="margin-left:15rem;">
+<div class="bff-grid bff-grid--vertical page-container">
+	<main class="main bff-col bff-p-horizontal--large">
 		<div id="utilities" class="bff-p-top--large">
 			<h1 class="bff-text-heading--large">Utilities</h1>
 			<%= render 'components/utilities/grids' %>
@@ -13,21 +13,20 @@
 			<%= render 'components/atoms/buttons' %>
 			<%= render 'components/atoms/checkbox' %>
 			<%= render 'components/atoms/dropdowns' %>
-			<%= render 'components/atoms/forms' %>
-			<%= render 'components/atoms/inputs' %>
+			<%= render 'components/atoms/text_inputs' %>
 			<%= render 'components/atoms/loader' %>
 			<%= render 'components/atoms/radio' %>
 			<%= render 'components/atoms/toggle' %>
 		</div>
-		<div id="molecules">
+		<div id="molecules" class="bff-p-top--large">
 			<h1 class="bff-text-heading--large">Molecules</h1>
 			<%= render 'components/molecules/forms' %>
 			<%= render 'components/molecules/notifications' %>
 			<%= render 'components/molecules/step_wizard' %>
 
 		</div>
-		<div id="orgranisms">
-			<h1>Organisms</h1>
+		<div id="organisms" class="bff-p-top--large">
+			<h1 class="bff-text-heading--large">Organisms</h1>
 			<%= render 'components/organisms/tables' %>
 			<%= render 'components/organisms/modal' %>
 		</div>
