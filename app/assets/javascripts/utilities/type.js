@@ -5,12 +5,12 @@
 var typeDocumentation = [
 	{
 		className: cssPrefix+'text-body--*size*',
-		usage: '<div><span class="bff-text-body--semibold">Sizes:</span> x-small, small, medium, large, x-large, xx-large</div>',
+		usage: '<div><span class="bff-text-body--semibold">Sizes:</span> x-small, small, default, medium, large, x-large, xx-large</div>',
 		notes:'--',
 	},
 	{
 		className: cssPrefix+'text-heading--*size*',
-		usage: '<div><span class="bff-text-body--semibold">Sizes:</span> x-small, small, medium, large, x-large, xx-large</div>',
+		usage: '<div><span class="bff-text-body--semibold">Sizes:</span> x-small, small, default, medium, large, x-large, xx-large</div>',
 		notes:'--',
 	},
 	{

@@ -3,9 +3,24 @@
 //
 
 var toggleDocumentation = [
-		{
-		className: cssPrefix+'Coming Soon',
+	{
+		className: cssPrefix+'checkbox--toggle',
 		usage: '--',
 		notes:'--',
 	},
+	{
+		className: cssPrefix+'checkbox-faux',
+		usage: '--',
+		notes:'--',
+	},
+	{
+		className: cssPrefix+'form-element',
+		usage: '--',
+		notes:'--',
+	},
+	{
+		className: cssPrefix+'form-element__label',
+		usage: '--',
+		notes:'--',
+	}
 ]

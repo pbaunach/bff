@@ -24,8 +24,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.#{$css-prefix}icon--small{font-size: $icon-size--small; } 
+/* TO DO: Switch all icon line-heights.*/
+.#{$css-prefix}icon--small{font-size: $icon-size--small; line-height:1rem;} 
 .#{$css-prefix}icon--normal{font-size: $icon-size--normal; }
+.#{$css-prefix}icon--medium{font-size: $icon-size--normal; }
 .#{$css-prefix}icon--large{font-size: $icon-size--large; }
 .#{$css-prefix}icon--x-large{font-size: $icon-size--x-large; }
 

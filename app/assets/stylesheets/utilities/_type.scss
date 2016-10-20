@@ -9,6 +9,9 @@
 .#{$css-prefix}text-body--default{
   font-size: $font-size--base;
 }
+.#{$css-prefix}text-body--medium{
+  font-size: $font-size--base;
+}
 .#{$css-prefix}text-body--large{
   font-size: $font-size--large;
 }
@@ -45,6 +48,11 @@
 }
 .#{$css-prefix}text-heading--default{
   @extend .#{$css-prefix}text-body--default;
+  @extend .#{$css-prefix}text-body--semibold;
+  color: $gray-darkest;
+}
+.#{$css-prefix}text-heading--medium{
+  @extend .#{$css-prefix}text-body--medium;
   @extend .#{$css-prefix}text-body--semibold;
   color: $gray-darkest;
 }

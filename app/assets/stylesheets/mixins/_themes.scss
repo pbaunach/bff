@@ -24,7 +24,13 @@
 }
 
 @mixin theme--background{
-   &--error {
+  &--booker{
+    background-color: $booker--color-blue;
+  }
+  &--frederick{
+    background-color: $frederick--color-green;
+  }
+  &--error {
     background-color: $danger--color;
   }
 
