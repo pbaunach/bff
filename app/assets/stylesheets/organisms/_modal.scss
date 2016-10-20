@@ -65,20 +65,6 @@
     }
   }
 
-  &__header--empty {
-    padding: 0;
-    border-bottom: 0;
-  }
-
-  &__header--empty + .#{$css-prefix}modal__content {
-      border: {
-      top: {
-        right-radius: $border-radius;
-        left-radius: $border-radius;
-      }
-    }
-  }
-
   &__content {
     overflow: hidden {
       y: auto;
