@@ -39,22 +39,22 @@
   margin-right:1.4rem;
   &:before{
     right:.25rem;
-    animation-delay: .0s;
+    animation-delay: -0.6s;
   }
   &:after{
     left:.25rem;
-    animation-delay: .2s;
+    animation-delay: -0.4s;
   }
 }
 .#{$css-prefix}loader__dot-b{
   margin-left:1.4rem;
   &:before{
     right:.25rem;
-    animation-delay: .4s;
+    animation-delay: -0.2s;
   }
   &:after{
     left:.25rem;
-    animation-delay: .6s;
+    animation-delay: 0s;
   }
 }
 
