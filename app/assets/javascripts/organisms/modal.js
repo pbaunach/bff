@@ -44,7 +44,7 @@ var modalDocumentation = [
 		notes:'--',
 	},
 	{
-		className: cssPrefix+'slid-up-open',
+		className: cssPrefix+'slide-up-open',
 		usage: '--',
 		notes:'--',
 	},
