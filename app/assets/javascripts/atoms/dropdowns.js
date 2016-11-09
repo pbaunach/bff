@@ -64,12 +64,12 @@ var dropdownsDocumentation = [
 		notes:'--',
 	},
 	{
-		className: cssPrefix+'dropdown--hover',
+		className: cssPrefix+'dropdown-trigger--hover',
 		usage: '--',
 		notes:'--',
 	},
 	{
-		className: cssPrefix+'dropdown--click',
+		className: cssPrefix+'dropdown-trigger--click',
 		usage: '--',
 		notes:'--',
 	},
