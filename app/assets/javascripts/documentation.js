@@ -38,4 +38,7 @@ $(document).ready(function(){
 	//Icons
 	parseDocumentation(iconsDocumentation, 'icons');
 	formatIcons(iconList, 'icon-grid');
+
+	//Colors
+	formatColors(colorsDocumentation, 'colors');
 })
