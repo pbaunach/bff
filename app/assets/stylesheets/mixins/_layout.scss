@@ -329,6 +329,12 @@
         display: none;
       }
     }
+    .#{$css-prefix}max-#{$class-name}-show {
+      display:none;
+      @media (max-width: $max) {
+        display: block;
+      }
+    }
   }
 }
 
