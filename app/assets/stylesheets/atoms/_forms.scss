@@ -14,6 +14,7 @@
     line-height: $line-height--small;
     margin-right: $spacing--small;
     margin-bottom: $spacing--xx-small;
+    font-weight:$font-weight--semibold;
 
     &:empty {
       margin: 0;
