@@ -4,6 +4,11 @@
 
 var formsDocumentation = [
 	{
+		className: cssPrefix+'form',
+		usage: '--',
+		notes:'--',
+	},
+	{
 		className: cssPrefix+'form--stacked',
 		usage: '--',
 		notes:'--',

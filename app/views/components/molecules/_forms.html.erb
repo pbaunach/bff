@@ -2,58 +2,54 @@
 
 <h2 class="bff-text-heading--default">Compound Form</h2>
 <div class="example-container">
-	<fieldset class="bff-form--compound">
+	<fieldset class="bff-form bff-form--compound">
 	  <legend class="bff-form-element__label bff-text-title--caps">Address</legend>
-	  <div class="form-element__group">
-	    <div class="bff-form-element__row">
-	      <div class="bff-form-element bff-size--1-of-1">
-	        <label class="bff-form-element__label">Street</label>
-	        <input class="bff-input" type="text" />
-	      </div>
-	    </div>
-	    <div class="bff-form-element__row">
-	      <div class="bff-form-element bff-size--1-of-2">
-	        <label class="bff-form-element__label" >City</label>
-	        <input class="bff-input" type="text" />
-	      </div>
-	      <div class="bff-form-element bff-size--1-of-2">
-	        <label class="bff-form-element__label">State</label>
-	        <input class="bff-input" type="text" />
-	      </div>
-	    </div>
-	    <div class="bff-form-element__row">
-	      <div class="bff-form-element bff-size--1-of-2">
-	        <label class="bff-form-element__label">ZIP Code</label>
-	        <input class="bff-input" type="text" />
-	      </div>
-	    </div>
-	  </div>
+    <div class="bff-form-element__row">
+      <div class="bff-form-element bff-size--1-of-1">
+        <label class="bff-form-element__label">Street</label>
+        <input class="bff-input" type="text" />
+      </div>
+    </div>
+    <div class="bff-form-element__row">
+      <div class="bff-form-element bff-size--1-of-2">
+        <label class="bff-form-element__label" >City</label>
+        <input class="bff-input" type="text" />
+      </div>
+      <div class="bff-form-element bff-size--1-of-2">
+        <label class="bff-form-element__label">State</label>
+        <input class="bff-input" type="text" />
+      </div>
+    </div>
+    <div class="bff-form-element__row">
+      <div class="bff-form-element bff-size--1-of-2">
+        <label class="bff-form-element__label">ZIP Code</label>
+        <input class="bff-input" type="text" />
+      </div>
+    </div>
 	</fieldset>
 </div>
-<pre class="bff-m-bottom--large"><code class="language-html">&lt;fieldset class="bff-form--compound">
+<pre class="bff-m-bottom--large"><code class="language-html">&lt;fieldset class="bff-form bff-form--compound">
   &lt;legend class="bff-form-element__label bff-text-title--caps">Address&lt;/legend>
-  &lt;div class="form-element__group">
-    &lt;div class="bff-form-element__row">
-      &lt;div class="bff-form-element bff-size--1-of-1">
-        &lt;label class="bff-form-element__label">Street&lt;/label>
-        &lt;input class="bff-input" type="text" />
-      &lt;/div>
+  &lt;div class="bff-form-element__row">
+    &lt;div class="bff-form-element bff-size--1-of-1">
+      &lt;label class="bff-form-element__label">Street&lt;/label>
+      &lt;input class="bff-input" type="text" />
     &lt;/div>
-    &lt;div class="bff-form-element__row">
-      &lt;div class="bff-form-element bff-size--1-of-2">
-        &lt;label class="bff-form-element__label" >City&lt;/label>
-        &lt;input class="bff-input" type="text" />
-      &lt;/div>
-      &lt;div class="bff-form-element bff-size--1-of-2">
-        &lt;label class="bff-form-element__label">State&lt;/label>
-        &lt;input class="bff-input" type="text" />
-      &lt;/div>
+  &lt;/div>
+  &lt;div class="bff-form-element__row">
+    &lt;div class="bff-form-element bff-size--1-of-2">
+      &lt;label class="bff-form-element__label" >City&lt;/label>
+      &lt;input class="bff-input" type="text" />
     &lt;/div>
-    &lt;div class="bff-form-element__row">
-      &lt;div class="bff-form-element bff-size--1-of-2">
-        &lt;label class="bff-form-element__label">ZIP Code&lt;/label>
-        &lt;input class="bff-input" type="text" />
-      &lt;/div>
+    &lt;div class="bff-form-element bff-size--1-of-2">
+      &lt;label class="bff-form-element__label">State&lt;/label>
+      &lt;input class="bff-input" type="text" />
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="bff-form-element__row">
+    &lt;div class="bff-form-element bff-size--1-of-2">
+      &lt;label class="bff-form-element__label">ZIP Code&lt;/label>
+      &lt;input class="bff-input" type="text" />
     &lt;/div>
   &lt;/div>
 &lt;/fieldset>
@@ -61,7 +57,7 @@
 
 <h2 class="bff-text-heading--default">Inline Form</h2>
 <div class="example-container">
-	<form class="bff-form--inline">
+	<form class="bff-form bff-form--inline">
 	  <div class="bff-form-element">
 	    <label class="bff-form-element__label">Name</label>
 	    <div class="bff-form-element__control">
@@ -80,7 +76,7 @@
 	</form>
 </div>
 <pre class="bff-m-bottom--large"><code class="language-html">&lt;form class="bff-form--inline">
-  &lt;div class="bff-form-element">
+  &lt;div class="bff-form bff-form-element">
     &lt;label class="bff-form-element__label">Name&lt;/label>
     &lt;div class="bff-form-element__control">
       &lt;input class="bff-input" type="text" />
@@ -100,7 +96,7 @@
 
 <h2 class="bff-text-heading--default">Stacked Form</h2>
 <div class="example-container">
-	<div class="bff-form--stacked">
+	<div class="bff-form bff-form--stacked">
 	  <div class="bff-form-element">
 	    <label class="bff-form-element__label">Text Input</label>
 	    <div class="bff-form-element__control">
@@ -150,7 +146,7 @@
 	  </div>
 	</div>
 </div>
-<pre class="bff-m-bottom--large"><code class="language-html">&lt;div class="bff-form--stacked">
+<pre class="bff-m-bottom--large"><code class="language-html">&lt;div class="bff-form bff-form--stacked">
   &lt;div class="bff-form-element">
     &lt;label class="bff-form-element__label">Text Input&lt;/label>
     &lt;div class="bff-form-element__control">
@@ -203,7 +199,7 @@
 
 <h2 class="bff-text-heading--default">Horizontal Form</h2>
 <div class="example-container">
-	<div class="bff-form--horizontal">
+	<div class="bff-form bff-form--horizontal">
 	  <div class="bff-form-element">
 	    <label class="bff-form-element__label">Text Input</label>
 	    <div class="bff-form-element__control">
@@ -253,7 +249,7 @@
 	  </div>
 	</div>
 </div>
-<pre class="bff-m-bottom--large"><code class="language-html">&lt;div class="bff-form--horizontal">
+<pre class="bff-m-bottom--large"><code class="language-html">&lt;div class="bff-form bff-form--horizontal">
   &lt;div class="bff-form-element">
     &lt;label class="bff-form-element__label">Text Input&lt;/label>
     &lt;div class="bff-form-element__control">

@@ -2,6 +2,10 @@
 // Forms
 //
 
+.#{$css-prefix}form{
+  // base form class for BEM reasons
+}
+
 .#{$css-prefix}form-element {
   position: relative;
 
