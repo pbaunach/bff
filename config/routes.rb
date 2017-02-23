@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'fredinator/builder'
+
   root 'documentation#home'  
   get 'documentation/home'
 
