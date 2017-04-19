@@ -2,17 +2,20 @@ Rails.application.routes.draw do
 
   get 'fredinator/builder'
 
-  root 'documentation#home'  
   get 'documentation/home'
 
   get 'pattern/index'
   get 'pattern/examples'
+  
+  get 'prototype/home'
+  get 'prototype/signup'
+  get 'prototype/dataImporter'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'documentation#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

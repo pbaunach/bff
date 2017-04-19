@@ -1,0 +1,56 @@
+<div class="bff-grid bff-grid--vertical page-container">
+	<%= render 'prototype/components/header' %>
+	<main class="bff-col bff-p-horizontal--large">
+
+		<%= render 'prototype/pages/dashboard' %>
+		<%= render 'prototype/pages/campaigns' %>
+		<%= render 'prototype/pages/automations' %>
+		<%= render 'prototype/pages/contacts' %>
+		<%= render 'prototype/pages/offers' %>
+		<%= render 'prototype/pages/reviews' %>
+		<%= render 'prototype/pages/referrals' %>
+		<%= render 'prototype/pages/distribution' %>
+		<%= render 'prototype/pages/reports' %>
+	</main>
+	<!-- Navigation -->
+	<%= render 'prototype/components/navigation' %>
+	
+	<!-- Universal Access Panel -->
+	<%= render 'prototype/components/uap' %>	
+</div>
+
+<div class="bff-modal bff-fade-in-open bff-hide" >
+  <div class="bff-modal__container">
+    <div class="bff-modal__header">
+      <button class="bff-button bff-modal__close" data-modal="close">
+      	<span class="bff-icon--cross  bff-icon--large"></span>
+      </button>
+      <h2 class="bff-text-body--medium bff-truncate">Modal Header</h2>
+    </div>
+    <div class="bff-modal__content bff-p-horizontal--medium">
+      <div>
+        <p class="bff-m-around--none">Sample Text</p>
+      </div>
+    </div>
+    <div class="bff-modal__footer">
+      <button class="bff-button bff-button--frederick-outline bff-button-min-size--medium" data-modal="close">Cancel</button>
+      <button class="bff-button bff-button--frederick bff-button-min-size--medium" data-modal="close">Okay</button>
+    </div>
+  </div>
+</div>
+<div class="bff-backdrop bff-backdrop--open bff-hide"></div>
+
+<script>
+	$(".page__content").hide();
+	$("#page__contacts").show();
+
+	$( ".navigation a:only-child" ).click(function(){
+		var datum = this.getAttribute('data-nav-item');
+		$(".page__content").hide();
+		$('#page__'+datum).show();
+	});
+	$("[data-modal=close]").click(function(){
+		$(".bff-modal").hide();
+		$(".bff-backdrop").hide();
+	});
+</script>

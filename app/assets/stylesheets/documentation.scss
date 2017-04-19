@@ -2,69 +2,71 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.page-container{
-	min-height:100vh; box-sizing:border-box;
-}
-.main{
-	margin-left:12rem;
-}
-
-ul{
-	list-style:none;
-	margin:0;
-}
-
-.navigation__container{
-	position:fixed;
-	top:0; 
-	bottom:0; 
-	width:12rem;
-	background-color: $frederick--color-green;
-	overflow-y:auto;
-}
-.navigation{
-	a{
-		color:$white;
-		text-decoration: none;
-		padding:$spacing--x-small $spacing--large;
-		display:block;
-		&:hover{
-			background-color:$frederick--color-green-light;
-		};
+.documentation{
+	.page-container{
+		min-height:100vh; box-sizing:border-box;
 	}
-	padding-bottom:10rem;	
-}
-.sub-navigation{
-	a{
-		padding-left:2.5rem;
+	.main{
+		margin-left:12rem;
 	}
-}
-.example-block{
-	background-color:$gray-lighter;
-	border:1px solid $gray;
-	text-align:center;
-	min-width:5rem;
-	min-height:2rem;
-	padding:.5rem;
-	border-radius:$border-radius;
-}
-.example-block--compact{
-	background-color:$gray-lighter;
-	border:1px solid $gray;
-	text-align:center;
-	min-width:5rem;
-	border-radius:$border-radius;
-}
 
-.example-container{
-	background-color:$white;
-	border:1px solid $gray-lighter;
-	padding:$spacing--small;
-	margin-bottom:$spacing--medium;
+	ul{
+		list-style:none;
+		margin:0;
+	}
 
-	&--compact {
-		padding:0;
-	}	
+	.navigation__container{
+		position:fixed;
+		top:0; 
+		bottom:0; 
+		width:12rem;
+		background-color: $frederick--color-green;
+		overflow-y:auto;
+	}
+	.navigation{
+		a{
+			color:$white;
+			text-decoration: none;
+			padding:$spacing--x-small $spacing--large;
+			display:block;
+			&:hover{
+				background-color:$frederick--color-green-light;
+			};
+		}
+		padding-bottom:10rem;	
+	}
+	.sub-navigation{
+		a{
+			padding-left:2.5rem;
+		}
+	}
+	.example-block{
+		background-color:$gray-lighter;
+		border:1px solid $gray;
+		text-align:center;
+		min-width:5rem;
+		min-height:2rem;
+		padding:.5rem;
+		border-radius:$border-radius;
+	}
+	.example-block--compact{
+		background-color:$gray-lighter;
+		border:1px solid $gray;
+		text-align:center;
+		min-width:5rem;
+		border-radius:$border-radius;
+	}
+
+	.example-container{
+		background-color:$white;
+		border:1px solid $gray-lighter;
+		padding:$spacing--small;
+		margin-bottom:$spacing--medium;
+
+		&--compact {
+			padding:0;
+		}	
+	}
 }
 
 ///////

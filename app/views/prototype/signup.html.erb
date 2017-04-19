@@ -1,0 +1,64 @@
+<style>
+	#to-the-beginning, #back-one{
+		width:30px;
+		height:30px;
+		position:fixed;
+		left:0;
+		background-color:#F5F7FA;
+		z-index:1000;
+	}
+	#back-one{
+		bottom:0;
+	}
+		#to-the-beginning{
+		top:0;
+	}
+
+</style>
+<div class="bff-grid bff-grid--vertical-align-stretch" style="background-color:#F5F7FA;">
+	<div class="bff-col bff-size--1-of-2" style="height:100%;">
+		<%= render 'prototype/components/signupForm' %>
+		<%= render 'prototype/components/businessAddressForm' %>
+		<%= render 'prototype/components/businessProfileForm' %>
+		<%= render 'prototype/components/dataImportForm' %>
+	</div>
+<!-- Color side -->
+	<%= render 'prototype/components/signupImage' %>
+	<%= render 'prototype/components/businessAddressImage' %>
+	<%= render 'prototype/components/businessProfileImage' %>
+	<%= render 'prototype/components/connectDataImage' %>
+
+	<div id="to-the-beginning"></div>
+	<div id="back-one" ></div>
+</div>
+
+<script>
+	$(".form__content").hide();
+	$(".bff-form__1").show();
+	$(".image__flow").hide();
+	$(".signup-image__1").show();
+
+	$( ".button__next-step" ).click(function(){
+		var datum = this.getAttribute('data-form-position');
+		datum = (parseInt(datum)+1);
+		$(".form__content").hide();
+		$('.bff-form__'+datum).show();
+		$(".image__flow").hide();
+		$('.signup-image__'+datum).show();
+	});
+
+	$( ".button__lets-go" ).click(function(){
+		window.location.href = "http://localhost:3000/prototype/home";
+	});
+	
+	$( "#to-the-beginning" ).click(function(){
+		$(".form__content").hide();
+		$(".bff-form__1").show();
+	});
+
+
+	$("[data-modal=close]").click(function(){
+		$(".bff-modal").hide();
+		$(".bff-backdrop").hide();
+	});
+</script>

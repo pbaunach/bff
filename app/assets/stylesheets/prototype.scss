@@ -1,0 +1,79 @@
+// Place all the styles related to the prototype controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.prototype{
+
+	.page-container{
+		min-height:100vh; box-sizing:border-box;
+	}
+	main, 
+	header{
+		margin-left:$size--x-small;
+	}
+	main{
+		padding:$spacing--xx-large 0 $spacing--small 0;
+	}
+	ul{
+		list-style:none;
+		margin:0;
+	}
+	.nav-dropdown__container{
+		position:fixed;
+		top:0; 
+		width:$size--x-small;
+		background-color: $frederick--color-green;
+		height:$spacing--xx-large;
+		z-index:2;
+
+		.nav-dropdown-selected{
+			color:$white;
+		}
+	}
+	.nav-dropdown, .header-dropdown{
+		display:block; 
+		width:$size--x-small;
+	}
+	.nav-dropdown:hover{
+		background-color:$frederick--color-green-light;
+	}
+	.navigation__container{
+		position:fixed;
+		top:$spacing--xx-large; 
+		bottom:0; 
+		width:$size--x-small;
+		background-color: $frederick--color-green;
+		overflow-y: auto;
+	}
+	.navigation{
+		a{
+			color:$white;
+			text-decoration: none;
+			padding:$spacing--x-small $spacing--medium;
+			display:block;
+			&:hover{
+				background-color:$frederick--color-green-light;
+			};
+		}
+	}
+	header{
+		background:$white;
+		width:100%;
+		position:fixed;
+		top:0;
+		left:0;
+		height:$spacing--xx-large;
+	}
+	.bff-uap{
+		position:fixed;
+		top:0;
+		bottom:0;
+		right:0;
+		width:$size--medium;
+		background:$white;
+		border-left:1px solid $gray-lighter;
+		z-index:10;
+		overflow-y:auto;
+	}
+
+}/*Prototype End */

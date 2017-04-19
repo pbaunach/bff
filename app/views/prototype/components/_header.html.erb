@@ -1,0 +1,37 @@
+<header class="bff-grid bff-grid--vertical-align-center">
+	<span class="bff-icon--menu bff-m-right--xx-small bff-p-left--medium"></span>
+	<!-- Dropdown Begin -->
+	<div class="bff-dropdown-trigger bff-dropdown-trigger--hover bff-p-around--small header-dropdown" style=""> 
+		<div class="bff-grid bff-grid--vertical-align-center nav-dropdown-selected"> 
+			<span class="bff-icon--store bff-m-right--xx-small"></span>
+			<span class="bff-truncate"> Peaceful Penrose Spa</span>
+			<span class="bff-icon--chevron-down bff-m-right--xx-small bff-p-left--xx-small"></span>
+		</div>
+		<div class="bff-dropdown bff-dropdown--left bff-dropdown--small bff-m-left--small">
+		    <ul class="bff-dropdown__list">
+		      <li class="bff-dropdown__item">
+		        <%= link_to(root_path+'prototype/dataImporter') do %>
+		          <div class="bff-grid bff-grid--vertical-align-center bff-truncate">
+								Data Upload
+		          </div>
+		        <% end %>
+		      </li>
+		      <li class="bff-dropdown__item">
+		        <a href="#placeholder">
+		          <div class="bff-grid bff-grid--vertical-align-center bff-truncate">
+								Location Settings
+		          </div>
+		        </a>
+		      </li>
+		      <li class="bff-dropdown__item">
+		        <a href="#placeholder">
+		          <div class="bff-grid bff-grid--vertical-align-center bff-truncate">
+								+ New Location
+		          </div>
+		        </a>
+		      </li>
+		    </ul>
+		</div>
+	</div><!-- Dropdown End -->
+	<span class="bff-icon--alarm bff-m-right--xx-small"></span>
+</header>
