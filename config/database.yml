@@ -14,12 +14,14 @@
 # Configure Using Gemfile
 # gem 'pg'
 #
+
 development:
   adapter: postgresql
   encoding: unicode
-  database: frederick_development
+  database: testDB
+  password: rainbow123
   pool: 5
-  password:
+  username: postgres
 
 test:
   adapter: postgresql

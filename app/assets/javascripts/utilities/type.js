@@ -23,4 +23,9 @@ var typeDocumentation = [
 		usage: '<div><span class="bff-text-body--semibold">Weights:</span> light, normal, medium</div>',
 		notes:'--',
 	},
+	{
+		className: cssPrefix+'text-color--*color*',
+		usage: '<div><span class="bff-text-body--semibold">Colors:</span> booker, frederick, success, danger, warning, info</div>',
+		notes:'--',
+	},
 ]
