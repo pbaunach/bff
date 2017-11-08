@@ -24,6 +24,7 @@ $(document).ready(function(){
 	parseDocumentation(checkboxDocumentation, 'checkbox');
 	parseDocumentation(dropdownsDocumentation, 'dropdowns');
 	parseDocumentation(textInputsDocumentation, 'text-inputs');
+	parseDocumentation(labelsDocumentation, 'labels');
 	parseDocumentation(loaderDocumentation, 'loader');
 	parseDocumentation(radioDocumentation, 'radio');
 	parseDocumentation(toggleDocumentation, 'toggle');

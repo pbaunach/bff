@@ -120,9 +120,8 @@
 }
 
 //
-// Colors
+// Type variants
 //
-
 
 .#{$css-prefix}text-color--booker{ color: $booker--color-blue; }
 .#{$css-prefix}text-color--frederick{ color: $frederick--color-green; }
@@ -130,3 +129,7 @@
 .#{$css-prefix}text-color--danger{ color: $danger--color; }
 .#{$css-prefix}text-color--warning{ color: $warning--color; }
 .#{$css-prefix}text-color--info{ color: $info--color; }
+
+
+
+

@@ -54,9 +54,14 @@ $cornflower:            #4A89DC;
 $cornflower-light:      #5D9CEC;
 $cornflower-lighter:    #79B3F2;
 
-$lavander:              #967ADC;
-$lavander-light:        #AC92EC;
-$lavander-lighter:      #BAA6F4;
+$lavender:              #967ADC;
+$lavender-light:        #AC92EC;
+$lavender-lighter:      #BAA6F4;
+
+// Because somebody can't spell :)
+$lavander: $lavender;
+$lavander-light: $lavender-light;
+$lavander-lighter: $lavender-lighter;
 
 $rose:                  #D770AD;
 $rose-light:            #EC87C0;
@@ -87,12 +92,12 @@ $font-color--default: $gray-darker;
 
 $font-size--root:             16px !default;
 
-$font-size--x-small:          .625rem !default; //10px
-$font-size--small:            .75rem !default; //12px
-$font-size--base:             .875rem !default; //14px
-$font-size--large:            1.125rem !default; //18px
-$font-size--x-large:          1.375rem !default; //22px
-$font-size--xx-large:         2rem !default; //32px
+$font-size--x-small:          .625rem !default;//10px
+$font-size--small:            .75rem !default;//12px
+$font-size--base:             .875rem !default;//14px
+$font-size--large:            1.125rem !default;//18px
+$font-size--x-large:          1.375rem !default;//22px
+$font-size--xx-large:         2rem !default;//32px
 
 $line-height:                1.5 !default;
 

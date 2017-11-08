@@ -1,0 +1,13 @@
+// Labels
+
+// Label sizes
+@mixin label-size($font-size, $padding-y, $padding-x) {
+  font-size: $font-size;
+  padding: $padding-y $padding-x;
+}
+
+// Label colors
+@mixin label-color($background-color, $color: $white) {
+  color: $color;
+  background-color: $background-color;
+}
