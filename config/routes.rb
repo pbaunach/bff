@@ -3,13 +3,14 @@ Rails.application.routes.draw do
   get 'fredinator/builder'
 
   get 'documentation/home'
+  #get 'guidelines/home'
 
-  get 'pattern/index'
-  get 'pattern/examples'
+  #get 'pattern/index'
+  #get 'pattern/examples'
   
-  get 'prototype/home'
-  get 'prototype/signup'
-  get 'prototype/dataImporter'
+  #get 'prototype/home'
+  #get 'prototype/signup'
+  #get 'prototype/dataImporter'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -29,6 +29,7 @@ $(document).ready(function(){
 	parseDocumentation(radioDocumentation, 'radio');
 	parseDocumentation(toggleDocumentation, 'toggle');
 	//Molecules
+	parseDocumentation(buttonGroupDocumentation, 'button-group');
 	parseDocumentation(formsDocumentation, 'forms');
 	parseDocumentation(notificationsDocumentation, 'notifications');
 	parseDocumentation(stepWizardDocumentation, 'step-wizard');
