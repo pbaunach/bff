@@ -21,6 +21,7 @@ $(document).ready(function(){
 	parseDocumentation(responsiveDocumentation, 'responsive');
 	//Atoms
 	parseDocumentation(buttonsDocumentation, 'buttons');
+	parseDocumentation(squareButtonsDocumentation, 'square-buttons');
 	parseDocumentation(checkboxDocumentation, 'checkbox');
 	parseDocumentation(dropdownsDocumentation, 'dropdowns');
 	parseDocumentation(textInputsDocumentation, 'text-inputs');
@@ -28,6 +29,7 @@ $(document).ready(function(){
 	parseDocumentation(loaderDocumentation, 'loader');
 	parseDocumentation(radioDocumentation, 'radio');
 	parseDocumentation(toggleDocumentation, 'toggle');
+	parseDocumentation(toolTipDocumentation, 'tool-tip');
 	//Molecules
 	parseDocumentation(buttonGroupDocumentation, 'button-group');
 	parseDocumentation(formsDocumentation, 'forms');

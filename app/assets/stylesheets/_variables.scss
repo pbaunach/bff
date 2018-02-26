@@ -242,20 +242,23 @@ $grid__columns:               12 !default;
 $grid__gutter--width:          1.875rem !default; // 30px
 
 //Buttons
-$btn-padding-x:           1rem !default;
-$btn-padding-y:           .375rem !default;
 $btn-font-weight:         $font-weight--light !default;
 
-$btn-padding-x--small:       .75rem !default;
-$btn-padding-y--small:       .25rem !default;
+$btn-padding-x--small:       1rem !default;
+$btn-padding-x:           1.375rem !default;
+$btn-padding-x--large:       1.75rem !default;
+$btn-padding-x--x-large:       2.125rem !default;
 
-$btn-padding-x--large:       1.25rem !default;
-$btn-padding-y--large:       .75rem !default;
+$btn-line-height--small: 1.875rem;
+$btn-line-height: 2.5rem;
+$btn-line-height--large: 3.125rem;
+$btn-line-height--x-large: 4.375rem;
 
-$btn-padding-x--x-large:       1.50rem !default;
-$btn-padding-y--x-large:       1rem !default;
+$btn-square-size--small: 1.875rem;
+$btn-square-size: 2.5rem;
+$btn-square-size--large: 3.125rem;
+$btn-square-size--x-large: 4.375rem;
 
-$btn-line-height: $line-height;
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius:              $border-radius !default;
@@ -288,9 +291,15 @@ $input-padding-y--small:             .275rem !default;
 $input-padding-x--large:             1.25rem !default;
 $input-padding-y--large:             .75rem !default;
 
-$input-height:                   	 (($font-size--base * $line-height) + ($input-padding-y * 2)) !default;
-$input-height--large:                (($font-size--large * $line-height--large) + ($input-padding-y--large * 2)) !default;
-$input-height--small:                (($font-size--small * $line-height--small) + ($input-padding-y--small * 2)) !default;
+$input-height--small:                1.875rem !default;
+$input-height:                   	 2.5rem !default;
+$input-height--large:                3.125rem !default;
+
+$input-line-height--small:              1.875rem;
+$input-line-height:                     2.5rem;
+$input-line-height--large:              3.125rem;
+$input-line-height--x-large:            4.375rem;
+
 
 $form-group-margin-bottom:       $spacer-y !default;
 

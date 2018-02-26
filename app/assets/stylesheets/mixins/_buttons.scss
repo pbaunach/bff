@@ -1,13 +1,14 @@
 // Buttons
 
 // Button sizes
-@mixin button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
-  padding: $padding-y $padding-x;
+@mixin button-size($padding-x, $font-size, $line-height, $border-radius) {
+  padding:0px $padding-x;
   font-size: $font-size;
   line-height: $line-height;
   @include border-radius($border-radius);
 }
 
+// Colored Variants
 @mixin button-variant--solid($bg--color, $font--color, $hover--color){
   background-color: $bg--color;
   border-color: $bg--color;
@@ -18,6 +19,7 @@
   };
 }
 
+// Outlined Colored Variants
 @mixin button-variant--outline($bg--color, $font--color, $hover--color){
   background-color: $bg--color;
   border:$border-width solid $font--color;
@@ -29,3 +31,9 @@
   };
 }
 
+// Icon Button Square
+@mixin square-button-size($square-size, $border-radius) {
+  width: $square-size;
+  height:$square-size;
+  @include border-radius($border-radius);
+}

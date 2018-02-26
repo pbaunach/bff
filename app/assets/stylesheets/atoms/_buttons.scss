@@ -3,18 +3,19 @@
 //
 
 .#{$css-prefix}button{
-  display: inline-block;
+  display:inline-flex; 
+  justify-content: center;
   font-weight: $btn-font-weight;
-  text-align: center;
   white-space: nowrap;
   vertical-align: middle;
+  align-items:center;
   cursor: pointer;
   user-select: none;
   border: $input-border--width solid transparent;
   background-color: $white;
   border-color: $gray-light;
   color: $gray-darkest;
-  @include button-size($btn-padding-y, $btn-padding-x, $font-size--base, $line-height, $btn-border-radius);
+  @include button-size( $btn-padding-x, $font-size--base, $btn-line-height, $btn-border-radius);
  
   &:hover{
     background-color: $gray-lightest;
@@ -39,15 +40,15 @@
 
 .#{$css-prefix}button--small {
   // line-height: ensure proper height of button next to small input
-  @include button-size($btn-padding-y--small, $btn-padding-x--small, $font-size--small, $line-height--small, $btn-border-radius);
+  @include button-size($btn-padding-x--small, $font-size--small, $btn-line-height--small, $btn-border-radius);
 }
 .#{$css-prefix}button--large {
   // line-height: ensure even-numbered height of button next to large input
-  @include button-size($btn-padding-y--large, $btn-padding-x--large, $font-size--large, $line-height--large, $btn-border-radius);
+  @include button-size($btn-padding-x--large, $font-size--large, $btn-line-height--large, $btn-border-radius);
 }
 .#{$css-prefix}button--x-large {
   // line-height: ensure even-numbered height of button next to large input
-  @include button-size($btn-padding-y--x-large, $btn-padding-x--x-large, $font-size--x-large, $line-height--x-large, $btn-border-radius);
+  @include button-size( $btn-padding-x--x-large, $font-size--x-large, $btn-line-height--x-large, $btn-border-radius);
 }
 
 //
@@ -72,6 +73,17 @@
 .#{$css-prefix}button__block {
   display: block;
   width: 100%;
+}
+
+//
+// Button Icons
+//
+
+.#{$css-prefix}button__icon--left{
+   padding-right:$spacing--x-small;
+}
+.#{$css-prefix}button__icon--right{
+  padding-left:$spacing--x-small;
 }
 
 //

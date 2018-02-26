@@ -1,0 +1,73 @@
+//
+// Square Buttons
+//
+
+.#{$css-prefix}square-button{
+  display:inline-flex; 
+  justify-content: center;
+  font-weight: $btn-font-weight;
+  white-space: nowrap;
+  vertical-align: middle;
+  align-items:center;
+  cursor: pointer;
+  user-select: none;
+  border: $input-border--width solid transparent;
+  background-color: $white;
+  border-color: $gray-light;
+  color: $gray-darkest;
+  padding:0px;
+
+  &:hover{
+    background-color: $gray-lightest;
+  };
+
+  @include square-button-size($btn-square-size, $border-radius);
+}
+.#{$css-prefix}square-button--small{ @include square-button-size($btn-square-size--small, $border-radius) }
+.#{$css-prefix}square-button--large{ @include square-button-size($btn-square-size--large, $border-radius) }
+.#{$css-prefix}square-button--x-large{ @include square-button-size($btn-square-size--x-large, $border-radius) }
+
+
+//
+// Square Button Variants
+//
+
+.#{$css-prefix}square-button--booker{ @include button-variant--solid($booker--color-blue, $white, $booker--color-blue-light) }
+.#{$css-prefix}square-button--booker-outline{ @include button-variant--outline(transparent, $booker--color-blue, $booker--color-blue-light ) }
+.#{$css-prefix}square-button--frederick{ @include button-variant--solid($frederick--color-green, $white, $frederick--color-green-light) }
+.#{$css-prefix}square-button--frederick-outline{ @include button-variant--outline(transparent, $frederick--color-green, $frederick--color-green-light ) }
+.#{$css-prefix}square-button--success{ @include button-variant--solid($success--color, $white, $success--color-light) }
+.#{$css-prefix}square-button--success-outline{ @include button-variant--outline(transparent, $success--color, $success--color-light ) }
+.#{$css-prefix}square-button--danger{ @include button-variant--solid($danger--color, $white, $danger--color-light) }
+.#{$css-prefix}square-button--danger-outline{ @include button-variant--outline(transparent, $danger--color, $danger--color-light ) }
+.#{$css-prefix}square-button--warning{ @include button-variant--solid($warning--color, $white, $warning--color-light) }
+.#{$css-prefix}square-button--warning-outline{ @include button-variant--outline(transparent, $warning--color, $warning--color-light ) }
+.#{$css-prefix}square-button--info{ @include button-variant--solid($info--color, $white, $info--color-light) }
+.#{$css-prefix}square-button--info-outline{ @include button-variant--outline(transparent, $info--color, $info--color-light ) }
+
+.#{$css-prefix}square-button--white-outline{
+  background-color: transparent;
+  border:$border-width solid $white;
+  color: $white;
+  &:hover{
+    background-color: $white;
+    border-color: $white;
+    color: $gray-darkest;
+  };
+}
+
+//
+// Square Button Disable
+//
+
+.#{$css-prefix}square-button--disabled{
+  background-color: $gray-light;
+  border-color: $gray-light;
+  color: $gray-lightest;
+  &:hover{
+    background-color: $gray-light;
+    border-color: $gray-light;
+    color: $gray-lightest;
+    cursor:not-allowed;
+  }
+}

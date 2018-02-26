@@ -122,3 +122,15 @@
 }
 
 
+//Sizes
+.#{$css-prefix}input--small{
+  font-size:$font-size--small;
+  line-height:$input-height--small;
+  min-height: calc(#{$input-height--small} + (#{$input-border--width} * 2)); // For IE
+}
+
+.#{$css-prefix}input--large{
+  font-size:$font-size--large;
+  line-height:$input-height--large;
+  min-height: calc(#{$input-height--large} + (#{$input-border--width} * 2)); // For IE
+}
