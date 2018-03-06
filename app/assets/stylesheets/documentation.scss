@@ -7,7 +7,7 @@
 		min-height:100vh; box-sizing:border-box;
 	}
 	.main{
-		margin-left:12rem;
+		margin-left:15rem;
 	}
 
 	ul{
@@ -19,12 +19,13 @@
 		position:fixed;
 		top:0; 
 		bottom:0; 
-		width:12rem;
+		width:15rem;
 		background-color: $frederick--color-green;
 		overflow-y:auto;
 	}
 	.navigation{
 		a{
+			font-size:$font-size--large;
 			color:$white;
 			text-decoration: none;
 			padding:$spacing--x-small $spacing--large;
