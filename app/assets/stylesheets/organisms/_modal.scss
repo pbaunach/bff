@@ -97,12 +97,10 @@
     color:$gray-dark;
     background:transparent;
     border:none;
-    float: right;
-    margin-left: $spacing--xx-small;
-    line-height: $line-height;
     padding: $spacing--xx-small;
-    display:flex;
-    transform: translate3d(0.5rem, -0.5rem, 0);
+    position:absolute;
+    top:.5rem;
+    right:.5rem;
   }
 }
 
