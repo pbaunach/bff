@@ -1,16 +1,25 @@
 <div class="navigation__container" style="z-index:1">
 	<nav class="navigation">
 		<ul>
-			<li class="bff-text-heading--default"><a href="#utilities">Utilities</a></li>
-				<ul class="sub-navigation">
+			<li class="bff-text-heading--default nav-item nav-item--has-children">
+				<span class="nav-item__header">
+					<a href="#utilities">Utilities</a>
+					<button type="button" class="nav-item__toggle" aria-expanded="false" aria-controls="nav-utilities" title="Toggle submenu"><span class="bff-icon--chevron-down"></span></button>
+				</span>
+				<ul class="sub-navigation nav-item__sub nav-item__sub--collapsed" id="nav-utilities">
 					<li><a href="#grid-anchor">Grid</a></li>
 					<li><a href="#spacing-anchor">Spacing</a></li>
 					<li><a href="#type-anchor">Type</a></li>
 					<li><a href="#visibility-anchor">Visibility</a></li>
 					<li><a href="#responsive-anchor">Responsive</a></li>
 				</ul>
-			<li class="bff-text-heading--default"><a href="#atoms">Atoms</a></li>
-				<ul class="sub-navigation">
+			</li>
+			<li class="bff-text-heading--default nav-item nav-item--has-children">
+				<span class="nav-item__header">
+					<a href="#atoms">Atoms</a>
+					<button type="button" class="nav-item__toggle" aria-expanded="false" aria-controls="nav-atoms" title="Toggle submenu"><span class="bff-icon--chevron-down"></span></button>
+				</span>
+				<ul class="sub-navigation nav-item__sub nav-item__sub--collapsed" id="nav-atoms">
 					<li><a href="#buttons-anchor">Buttons</a></li>
 					<li><a href="#square-buttons-anchor">Square Buttons</a></li>
 					<li><a href="#checkbox-anchor">Checkboxes</a></li>
@@ -22,21 +31,45 @@
 					<li><a href="#toggle-anchor">Toggle</a></li>
 					<li><a href="#tool-tip-anchor">Tool Tip</a></li>
 				</ul>
-			<li class="bff-text-heading--default"><a href="#molecules">Molecules</a></li>
-				<ul class="sub-navigation">
+			</li>
+			<li class="bff-text-heading--default nav-item nav-item--has-children">
+				<span class="nav-item__header">
+					<a href="#molecules">Molecules</a>
+					<button type="button" class="nav-item__toggle" aria-expanded="false" aria-controls="nav-molecules" title="Toggle submenu"><span class="bff-icon--chevron-down"></span></button>
+				</span>
+				<ul class="sub-navigation nav-item__sub nav-item__sub--collapsed" id="nav-molecules">
 					<li><a href="#button-group-anchor">Button Group</a></li>
 					<li><a href="#forms-anchor">Forms</a></li>
 					<li><a href="#notifications-anchor">Notifications</a></li>
 					<li><a href="#step-wizard-anchor">Step Wizard</a></li>
 				</ul>
-			<li class="bff-text-heading--default"><a href="#organisms">Organisms</a></li>
-				<ul class="sub-navigation">
+			</li>
+			<li class="bff-text-heading--default nav-item nav-item--has-children">
+				<span class="nav-item__header">
+					<a href="#organisms">Organisms</a>
+					<button type="button" class="nav-item__toggle" aria-expanded="false" aria-controls="nav-organisms" title="Toggle submenu"><span class="bff-icon--chevron-down"></span></button>
+				</span>
+				<ul class="sub-navigation nav-item__sub nav-item__sub--collapsed" id="nav-organisms">
 					<li><a href="#tables-anchor">Tables</a></li>
 					<li><a href="#modal-anchor">Modal</a></li>
 				</ul>
+			</li>
 			<li class="bff-text-heading--default"><a href="#colors">Colors</a></li>
 			<li class="bff-text-heading--default"><a href="#icons">Icons</a></li>
-			<li class="bff-text-heading--default"><a href="#bff-variables">SASS Variables</a></li>
 		</ul>
 	</nav>
 </div>
+
+<script>
+(function() {
+	document.querySelectorAll('.nav-item__toggle').forEach(function(btn) {
+		btn.addEventListener('click', function() {
+			var sub = document.getElementById(btn.getAttribute('aria-controls'));
+			var isExpanded = btn.getAttribute('aria-expanded') === 'true';
+			sub.classList.toggle('nav-item__sub--collapsed', isExpanded);
+			btn.setAttribute('aria-expanded', !isExpanded);
+			btn.querySelector('span').className = isExpanded ? 'bff-icon--chevron-down' : 'bff-icon--chevron-up';
+		});
+	});
+})();
+</script>

@@ -2,8 +2,52 @@
 
 <h2 class="bff-text-heading--default">Modal</h2>
 <div class="example-container">
-	<div>Working Demo Coming Soon</div>
+	<button type="button" class="bff-button bff-button--frederick bff-button-min-size--medium" id="modal-demo-open">Open modal</button>
+
+	<div class="bff-modal bff-fade-in-open bff-hide" id="modal-demo" role="dialog" aria-modal="true" aria-labelledby="modal-demo-title">
+		<div class="bff-modal__container">
+			<div class="bff-modal__header">
+				<button type="button" class="bff-square-button bff-modal__close" aria-label="Close modal"><span class="bff-icon--cross2"></span></button>
+				<h2 class="bff-text-header--medium bff-truncate" id="modal-demo-title">Modal Header</h2>
+			</div>
+			<div class="bff-modal__content bff-p-horizontal--large">
+				<div>
+					<p class="bff-m-around--none">Sample Text</p>
+				</div>
+			</div>
+			<div class="bff-modal__footer">
+				<button type="button" class="bff-button bff-button-min-size--medium modal-demo-close">Cancel</button>
+				<button type="button" class="bff-button bff-button--frederick bff-button-min-size--medium modal-demo-close">Okay</button>
+			</div>
+		</div>
+	</div>
+	<div class="bff-backdrop bff-hide" id="modal-demo-backdrop"></div>
 </div>
+
+<script>
+(function() {
+	var modal = document.getElementById('modal-demo');
+	var backdrop = document.getElementById('modal-demo-backdrop');
+	function openModal() {
+		modal.classList.remove('bff-hide');
+		backdrop.classList.remove('bff-hide');
+		backdrop.classList.add('bff-backdrop--open');
+	}
+	function closeModal() {
+		modal.classList.add('bff-hide');
+		backdrop.classList.add('bff-hide');
+		backdrop.classList.remove('bff-backdrop--open');
+	}
+	document.getElementById('modal-demo-open').addEventListener('click', openModal);
+	modal.querySelector('.bff-modal__close').addEventListener('click', closeModal);
+	backdrop.addEventListener('click', closeModal);
+	modal.querySelectorAll('.modal-demo-close').forEach(function(btn) { btn.addEventListener('click', closeModal); });
+	document.addEventListener('keydown', function(e) {
+		if (e.key === 'Escape' && !modal.classList.contains('bff-hide')) closeModal();
+	});
+})();
+</script>
+
 <pre class="bff-m-bottom--large"><code class="language-html">&lt;div class="bff-modal bff-fade-in-open">
   &lt;div class="bff-modal__container">
     &lt;div class="bff-modal__header">

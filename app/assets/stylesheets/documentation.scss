@@ -39,7 +39,32 @@
 	.sub-navigation{
 		a{
 			padding-left:2.5rem;
+			font-weight: $font-weight--light;
 		}
+	}
+
+	.nav-item__header{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		a{
+			flex: 1;
+		}
+	}
+	.nav-item__toggle{
+		background: none;
+		border: none;
+		color: $white;
+		cursor: pointer;
+		padding: $spacing--x-small $spacing--small;
+		display: flex;
+		align-items: center;
+		&:hover{
+			background-color: $frederick--color-green-light;
+		}
+	}
+	.nav-item__sub--collapsed{
+		display: none;
 	}
 	.example-block{
 		background-color:$gray-lighter;
