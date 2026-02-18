@@ -15,5 +15,7 @@ Rails.application.configure do
   config.assets.debug = true
   config.assets.quiet = true
   config.public_file_server.enabled = true
+  # Allow requests from any host in development (e.g. localhost, 127.0.0.1, or custom hostnames)
+  config.hosts.clear
   config.secret_key_base = "bab441e37640f3c9abd69c66ba10f8b1a78210c1d6fb9f6659c2a83bcd4bcae60deefcd4dbda427f53edb2e5f1b83f6c79afb0948797a2a30b7d0db3f5a59c8e"
 end
